@@ -1,0 +1,14 @@
+html{
+    background-color: bisque;
+    font-family: 'Rubik', 'Roboto', sans-serif;
+}
+
+.website-name-header{
+    text-align: center;
+}
+
+
+.logo-image{
+    display: flex;
+    border-radius: 50%;
+}
