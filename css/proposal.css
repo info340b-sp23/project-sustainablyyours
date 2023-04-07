@@ -1,19 +1,29 @@
-html{
+html {
     background-color: bisque;
     font-family: 'Rubik', 'Roboto', sans-serif;
 }
 
-.website-name-header{
+.website-name-header {
     text-align: center;
 }
 
-
-.logo-image{
+.logo-image {
     display: flex;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-li {
-    margin-left: 50px;
-    margin-right: 50px;
+h1 {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+ol {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+body header p {
+    text-align: center;
 }
