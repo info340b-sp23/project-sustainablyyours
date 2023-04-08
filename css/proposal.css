@@ -1,22 +1,36 @@
+/* Set background color and font family for the entire page */
 html {
     background-color: bisque;
     font-family: 'Rubik', 'Roboto', sans-serif;
 }
 
+/* Center the website name in the header */
 .website-name-header {
     text-align: center;
 }
 
+/* Style the logo image to be circular and centered */
 .logo-image {
     display: flex;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.2s ease-in-out;
 }
 
+/* Add a hover effect to the logo image to make it grow slightly when hovered over */
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+/* Add margins to the h1 and ol elements to center them on the page */
 h1 {
     margin-left: 130px;
     margin-right: 130px;
+    /* Style the h1 with a gradient text effect */
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 ol {
@@ -24,6 +38,17 @@ ol {
     margin-right: 190px;
 }
 
+/* Center the text in the header paragraph */
 body header p {
     text-align: center;
+}
+
+/* Add a subtle gradient background to the header */
+header {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, bisque 100%);
+}
+
+/* Add a box shadow to the container to give it some depth */
+.container {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
