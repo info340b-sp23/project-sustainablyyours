@@ -23,6 +23,12 @@ html {
     transform: scale(1.1);
 }
 
+.question {
+    padding: 1.5em;
+    padding-bottom: .5em;
+    font-weight: bold;
+}
+
 /* Add margins to the h1 and ol elements to center them on the page */
 h1 {
     margin-left: 130px;
@@ -31,6 +37,10 @@ h1 {
     background: linear-gradient(to right, #f12711, #f5af19);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+main h1 {
+    margin-top: 3rem;
 }
 
 ol {
