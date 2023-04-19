@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Georgia, serif;
 }
 .contanier{
     width: 100%;
@@ -90,14 +90,6 @@ nav ul li.active a{
     margin: 20px 0 8px;
     color: #444;
 }
-.content .div-text h1{
-    font-size: 55px;
-    font-weight: bold;
-
-    letter-spacing: 1.8px;
-    color: #444;
-    margin-bottom: 25px;
-}
 .content .div-text p{
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -120,7 +112,6 @@ nav ul li.active a{
     background-color: #086404;
 }
 
-
 .content .div-img img{
     width: 350px;
 }
@@ -139,4 +130,93 @@ nav ul li.active a{
 }
 .content .small-img img:hover{
     transform: scale(1.2);
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.content .div-text h1{
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.content .div-text .div-contact{
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #444;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+.content .div-text i{
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    color: #444;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 320px;
+    left: 150px;
+}
+.content .div-text h2{
+    font-size: 25px;
+    letter-spacing: 1.8px;
+    color: #444;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 320px;
+    left: 200px;
+}
+.content .div-text .email{
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    color: #444;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 360px;
+    left: 200px;
+}  
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    background-color: #91b247;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #086404;
 }
