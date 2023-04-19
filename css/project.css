@@ -22,7 +22,7 @@ nav .logo{
     align-items: center;
 }
 nav .logo i{
-    color: #79bccf;
+    color: #91b247;
     font-size: 28px;
 }
 nav .logo h1{
@@ -43,7 +43,7 @@ nav ul li::after{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #79bccf;
+    background: #91b247;
     width: 0%;
     height: 3px;
     transition: 0.3s;
@@ -62,13 +62,13 @@ nav ul li a{
 }
 nav ul li a:hover,
 nav ul li.active a{
-    color: #79bccf;
+    color: #91b247;
 }
 
 .contanier .content{
     width: 100%;
     height: calc(100vh - 95px);
-    background: linear-gradient(130deg, #c4e1f8, #eeb0bd);
+    background: linear-gradient(130deg, #91b247, #c4e1f8);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +99,7 @@ nav ul li.active a{
     margin-bottom: 25px;
 }
 .content .div-text p{
-    color: #666;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1.3px;
@@ -108,7 +108,7 @@ nav ul li.active a{
 .content .div-text .btn{
     padding: 15px 35px;
     background-color: #fff;
-    color: #79bccf;
+    color: #91b247;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -117,7 +117,7 @@ nav ul li.active a{
 }
 .content .div-text .btn:hover{
     color: #fff;
-    background-color: #79bccf;
+    background-color: #086404;
 }
 
 
