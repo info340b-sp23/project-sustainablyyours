@@ -28,6 +28,8 @@ nav .logo i{
 nav .logo h1{
     color: #444;
     font-size: 28px;
+    position: absolute;
+    left: 125px;
 }
 
 nav ul li{
