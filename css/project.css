@@ -227,6 +227,14 @@ input[type="text"], textarea{
     margin-bottom: 20px;
 }
 
+input[type="password"], textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 input[type="submit"]{
     background-color: #4bb45c;
     color: #fff;
@@ -256,6 +264,10 @@ input[type="submit"]:hover{
 
 .dropdown:hover .dropdown-pages {
     display: block;
+}
+
+form h2{
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 598px) {

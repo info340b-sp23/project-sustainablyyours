@@ -34,27 +34,18 @@
                 </ul>
             </nav>
     
-            <div class="content">
-                <div class="div-text">
-                    <span>Shop Sustainable!</span>
-                    <h3>Join the sustainable revolution with</h3>
-                    <h1><em>SustainablyYours</em></h1>
-                    <p>
-                        Transform your shopping habits with SustainablyYours and help the planet! Discover all your preferred products from your favorite retailers, but with sustainable alternatives.
-                    </p>
-                        <a href="#" class="btn">Shop now</a>
-                </div>
-    
-                <div class="div-img">
-                    <img id="big-img" src="" alt="">
-                </div>
-    
-                <div class="small-img">
-                    <img onclick="myTshirt(this.src)" src="" alt="">
-                    <img onclick="myTshirt(this.src)" src="" alt="">
-                    <img onclick="myTshirt(this.src)" src="" alt="">
-                </div>
-            </div>
-        </div>
+            <section class="content">
+                <form>
+                    <h2>Account Login</h2>
+                    <div>
+                        <label for="username_input">Username:</label>
+                        <input type="text" id="username_input" name="username" pattern=".\w{3,}" placeholder="3 character username requirement" required>
+                    </div>
+                    <div>
+                        <label for="password_input">Password:</label>
+                        <input type="password" id="password_input" name="password" pattern=".{6,}" placeholder="6 character requirement" required>
+                    </div>
+                </form>
+            </section>
     </body>
 </html>
