@@ -149,7 +149,7 @@ nav ul li.active a{
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #fff;
     font-family: sans-serif;
 }
 
@@ -213,19 +213,21 @@ form {
     left: 200px;
 }  
 
-label {
+label{
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
 }
-input[type="text"], textarea {
+
+input[type="text"], textarea{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-input[type="submit"] {
+
+input[type="submit"]{
     background-color: #4bb45c;
     color: #fff;
     padding: 10px 20px;
@@ -235,17 +237,17 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover{
     background-color: #086404;
 }
 
-.dropdown-pages {
+.dropdown-pages{
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #fff;
 }
 
-.dropdown-pages a {
+.dropdown-pages li a{
     color: black;
     padding: 10px 10px;
     text-decoration: none;
@@ -257,10 +259,11 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 598px) {
-    #dropdown-pages {
-        display: block;
-    }
-    #dropdown {
+    .dropdown button{
         display: none;
     }
+    .dropdown-pages{
+        display: block;
+        position: relative;
+    } 
 }
