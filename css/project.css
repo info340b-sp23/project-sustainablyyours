@@ -4,11 +4,13 @@
     box-sizing: border-box;
     font-family: Georgia, serif;
 }
+
 .contanier{
     width: 100%;
     height: 100vh;
     padding: 0 15px 15px;
 }
+
 .contanier nav{
     width: 90%;
     margin: auto;
@@ -17,16 +19,19 @@
     align-items: center;
     height: 80px;
 }
+
 nav .logo{
     display: flex;
     align-items: center;
 }
+
 nav .logo i{
-    color: #91b247;
+    color: #4bb45c;
     font-size: 28px;
 }
+
 nav .logo h1{
-    color: #444;
+    color: #383c36;
     font-size: 28px;
     position: absolute;
     left: 125px;
@@ -40,22 +45,25 @@ nav ul li{
     line-height: 80px;
     cursor: pointer;
 }
+
 nav ul li::after{
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #91b247;
+    background: #4bb45c;
     width: 0%;
     height: 3px;
     transition: 0.3s;
 }
+
 nav ul li:hover::after,
 nav ul li.active::after{
     width: 100%;
 }
+
 nav ul li a{
-    color: #444;
+    color: #383c36;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -64,13 +72,13 @@ nav ul li a{
 }
 nav ul li a:hover,
 nav ul li.active a{
-    color: #91b247;
+    color: #4bb45c;
 }
 
 .contanier .content{
     width: 100%;
     height: calc(100vh - 95px);
-    background: linear-gradient(130deg, #91b247, #c4e1f8);
+    background: linear-gradient(130deg, #4bb45c, #4bb3e6);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -90,8 +98,9 @@ nav ul li.active a{
     font-size: 50px;
     font-weight: normal;
     margin: 20px 0 8px;
-    color: #444;
+    color: #383c36;
 }
+
 .content .div-text p{
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -99,16 +108,18 @@ nav ul li.active a{
     letter-spacing: 1.3px;
     margin-bottom: 55px;
 }
+
 .content .div-text .btn{
     padding: 15px 35px;
     background-color: #fff;
-    color: #91b247;
+    color: #4bb45c;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     border-radius: 30px;
     transition: 0.3s;
 }
+
 .content .div-text .btn:hover{
     color: #fff;
     background-color: #086404;
@@ -117,6 +128,7 @@ nav ul li.active a{
 .content .div-img img{
     width: 350px;
 }
+
 .content .small-img{
     position: absolute;
     left: 50%;
@@ -125,11 +137,13 @@ nav ul li.active a{
     display: flex;
     gap: 80px;
 }
+
 .content .small-img img{
     width: 80px;
     cursor: pointer;
     transition: 0.4s;
 }
+
 .content .small-img img:hover{
     transform: scale(1.2);
 }
@@ -155,7 +169,7 @@ form {
     font-size: 55px;
     font-weight: bold;
     letter-spacing: 1.8px;
-    color: #444;
+    color: #383c36;
     margin-bottom: 25px;
 }
 
@@ -163,7 +177,7 @@ form {
     font-size: 55px;
     font-weight: bold;
     letter-spacing: 1.8px;
-    color: #444;
+    color: #383c36;
     margin-bottom: 25px;
     position: absolute;
     top: 200px;
@@ -172,7 +186,7 @@ form {
 .content .div-text i{
     font-size: 25px;
     letter-spacing: 1.8px;
-    color: #444;
+    color: #383c36;
     margin-bottom: 25px;
     position: absolute;
     top: 320px;
@@ -181,7 +195,7 @@ form {
 .content .div-text h2{
     font-size: 25px;
     letter-spacing: 1.8px;
-    color: #444;
+    color: #383c36;
     margin-bottom: 25px;
     position: absolute;
     top: 320px;
@@ -190,13 +204,12 @@ form {
 .content .div-text .email{
     font-size: 15px;
     letter-spacing: 1.8px;
-    color: #444;
+    color: #383c36;
     margin-bottom: 25px;
     position: absolute;
     top: 360px;
     left: 200px;
 }  
-
 
 label {
     display: block;
@@ -211,7 +224,7 @@ input[type="text"], textarea {
     margin-bottom: 20px;
 }
 input[type="submit"] {
-    background-color: #91b247;
+    background-color: #4bb45c;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -221,4 +234,15 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #086404;
+}
+
+#tabs {
+    display: none;
+  }
+
+/* if (size is at least 598px) */
+@media (min-width: 598px) {
+  #hamburger-menu {
+    display: none;
+  }
 }
