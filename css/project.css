@@ -32,7 +32,7 @@ nav .logo i{
 
 nav .logo h1{
     color: #383c36;
-    font-size: 28px;
+    font-size: 5vh;
     position: absolute;
     left: 125px;
 }
@@ -87,7 +87,7 @@ nav ul li.active a{
 }
 .content .div-text span{
     color: #fff;
-    font-size: 25px;
+    font-size: 5vh;
     text-transform: uppercase;
     letter-spacing: 1.8px;
     font-weight: bold;
@@ -95,7 +95,7 @@ nav ul li.active a{
 .content .div-text h3{
     text-transform: uppercase;
     letter-spacing: 1.8px;
-    font-size: 50px;
+    font-size: 5vh;
     font-weight: normal;
     margin: 20px 0 8px;
     color: #383c36;
@@ -103,7 +103,7 @@ nav ul li.active a{
 
 .content .div-text p{
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 2vh;
     line-height: 1.8;
     letter-spacing: 1.3px;
     margin-bottom: 55px;
@@ -165,7 +165,7 @@ form{
 }
 
 .content .div-text h1{
-    font-size: 55px;
+    font-size: 5vh;
     font-weight: bold;
     letter-spacing: 1.8px;
     color: #383c36;
@@ -278,4 +278,7 @@ form h2{
         display: block;
         position: relative;
     } 
+    body{
+    background-image: url('imgs/landing_back-transformed.jpeg');
+    }
 }
