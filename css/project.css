@@ -153,7 +153,7 @@ body {
     font-family: sans-serif;
 }
 
-form {
+form{
     width: 50%;
     margin: 0 auto;
     padding: 20px;
@@ -262,7 +262,7 @@ input[type="submit"]:hover{
     display: block;
 }
 
-.dropdown:hover .dropdown-pages {
+.dropdown:hover .dropdown-pages{
     display: block;
 }
 
@@ -270,7 +270,7 @@ form h2{
     margin-bottom: 1rem;
 }
 
-@media (min-width: 598px) {
+@media (min-width: 768px){
     .dropdown button{
         display: none;
     }
