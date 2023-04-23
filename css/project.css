@@ -278,8 +278,9 @@ form h2{
         display: block;
         position: relative;
     } 
-    body{
-    background-image: url('imgs/landing_back-transformed.jpeg');
+    .container .content{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/landing_back-transformed.jpeg');
+    background-size: 100%;
     }
 }
 
