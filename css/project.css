@@ -283,6 +283,10 @@ form h2{
     }
 }
 
+.card{
+    height: 100%;
+}
+
 .card-inner {
     position: relative;
     width: 100%;
