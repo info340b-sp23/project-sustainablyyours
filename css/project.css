@@ -99,7 +99,6 @@ nav ul li.active a{
     font-weight: normal;
     margin: 20px 0 8px;
     color: #383c36;
-
     font-family: 'Montserrat', serif;
 }
 
@@ -347,3 +346,22 @@ form h2{
     from { width: 0 }
     to { width: 100% }
   }
+
+form.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.product-container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.product {
+    width: 200px;
+    height: 300px;
+}
