@@ -530,3 +530,12 @@ label, #sustainable-items {
   top: 4rem;
 }
 
+.fa-star {
+  position: absolute;
+  top: .11rem;
+  right: .11rem;
+}
+
+.fa-star:hover{
+  color: #ffdf00 !important;
+}
