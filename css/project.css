@@ -300,28 +300,28 @@ form h2{
     color: #555;
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-  
-  .content-trans {
-    opacity: 0;
-    animation: floatIn 3s forwards;
-  }
-  
-  @keyframes floatIn {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+}
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+.content-trans {
+  opacity: 0;
+  animation: floatIn 3s forwards;
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
 form.form {
     position: absolute;
@@ -340,23 +340,6 @@ form.form {
 .product {
     width: 200px;
     height: 300px;
-}
-
-.card-body img {
-    float: left;
-    width:  250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.col-sm {
-    width:  125px;
-    height: 125px;
-}
-
-label, #sustainable-items {
-    margin-bottom: 10px;
-    position: relative;
 }
 
 /* About Page */
@@ -522,26 +505,28 @@ html {
 
 
   /* SHOP PAGE CSS */
-  .card-body img {
-    float: left;
-    width:  250px;
-    height: 250px;
-    object-fit: cover;
+
+.card-body img {
     position: relative;
-    width:  275px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
+    top: 0;
 }
 
 .col-sm {
-    width:  125px;
-    height: 125px;
     width:  125rem;
     height: 10rem;
 }
-
 
 label, #sustainable-items {
     margin-bottom: 10px;
     position: relative;
 }
+
+.search {
+  position: absolute;
+  left: 30rem;
+  top: 4rem;
+}
+
