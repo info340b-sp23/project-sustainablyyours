@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <head>
         <meta charset="utf-8">
         <meta name="authors" content="Hrudhai Umashankar, Kaden Kapadia, Abi Chinn, and Hermon Rusom">
@@ -11,71 +11,179 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/project.css">
-        <link rel="stylesheet" href="css/shop.css">
     </head>
+</head>
 
-    <body>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <i class="fa-sharp fa-solid fa-leaf"></i>
-                    <h1>SustainablyYours</h1>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-sharp fa-solid fa-leaf"></i>
+                <h1>SustainablyYours</h1>
+            </div>
+            <ul>
+                <div class="dropdown">
+                    <button class="fa-solid fa-bars fa-2xl"></button>
+                    <div class="dropdown-pages">
+                        <li><a href="intro.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
+                    </div>
                 </div>
-                <ul>
-                    <div class="dropdown">
-                        <button class="fa-solid fa-bars fa-2xl"></button>
-                        <div class="dropdown-pages">
-                            <li><a href="intro.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="index.html">Shop</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+        
+    <main>
+        <form action="/search">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="q">
+            <button type="submit">Go</button>
+        </form>
+          
+        <label for="category-select">Choose a category:</label>
+
+        <select>
+            <option value="">Select a Category</option>
+            <optgroup label="Audio &amp; Tech">
+            <option value="1">Tech Cases</option>
+            <option value="2">Tech Accessories</option>
+            <option value="3">Chargers &amp; Cables</option>
+            </optgroup>
+            <optgroup label="Beauty &amp; Care ">
+            <option value="4">Skin Care</option>
+            <option value="5">Hair Care</option>
+            <option value="6">Bath &amp; Body</option>
+            <option value="7">Makeup</option>
+            <option value="8">Personal Care</option>
+            <option value="9">Oral Care</option>
+            <option value="10">Sun Care</option>
+            </optgroup>
+            <optgroup label="Clothing &amp; Accessories ">
+                <option value="11">Men's Clothing</option>
+                <option value="12">Men's Accessories</option>
+                <option value="13">Women's Clothing &amp; Body</option>
+                <option value="14">Women's Accessories</option>
+                <option value="15">Kid's Clothing</option>
+                <option value="16">Baby Clothing &amp; Products </option>
+            </optgroup>
+            <optgroup label="Home &amp; Kitchen ">
+                <option value="17">Kitchen</option>
+                <option value="18">Bath</option>
+                <option value="19">Bed</option>
+                <option value="20">Garden</option>
+                <option value="21">Office</option>
+                <option value="22">Decor</option>
+            </optgroup>
+            <optgroup label="Sports &amp; Outdoors ">
+                <option value="23">Bike</option>
+                <option value="24">Camp</option>
+                <option value="25">Garden</option>
+                <option value="26">Games</option>
+                <option value="27">Hike</option>
+                <option value="28">Yoga</option>
+            </optgroup>
+            <optgroup label="Travel">
+                <option value="29">Bags and Backpacks</option>
+                <option value="30">Toiletry Bags</option>
+                <option value="31">On the Go</option>
+            </optgroup>
+        </select>
+        
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-3 d-flex">
+                <!-- Card 1 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-auto col-xl-12">
+                        <img src="img/outerknown-yellow-puffer.png" class="pb-3" alt="Yellow Puffer Jacket from Outerknown">
+                        </div>
+                        <div class="col-sm">
+                        <p class="card-text">Outerknown Summer Yellow OK Mono Puffer Shirt Jacket</p>
+                        <p class="card-text">$398.00</p>
+                        <a href="account.html" class="btn btn-dark">Add to Wishlist</a>
                         </div>
                     </div>
-                </ul>
-            </nav>
-            <div class="card-gradient content-trans content">
-                <h2 class="shop">Shop Our Products</h2>
-                <div class="product-container">
-                    <div class="product">
-                        <img src="img/blueshirt.jpg" alt="Blue shirt">
-                        <h3>Blue Shirt</h3>
-                        <p class="product-price">$19.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="img/greenshirt.jpg" alt="Green Shirt">
-                        <h3>Green Shirt</h3>
-                        <p class="product-price">$24.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="img/blackshirt.jpg" alt="Black Shirt">
-                        <h3>Black Shirt</h3>
-                        <p class="product-price">$13.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="img/whiteshirt.jpg" alt="White Shirt">
-                        <h3>White Shirt</h3>
-                        <p class="product-price">$14.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-                <!-- <div class="cart">
-                    <h3>Cart</h3>
-                    <ul class="cart-items"></ul>
-                    <p class="total">Total: $0</p>
-                    <button class="checkout">Checkout</button>
-                </div> --> 
+                </div>
+        
+                <div class="col-md-6 col-xl-3 d-flex">
+                <!-- Card 2 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-auto col-xl-12">
+                        <img src="img/pact-blue-shirt.jpg" class="pb-3" alt="blue long sleeve shirt from pact">
+                        </div>
+                        <div class="col-sm">
+                        <p class="card-text">pact Vintage Long Sleeve Raglan Tee</p>
+                        <p class="card-text">$36.00</p>
+                        <a href="account.html" class="btn btn-dark">Add to Wishlist</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="col-md-6 col-xl-3 d-flex">
+                <!-- Card 3 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-auto col-xl-12">
+                        <img src="img/pact-green-shirt.jpg" class="pb-3" alt="green t-shirt from pact">
+                        </div>
+                        <div class="col-sm">
+                        <p class="card-text">pact Vintage Short Sleeve Henley</p>
+                        <p class="card-text">$41.00</p>
+                        <a href="account.html" class="btn btn-dark">Add to Wishlist</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="col-md-6 col-xl-3 d-flex">
+                <!-- Card 4 -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-auto col-xl-12">
+                        <img src="img/outerknown-blue-shirt-plush.jpg" class="pb-3" alt="Plush azure blue polo shirt from Outerknown">
+                        </div>
+                        <div class="col-sm">
+                        <p class="card-text">Outerknown Azure Blue Rewind Polo</p>
+                        <p class="card-text">$108.00</p>
+                        <a href="account.html" class="btn btn-dark">Add to Wishlist</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
-        <footer>
-            <address>
-                Contact us at <a href="mailto:info@sustainablyyours.com">info@sustainablyyours.com</a>.
-            </address>
-            <p>&copy; 2023 SustainablyYours</p>
-        </footer>
+            </div>
+      </main>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="intro.html"><i class="fa-solid fa-house"></i></a>
+                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
+                <a href="index.html"><i class="fa-solid fa-store"></i> </a>
+                <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
+                <a href="account.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+            <p class="copyright">SustainablyYours  &copy;2023</p>
+        </footer>
+    </div>
 </html>
