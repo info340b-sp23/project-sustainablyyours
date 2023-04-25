@@ -365,3 +365,20 @@ form.form {
     width: 200px;
     height: 300px;
 }
+
+.card-body img {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.col-sm {
+    width:  125px;
+    height: 125px;
+}
+
+label, #sustainable-items {
+    margin-bottom: 10px;
+    position: relative;
+}
