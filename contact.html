@@ -17,61 +17,65 @@
 
     <body>
         <div class="container">
-    
-            <nav>
-                <div class="logo">
-                    <i class="fa-sharp fa-solid fa-leaf"></i>
-                    <h1>SustainablyYours</h1>
-                </div>
-                <ul>
-                    <div class="dropdown">
-                        <button class="fa-solid fa-bars fa-2xl"></button>
-                        <div class="dropdown-pages">
-                            <li><a href="intro.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="index.html">Shop</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
-                        </div>
+            <header>
+                <nav>
+                    <div class="logo">
+                        <i class="fa-sharp fa-solid fa-leaf"></i>
+                        <h1>SustainablyYours</h1>
                     </div>
-                </ul>
-            </nav>
+                    <ul>
+                        <div class="dropdown">
+                            <button class="fa-solid fa-bars fa-2xl"></button>
+                            <div class="dropdown-pages">
+                                <li><a href="intro.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="index.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <div class="content">
+                    <div class="div-text">
+                        <h1 class="div-contact">Contact Us!</h1><i class="fa-solid fa-envelope email-contact"></i>
+                        <h2 class="email-contact">Email</h2>
+                        <a href="mailto:info@sustainablyyours.com" class="email email-contact">info@sustainablyyours.com</a>
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Jon Smith">
     
-            <div class="content">
-                <div class="div-text">
-                    <h1 class="div-contact">Contact Us!</h1><i class="fa-solid fa-envelope email-contact"></i>
-                    <h2 class="email-contact">Email</h2>
-                    <a href="mailto:info@sustainablyyours.com" class="email email-contact">info@sustainablyyours.com</a>
-                    <form>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Jon Smith">
-
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" required placeholder="email@domain.com">
-
-                        <label for="phone_number">Phone Number:</label>
-                        <input type="text" id="phone_number" name="phone number" required placeholder="999-999-9999">
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Insert message here"></textarea>
-
-                        <input type="submit" value="Submit">
-                    </form>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required placeholder="email@domain.com">
+    
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="text" id="phone_number" name="phone number" required placeholder="999-999-9999">
+    
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Insert message here"></textarea>
+    
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </main>
+
+        </div>
     </body>
 
-    <div class="footer-basic">
+   <div class="footer-basic">
         <footer>
             <div class="social">
-                <a href="intro.html"><i class="fa-solid fa-house"></i></a>
-                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
-                <a href="index.html"><i class="fa-solid fa-store"></i> </a>
-                <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
-                <a href="account.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="intro.html" aria-label="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="about.html" aria-label="About Us"><i class="fa-solid fa-address-card"></i></a>
+                <a href="index.html" aria-label="Shop"><i class="fa-solid fa-store"></i> </a>
+                <a href="contact.html" aria-label="Contact"><i class="fa-solid fa-address-book"></i></a>
+                <a href="account.html" aria-label="Account Login"><i class="fa-solid fa-right-to-bracket"></i></a>
             </div>
             <p class="copyright">SustainablyYours  &copy;2023</p>
         </footer>
     </div>
 </html>
-
