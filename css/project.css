@@ -1,61 +1,61 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', serif;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    padding: 0 15px 15px;
+  width: 100%;
+  height: 100vh;
+  padding: 0 15px 15px;
 }
 
 .container nav {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 nav .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav .logo i {
-    color: #4bb45c;
-    font-size: 28px;
+  color: #4bb45c;
+  font-size: 28px;
 }
 
 nav .logo h1 {
-    color: #383c36;
-    font-size: 28px;
-    position: absolute;
-    margin-left: 50px;
+  color: #383c36;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 50px;
 
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 50px;
-    height: 80px;
-    position: relative;
-    line-height: 80px;
-    cursor: pointer;
+  display: inline-block;
+  margin-left: 50px;
+  height: 80px;
+  position: relative;
+  line-height: 80px;
+  cursor: pointer;
 }
 
 nav ul li::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #4bb45c;
-    width: 0%;
-    height: 3px;
-    transition: 0.3s;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #4bb45c;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s;
 }
 
 nav ul li:hover::after,
@@ -64,36 +64,36 @@ nav ul li.active::after {
 }
 
 nav ul li a {
-    color: #383c36;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
+  color: #383c36;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li.active a {
-    color: #4bb45c;
+  color: #4bb45c;
 }
 
 .container .content {
-    width: 100%;
-    height: calc(100vh - 95px);
-    background: linear-gradient(130deg, #4bb45c, #4bb3e6);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
+  width: 100%;
+  height: calc(100vh - 95px);
+  background: linear-gradient(130deg, #4bb45c, #4bb3e6);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
 }
 
 .content .div-text span {
-    color: #fff;
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    font-weight: bold;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-weight: bold;
 }
 
 .content .div-text h2 {
@@ -107,15 +107,15 @@ nav ul li.active a {
 }
 
 .content .div-text p {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 1.3px;
-    margin-bottom: 55px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 1.3px;
+  margin-bottom: 55px;
 }
 
 .content .div-text form {
-    animation: floatIn 3s forwards;
+  animation: floatIn 3s forwards;
 }
 
 .content .div-text .btn {
