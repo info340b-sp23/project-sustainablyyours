@@ -114,6 +114,21 @@ nav ul li.active a {
     margin-bottom: 55px;
 }
 
+@media (max-width: 768px) {
+  .content .div-text h3 {
+      font-size: 2.8vh;
+      flex-wrap: wrap;
+  }
+  .content .div-text h1 {
+    font-size: 25px;
+    flex-wrap: wrap;
+  }
+  .content .div-text p {
+      font-size: 2.0vh;
+      word-wrap: break-word;
+  }
+}
+
 .content .div-text form {
     animation: floatIn 3s forwards;
 }
@@ -155,6 +170,12 @@ form {
     right: 100px;
 }
 
+@media (max-width: 768px) {
+  form {
+    top: 130px;
+  }
+}
+
 .content .div-text h1 {
     font-size: 55px;
     font-weight: bold;
@@ -172,6 +193,12 @@ form {
     animation: floatIn 3s forwards;
 }
 
+@media (max-width: 768px) {
+  .email-contact {
+    font-size: 0px;
+  }
+}
+
 .content .div-text .div-contact {
     font-size: 55px;
     font-weight: bold;
@@ -181,6 +208,12 @@ form {
     position: absolute;
     top: 200px;
     left: 150px;
+}
+
+@media (max-width: 768px) {
+  .content .div-text .div-contact {
+    font-size: 0px;
+  }
 }
 
 .content .div-text i {
@@ -212,6 +245,12 @@ form {
     top: 360px;
     left: 200px;
 }  
+
+@media (max-width: 768px) {
+  .content .div-text .email {
+    font-size: 0px;
+  }
+}
 
 label {
     display: block;
@@ -264,6 +303,26 @@ input[type="submit"]:hover {
 
 .dropdown:hover .dropdown-pages {
     display: block;
+}
+
+@media (max-width: 650px) {
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-pages {
+    position: top;
+    padding-right: 10em;
+    display: none;
+    width: 100%;
+  }
+  .dropdown-pages li a {
+    display: block;
+    padding: 10px;
+    color: black;
+  }
+  .dropdown:hover .dropdown-pages {
+    display: block;
+  }
 }
 
 form h2 {
@@ -381,6 +440,12 @@ html {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .about-section-team h1 {
+    font-size: 3.0vh;
+  }
 }
 
 .container-card {
@@ -505,10 +570,11 @@ hr {
 /* SHOP PAGE CSS */
 .card-body img {
     position: relative;
-    width: 250px;
+    max-width: 250px;
     height: 250px;
     object-fit: contain;
     top: 0;
+    padding: 0em;
 }
 
 .col-sm {
