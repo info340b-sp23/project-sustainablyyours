@@ -616,6 +616,11 @@ label, #sustainable-items {
   }
 }
 
+label[for="category-select"] select {
+  position: relative;
+  top: -100px;
+}
+
 .fa-star {
   position: absolute;
   top: .11rem;
