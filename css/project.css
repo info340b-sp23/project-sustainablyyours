@@ -90,7 +90,7 @@ nav ul li.active a {
 
 .content .div-text span {
     color: #fff;
-    font-size: 25px;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 1.8px;
     font-weight: bold;
@@ -107,7 +107,7 @@ nav ul li.active a {
 }
 
 .content .div-text p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1.3px;
@@ -460,8 +460,17 @@ html {
 
 .meet-team-title{
   /* text-align: center; */
-  margin-left: 500;
-  font-size: 10000;
+  margin-left: 50px;
+  font-size: 70px;
+}
+
+@media (max-width: 768px) {
+  .meet-team-title {
+    font-size: 30px;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: -95px;
+  }
 }
 
 .title {
@@ -595,6 +604,14 @@ label, #sustainable-items {
   position: relative;
   left: 2rem;
   top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .search {
+      position: relative;
+      left: 0px;
+      width: 300px;
+  }
 }
 
 .fa-star {
