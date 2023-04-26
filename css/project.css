@@ -629,3 +629,7 @@ label, #sustainable-items {
   color: #383c36;
   font-family: 'Montserrat', serif;
 }
+
+.logged-in {
+  color: #4bb45c !important;
+}
