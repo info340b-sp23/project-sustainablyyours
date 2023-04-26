@@ -172,7 +172,9 @@ form {
 
 @media (max-width: 768px) {
   form {
-    top: 130px;
+    width: 70%;
+    top: 120px;
+    left: 55px;
   }
 }
 
