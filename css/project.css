@@ -96,16 +96,6 @@ nav ul li.active a {
     font-weight: bold;
 }
 
-.content .div-text h3 {
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    font-size: 45px;
-    font-weight: normal;
-    margin: 20px 0 8px;
-    color: #383c36;
-    font-family: 'Montserrat', serif;
-}
-
 .content .div-text p {
     color: rgb(0, 0, 0);
     font-size: 14px;
@@ -628,4 +618,14 @@ label, #sustainable-items {
 
 .remove-from-wishlist:hover {
   color: black !important;
+}
+
+.content .div-text .one-line h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 45px;
+  font-weight: normal;
+  margin: 20px 0 8px;
+  color: #383c36;
+  font-family: 'Montserrat', serif;
 }
