@@ -542,3 +542,7 @@ label, #sustainable-items {
 .fa-star:hover{
   color: #ffdf00 !important;
 }
+
+.remove-from-wishlist:hover {
+  color: black !important;
+}
