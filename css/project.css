@@ -166,7 +166,7 @@ form {
     background-color: #fff;
     border-radius: 5px;
     position: absolute;
-    top: 200px;
+    top: 120px;
     right: 100px;
 }
 
@@ -614,11 +614,6 @@ label, #sustainable-items {
       left: 0px;
       width: 300px;
   }
-}
-
-label[for="category-select"] select {
-  position: relative;
-  top: -100px;
 }
 
 .fa-star {
