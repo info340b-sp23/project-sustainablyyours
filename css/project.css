@@ -96,6 +96,16 @@ nav ul li.active a {
     font-weight: bold;
 }
 
+.content .div-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 45px;
+  font-weight: normal;
+  margin: 20px 0 8px;
+  color: #383c36;
+  font-family: 'Montserrat', serif;
+}
+
 .content .div-text p {
     color: rgb(0, 0, 0);
     font-size: 14px;
@@ -141,8 +151,8 @@ form {
     background-color: #fff;
     border-radius: 5px;
     position: absolute;
-    top: 120px;
-    right: 100px;
+    top: 6rem;
+    right: 9rem;
 }
 
 @media (max-width: 768px) {
@@ -150,10 +160,6 @@ form {
     width: 70%;
     top: 120px;
     left: 55px;
-  }
-  .content .div-text h3 {
-      font-size: 2.8vh;
-      flex-wrap: wrap;
   }
   .content .div-text h1 {
     font-size: 25px;
@@ -163,9 +169,7 @@ form {
       font-size: 2.0vh;
       word-wrap: break-word;
   }
-  .email-contact {
-    font-size: 0px;
-  }
+
   .content .div-text .div-contact {
     font-size: 0px;
   }
@@ -226,7 +230,7 @@ form {
     left: 150px;
 }
 
-.content .div-text h2 {
+h2 #email {
     font-size: 25px;
     letter-spacing: 1.8px;
     color: #383c36;
@@ -418,19 +422,19 @@ html {
   border-radius: 5%;
 }
 
-.card img{
+.card img {
   width: 100%;
   border-radius: 5%;
 }
 
-.about-section-team{
+.about-section-team {
   padding: 50px;
   text-align: center;
   color: black;
   animation: floatIn 3s forwards;
 }
 
-.about-section-team h1{
+.about-section-team h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
@@ -597,16 +601,6 @@ label, #sustainable-items {
 
 .remove-from-wishlist:hover {
   color: black !important;
-}
-
-.content .div-text .one-line h2 {
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
-  font-size: 45px;
-  font-weight: normal;
-  margin: 20px 0 8px;
-  color: #383c36;
-  font-family: 'Montserrat', serif;
 }
 
 .logged-in {
