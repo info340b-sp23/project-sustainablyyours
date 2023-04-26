@@ -193,61 +193,51 @@ form {
 }
 
 .content .div-text h1 {
-    font-size: 55px;
-    font-weight: bold;
-    letter-spacing: 1.8px;
-    color: #383c36;
-    margin-bottom: 25px;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  color: #383c36;
+  margin-bottom: 25px;
 
-    overflow: hidden;
-    animation: typing 3s steps(30, end);
-    white-space: nowrap;
-    animation-fill-mode: forwards;
+  overflow: hidden;
+  animation: typing 3s steps(30, end);
+  white-space: nowrap;
+  animation-fill-mode: forwards;
 }
 
 .email-contact {
-    animation: floatIn 3s forwards;
+  animation: floatIn 3s forwards;
 }
 
 .content .div-text .div-contact {
-    font-size: 55px;
-    font-weight: bold;
-    letter-spacing: 1.8px;
-    color: #383c36;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 200px;
-    left: 150px;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  color: #383c36;
+  margin-bottom: 25px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
 }
 
 .content .div-text i {
-    font-size: 25px;
-    letter-spacing: 1.8px;
-    color: #383c36;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 320px;
-    left: 150px;
-}
-
-h2 #email {
-    font-size: 25px;
-    letter-spacing: 1.8px;
-    color: #383c36;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 320px;
-    left: 200px;
+  font-size: 25px;
+  letter-spacing: 1.8px;
+  color: #383c36;
+  margin-bottom: 25px;
+  position: absolute;
+  top: 320px;
+  left: 150px;
 }
 
 .content .div-text .email {
-    font-size: 15px;
-    letter-spacing: 1.8px;
-    color: #383c36;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 360px;
-    left: 200px;
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  color: #383c36;
+  margin-bottom: 25px;
+  position: absolute;
+  top: 320px;
+  left: 190px;
 }
 
 label {
