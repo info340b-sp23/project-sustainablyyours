@@ -104,21 +104,6 @@ nav ul li.active a {
     margin-bottom: 55px;
 }
 
-@media (max-width: 768px) {
-  .content .div-text h3 {
-      font-size: 2.8vh;
-      flex-wrap: wrap;
-  }
-  .content .div-text h1 {
-    font-size: 25px;
-    flex-wrap: wrap;
-  }
-  .content .div-text p {
-      font-size: 2.0vh;
-      word-wrap: break-word;
-  }
-}
-
 .content .div-text form {
     animation: floatIn 3s forwards;
 }
@@ -166,6 +151,41 @@ form {
     top: 120px;
     left: 55px;
   }
+  .content .div-text h3 {
+      font-size: 2.8vh;
+      flex-wrap: wrap;
+  }
+  .content .div-text h1 {
+    font-size: 25px;
+    flex-wrap: wrap;
+  }
+  .content .div-text p {
+      font-size: 2.0vh;
+      word-wrap: break-word;
+  }
+  .email-contact {
+    font-size: 0px;
+  }
+  .content .div-text .div-contact {
+    font-size: 0px;
+  }
+  .content .div-text .email {
+    font-size: 0px;
+  }
+  .meet-team-title {
+    font-size: 30px;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: -95px;
+  }
+  .about-section-team h1 {
+    font-size: 3.0vh;
+  }
+  .search {
+    position: relative;
+    left: 0px;
+    width: 300px;
+  }
 }
 
 .content .div-text h1 {
@@ -185,12 +205,6 @@ form {
     animation: floatIn 3s forwards;
 }
 
-@media (max-width: 768px) {
-  .email-contact {
-    font-size: 0px;
-  }
-}
-
 .content .div-text .div-contact {
     font-size: 55px;
     font-weight: bold;
@@ -200,12 +214,6 @@ form {
     position: absolute;
     top: 200px;
     left: 150px;
-}
-
-@media (max-width: 768px) {
-  .content .div-text .div-contact {
-    font-size: 0px;
-  }
 }
 
 .content .div-text i {
@@ -236,12 +244,6 @@ form {
     position: absolute;
     top: 360px;
     left: 200px;
-}  
-
-@media (max-width: 768px) {
-  .content .div-text .email {
-    font-size: 0px;
-  }
 }
 
 label {
@@ -331,7 +333,7 @@ form h2 {
     } 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .dropdown button{
         display: none;
     }
@@ -396,11 +398,11 @@ form.form {
 
 /* About Page */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .column {
@@ -434,12 +436,6 @@ html {
   margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
-  .about-section-team h1 {
-    font-size: 3.0vh;
-  }
-}
-
 .container-card {
   padding: 0 16px;
 }
@@ -454,15 +450,6 @@ html {
   /* text-align: center; */
   margin-left: 50px;
   font-size: 70px;
-}
-
-@media (max-width: 768px) {
-  .meet-team-title {
-    font-size: 30px;
-    white-space: nowrap;
-    text-align: left;
-    margin-left: -95px;
-  }
 }
 
 .title {
@@ -487,7 +474,7 @@ html {
   width: 300%;
 }
 
-.row{
+.row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,14 +583,6 @@ label, #sustainable-items {
   position: relative;
   left: 2rem;
   top: 1rem;
-}
-
-@media (max-width: 768px) {
-  .search {
-      position: relative;
-      left: 0px;
-      width: 300px;
-  }
 }
 
 .fa-star {
