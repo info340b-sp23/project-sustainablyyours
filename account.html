@@ -17,54 +17,58 @@
 
     <body>
         <div class="container">
-    
-            <nav>
-                <div class="logo">
-                    <i class="fa-sharp fa-solid fa-leaf"></i>
-                    <h1>SustainablyYours</h1>
-                </div>
-                <ul>
-                    <div class="dropdown">
-                        <button class="fa-solid fa-bars fa-2xl"></button>
-                        <div class="dropdown-pages">
-                            <li><a href="intro.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="index.html">Shop</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
+            <header>
+                <nav>
+                    <div class="logo">
+                        <i class="fa-sharp fa-solid fa-leaf"></i>
+                        <h1>SustainablyYours</h1>
+                    </div>
+                    <ul>
+                        <div class="dropdown">
+                            <button class="fa-solid fa-bars fa-2xl"></button>
+                            <div class="dropdown-pages">
+                                <li><a href="intro.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="index.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="account.html"><i aria-label="Account Login" class="fa-solid fa-user"></i></a></li>
+                            </div>
                         </div>
-                    </div>
-                </ul>
-            </nav>
-    
-            <section class="content">
-                <form class="form">
-                    <h2>Account Login</h2>
-                    <div>
-                        <label for="username_input">Username:</label>
-                        <input type="text" id="username_input" name="username" pattern=".\w{3,}" placeholder="Enter your username" required>
-                    </div>
-                    <div>
-                        <label for="password_input">Password:</label>
-                        <input type="password" id="password_input" name="password" pattern=".{6,}" placeholder="Enter your password" required>
-                    </div>
-                    <div>
-                        <p>
-                            <a href="contact.html">Forgot Your Login Info?</a>
-                        </p>
-                    </div>
-                </form>
-            </section>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <section class="content">
+                    <form class="form">
+                        <h2>Account Login</h2>
+                        <div>
+                            <label for="username_input">Username:</label>
+                            <input type="text" id="username_input" name="username" pattern=".\w{3,}" placeholder="Enter your username" required>
+                        </div>
+                        <div>
+                            <label for="password_input">Password:</label>
+                            <input type="password" id="password_input" name="password" pattern=".{6,}" placeholder="Enter your password" required>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="contact.html">Forgot Your Login Info?</a>
+                            </p>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>     
     </body>
 
     <div class="footer-basic">
         <footer>
             <div class="social">
-                <a href="intro.html"><i class="fa-solid fa-house"></i></a>
-                <a href="about.html"><i class="fa-solid fa-address-card"></i></a>
-                <a href="index.html"><i class="fa-solid fa-store"></i> </a>
-                <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
-                <a href="account.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="intro.html" aria-label="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="about.html" aria-label="About Us"><i class="fa-solid fa-address-card"></i></a>
+                <a href="index.html" aria-label="Shop"><i class="fa-solid fa-store"></i> </a>
+                <a href="contact.html" aria-label="Contact"><i class="fa-solid fa-address-book"></i></a>
+                <a href="account.html" aria-label="Account Login"><i class="fa-solid fa-right-to-bracket"></i></a>
             </div>
             <p class="copyright">SustainablyYours  &copy;2023</p>
         </footer>
