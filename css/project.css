@@ -21,21 +21,8 @@
 }
 
 nav .logo {
-  display: flex;
-  align-items: center;
-}
-
-nav .logo i {
   color: #4bb45c;
   font-size: 28px;
-}
-
-nav .logo h1 {
-  color: #383c36;
-  font-size: 28px;
-  position: absolute;
-  margin-left: 50px;
-
 }
 
 nav ul li {
