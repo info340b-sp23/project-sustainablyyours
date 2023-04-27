@@ -25,6 +25,14 @@ nav .logo {
   font-size: 28px;
 }
 
+nav .logo h1 {
+  color: #383c36;
+  font-size: 28px;
+  position: absolute;
+  margin-left: 50px;
+
+}
+
 nav ul li {
   display: inline-block;
   margin-left: 50px;
@@ -81,14 +89,17 @@ nav ul li.active a {
   text-transform: uppercase;
   letter-spacing: 1.8px;
   font-weight: bold;
+    margin: 20px 5px 8px;
 }
 
 .content .div-text h2 {
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  font-size: 45px;
+  font-size: 7vh;
+  inline-size: min-content;
+  width: 90%;
   font-weight: normal;
-  margin: 20px 0 8px;
+  margin: 20px 5px 8px;
   color: #383c36;
   font-family: 'Montserrat', serif;
 }
@@ -98,7 +109,9 @@ nav ul li.active a {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 1.3px;
-  margin-bottom: 55px;
+  margin-bottom: 3vh;
+  inline-size: min-content;
+  width: 100%;
 }
 
 .content .div-text form {
@@ -170,7 +183,7 @@ form {
     margin-left: -95px;
   }
   .about-section-team h1 {
-    font-size: 3.0vh;
+    font-size: 2vh;
   }
   .search {
     position: relative;
@@ -185,10 +198,10 @@ form {
   letter-spacing: 1.8px;
   color: #383c36;
   margin-bottom: 25px;
-
-  overflow: hidden;
+  inline-size: min-content;
+  width: 90%;
   animation: typing 3s steps(30, end);
-  white-space: nowrap;
+  white-space: normal;
   animation-fill-mode: forwards;
 }
 
@@ -323,7 +336,7 @@ form h2 {
         position: relative;
     } 
     .container .content{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/landing_back-transformed.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.423), rgba(255, 255, 255, 0.188)), url('../img/landing_back-transformed.jpeg');
     background-size: 100%;
     }
 }
@@ -411,8 +424,8 @@ html {
   animation: floatIn 3s forwards;
 }
 
-.about-section-team h1 {
-  font-size: 50px;
+.about-section-team h1, .meet-team-title {
+  font-size: 7vh;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
 }
@@ -425,12 +438,6 @@ html {
   content: "";
   clear: both;
   display: table;
-}
-
-.meet-team-title{
-  /* text-align: center; */
-  margin-left: 50px;
-  font-size: 70px;
 }
 
 .title {
