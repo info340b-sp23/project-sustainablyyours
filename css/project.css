@@ -543,6 +543,13 @@ hr {
   margin-bottom:0;
 }  
 
+.about-page-format{
+  padding: 50px;
+  margin-top: 1100px;
+  position: relative;
+
+}
+
 /* SHOP PAGE CSS */
 .card-body img {
     position: relative;
