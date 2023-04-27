@@ -23,6 +23,8 @@
 nav .logo {
   color: #4bb45c;
   font-size: 28px;
+  margin-right: 10px;
+  
 }
 
 nav .logo h1 {
@@ -35,10 +37,10 @@ nav .logo h1 {
 
 nav ul li {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 115px;
   height: 80px;
   position: relative;
-  line-height: 80px;
+  line-height: 72px;
   cursor: pointer;
 }
 
@@ -545,7 +547,7 @@ hr {
 
 .about-page-format{
   padding: 50px;
-  margin-top: 1100px;
+  margin-top: 1160px;
   position: relative;
 
 }
