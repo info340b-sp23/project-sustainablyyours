@@ -11,28 +11,34 @@
   padding: 0 15px 15px;
 }
 
-
+.container nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
 
 nav .logo {
   color: #4bb45c;
   font-size: 28px;
-  margin-right: 10px;
-  
 }
 
 nav .logo h1 {
-  color: black;
+  color: #383c36;
   font-size: 28px;
   position: absolute;
   margin-left: 50px;
+
 }
 
 nav ul li {
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 50px;
   height: 80px;
   position: relative;
-  line-height: 72px;
+  line-height: 80px;
   cursor: pointer;
 }
 
@@ -115,7 +121,7 @@ nav ul li.active a {
 .content .div-text .btn {
     padding: 15px 35px;
     background-color: #fff;
-    color: #086404;
+    color: #4bb45c;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -257,7 +263,7 @@ input[type="password"], textarea {
 }
 
 input[type="submit"] {
-    background-color: #4bb45c;
+    background-color: #086404;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -266,9 +272,12 @@ input[type="submit"] {
     font-size: 16px;
 }
 
+/*
 input[type="submit"]:hover {
-    background-color: #086404;
+  color: #fff;
+  background-color: #086404;
 }
+*/
 
 .dropdown-pages {
     display: none;
@@ -330,7 +339,7 @@ form h2 {
         position: relative;
     } 
     .container .content{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('../img/background-leaves.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.423), rgba(255, 255, 255, 0.188)), url('../img/landing_back-transformed.jpeg');
     background-size: 100%;
     }
 }
@@ -435,7 +444,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: rgb(109, 109, 109);
 }
 
 .background-about{
@@ -480,7 +489,7 @@ hr {
 .footer-basic {
   padding:40px 0;
   background-color:#ffffff;
-  color: black;
+  color:#4b4c4d;
 }
 
 .footer-basic ul {
@@ -533,16 +542,9 @@ hr {
   margin-top:15px;
   text-align:center;
   font-size:13px;
-  color: black;
+  color:#aaa;
   margin-bottom:0;
 }  
-
-.about-page-format{
-  padding: 50px;
-  margin-top: 1160px;
-  position: relative;
-
-}
 
 /* SHOP PAGE CSS */
 .card-body img {
