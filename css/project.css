@@ -11,14 +11,7 @@
   padding: 0 15px 15px;
 }
 
-.container nav {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
+
 
 nav .logo {
   color: #4bb45c;
@@ -32,12 +25,11 @@ nav .logo h1 {
   font-size: 28px;
   position: absolute;
   margin-left: 50px;
-
 }
 
 nav ul li {
   display: inline-block;
-  margin-left: 115px;
+  margin-left: 3rem;
   height: 80px;
   position: relative;
   line-height: 72px;
