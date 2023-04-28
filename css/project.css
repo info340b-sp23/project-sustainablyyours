@@ -593,3 +593,8 @@ label, #sustainable-items {
 .logged-in {
   color: #4bb45c;
 }
+
+.account-login {
+  background-color: transparent;
+  border: none;
+}
