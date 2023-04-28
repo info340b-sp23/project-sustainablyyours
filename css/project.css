@@ -379,6 +379,10 @@ html {
   box-sizing: inherit;
 }
 
+.btn-outline-primary {
+  position: relative;
+}
+
 .column {
   float: left;
   width: 39%;
