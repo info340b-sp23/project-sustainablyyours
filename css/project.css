@@ -25,14 +25,6 @@ nav .logo {
   font-size: 28px;
 }
 
-nav .logo h1 {
-  color: #383c36;
-  font-size: 28px;
-  position: absolute;
-  margin-left: 50px;
-
-}
-
 nav ul li {
   display: inline-block;
   margin-left: 50px;
@@ -85,11 +77,11 @@ nav ul li.active a {
 
 .content .div-text span {
   color: #fff;
-  font-size: 35px;
+  font-size: 29px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
   font-weight: bold;
-    margin: 20px 5px 8px;
+  margin: 20px 5px 8px;
 }
 
 .content .div-text h2 {
@@ -144,15 +136,15 @@ body {
 }
 
 form {
-    font-family: 'Inter', serif;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 8rem;
-    right: 9rem;
+  font-family: 'Inter', serif;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 6rem;
+  right: 23vh;
 }
 
 @media (max-width: 768px) {
@@ -162,7 +154,7 @@ form {
     left: 55px;
   }
   .content .div-text h1 {
-    font-size: 25px;
+    font-size: 5rem;
     flex-wrap: wrap;
   }
   .content .div-text p {
@@ -170,12 +162,6 @@ form {
       word-wrap: break-word;
   }
 
-  .content .div-text .div-contact {
-    font-size: 0px;
-  }
-  .content .div-text .email {
-    font-size: 0px;
-  }
   .meet-team-title {
     font-size: 30px;
     white-space: nowrap;
@@ -193,9 +179,10 @@ form {
 }
 
 .content .div-text h1 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   letter-spacing: 1.8px;
+  margin: 4px 5px 8px;
   color: #383c36;
   margin-bottom: 25px;
   inline-size: min-content;
@@ -209,16 +196,6 @@ form {
   animation: floatIn 3s forwards;
 }
 
-.content .div-text .div-contact {
-  font-size: 55px;
-  font-weight: bold;
-  letter-spacing: 1.8px;
-  color: #383c36;
-  margin-bottom: 25px;
-  position: absolute;
-  top: 200px;
-  left: 150px;
-}
 
 .content .div-text i {
   font-size: 25px;
@@ -235,9 +212,7 @@ form {
   letter-spacing: 1.8px;
   color: #383c36;
   margin-bottom: 25px;
-  position: absolute;
-  top: 280px;
-  left: 195px;
+  position: relative;
 }
 
 label {
@@ -316,10 +291,6 @@ input[type="submit"]:hover {
   }
 }
 
-form h2 {
-    margin-bottom: 1rem;
-}
-
 @media (min-width: 598px) {
     .dropdown button{
         display: none;
@@ -331,17 +302,23 @@ form h2 {
 }
 
 @media (min-width: 768px) {
-    .dropdown button{
-        display: none;
-    }
-    .dropdown-pages{
-        display: block;
-        position: relative;
-    } 
-    .container .content{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('../img/background-leaves.jpg');
-    background-size: 100%;
-    }
+  .dropdown button{
+      display: none;
+  }
+  .dropdown-pages{
+      display: block;
+      position: relative;
+  } 
+  .container .content{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('../img/background-leaves.jpg');
+  background-size: 100%;
+  }
+  .content .div-text span {
+    font-size: 35px;
+  }
+  .content .div-text h1 {
+    font-size: 55px;
+  }
 }
 
 .team-title {
@@ -428,7 +405,7 @@ html {
 }
 
 .about-section-team h1, .meet-team-title {
-  font-size: 7vh;
+  font-size: 6.25vh;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
 }
