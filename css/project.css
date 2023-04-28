@@ -121,7 +121,7 @@ nav ul li.active a {
 .content .div-text .btn {
     padding: 15px 35px;
     background-color: #fff;
-    color: #4bb45c;
+    color: #086404;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -339,7 +339,7 @@ form h2 {
         position: relative;
     } 
     .container .content{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.423), rgba(255, 255, 255, 0.188)), url('../img/landing_back-transformed.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('../img/background-leaves.jpg');
     background-size: 100%;
     }
 }
