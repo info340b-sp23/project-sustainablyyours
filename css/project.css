@@ -166,7 +166,7 @@ nav ul li.active a {
   background-color: #086404;
 }
 
-.content-trans {
+.content-trans, .email-contact, .content .div-text form, .email-contact {
   opacity: 0;
   animation: floatIn 3s forwards;
 }
@@ -178,11 +178,6 @@ nav ul li.active a {
 body {
   background-color: #fff;
   font-family: sans-serif;
-}
-
-/* form and account page*/
-.content .div-text form {
-  animation: floatIn 3s forwards;
 }
 
 /* account page */
@@ -313,10 +308,6 @@ form {
 }
 
 /* contact page */
-.email-contact {
-  animation: floatIn 3s forwards;
-}
-
 .content .div-text .email {
   font-size: 15px;
   letter-spacing: 1.8px;
@@ -381,10 +372,6 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-.btn-outline-primary {
-  position: relative;
 }
 
 .column {
