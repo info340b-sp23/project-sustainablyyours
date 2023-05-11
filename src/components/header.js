@@ -1,8 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {icon} from '@fortawesome/fontawesome-svg-core/import.macro'
 
-class Header extends React.Component {
+export class Header extends React.Component {
     render() {
         return (
             <header>
@@ -39,5 +39,3 @@ class Header extends React.Component {
         )
     }
 }
-
-export default Header;
