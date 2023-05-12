@@ -11,7 +11,7 @@ export function Intro() {
                     <h2>Join the sustainable revolution with</h2>
                     <h1>SustainablyYours.</h1>
                     <p>Transform your shopping habits with SustainablyYours and help the planet! Discover all your preferred products from your favorite retailers, but with sustainable alternatives.</p>
-                    <a href="index.html" className="btn">Shop now</a>
+                    <a href="/shop" className="btn">Shop now</a>
                 </div>
             </div>
             </main>
