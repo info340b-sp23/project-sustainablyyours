@@ -27,9 +27,7 @@ export class Header extends React.Component {
                             <a className="nav-link" aria-label="contact us page" href="/contact">Contact</a>
                         </li>
                         <li className="nav-item">
-
-                            <a className="nav-link" aria-label="account login" href="/account"><FontAwesomeIcon icon="fa-solid fa-user" /></a>
-
+                            <a className="nav-link" aria-label="account login" href="/account"><i class="fa-solid fa-user"></i></a>
                         </li>
                         </ul>
                     </div>
