@@ -53,18 +53,45 @@
                 <h1>Account Login</h1>
                 <div>
                   <label for="username_input">Username:</label>
-                  <input type="text" id="username_input" name="username" pattern=".\w{3,}" placeholder="Enter your username" required>
+                  <input type="text" id="username_input" name="username" pattern=".\w{3,}" placeholder="Enter your username" minLength=1 maxLength=50 required>
                 </div>
                 <div>
                   <label for="password_input">Password:</label>
                   <input type="password" id="password_input" name="password" pattern=".{6,}" placeholder="Enter your password" required>
                 </div>
                 <div>
+                  <button type="submit" class="btn btn-primary">Login</button>
                   <p>
                     <a href="contact.html" aria-label="contact page">Forgot Your Login Info?</a>
                   </p>
                 </div>
               </form>
+              <script>
+                // Select the form and username input field
+                const form = document.querySelector('.form');
+                const usernameInput = document.getElementById('username_input');
+              
+                // Add a submit event listener to the form
+                form.addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent the form from submitting
+              
+                  // Validate the username field
+                  if (!isValidUsername(usernameInput.value)) {
+                    usernameInput.setCustomValidity('Please enter a username with 1 to 50 characters');
+                    usernameInput.reportValidity();
+                    return;
+                  }
+              
+                  // Submit the form if all fields are valid
+                  form.submit();
+                });
+              
+                // Validate the username field
+                function isValidUsername(username) {
+                  return username.length >= 1 && username.length <= 50;
+                }
+              </script>
+              
             </section>
           </main>
       </div> 
