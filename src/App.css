@@ -305,7 +305,7 @@ Nav .nav-item {
       position: relative;
     } 
     .container .content{
-      background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('./img/background-leaves.jpg');
+      /* background-image: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.584)), url('./img/background-leaves.jpg'); */
       background-size: 100%;
     }
     .content .div-text span {
