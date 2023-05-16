@@ -79,6 +79,16 @@
     height: 80px;
   }
   
+Nav .nav-item {
+  display: inline-block;
+  margin-left: 8vw;
+  text-transform: uppercase;
+  height: 80px;
+  position: relative;
+  line-height: 80px;
+  cursor: pointer;
+}
+
   nav .logo {
     color: #4bb45c;
     font-size: 28px;
