@@ -18,7 +18,7 @@ export function About() {
                     <div class="row">
                         <div class="column">
                             <div class="card">
-                                <img src="../public/img/hrudhai_profilepic.jpg" aria-label="Hrudhai" alt="Hrudhai" />
+                                <img src="img/hrudhai_profilepic.jpg" aria-label="Hrudhai" alt="Hrudhai" />
                                 {/* removed 'style="width:100%"' from img */}
                                 <div class="container-card">
                                     <h2>Hrudhai Umas</h2>
