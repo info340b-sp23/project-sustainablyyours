@@ -53,7 +53,7 @@ export function Header() {
             <Nav.Link className="nav-item" href="/about" aria-label="about us page">About Us</Nav.Link>
             <Nav.Link className="nav-item" href="/shop" aria-label="shop page">Shop</Nav.Link>
             <Nav.Link className="nav-item" href="/contact" aria-label="contact us page">Contact</Nav.Link>
-            <Nav.Link className="nav-item" href="/account" aria-label="account login"><i class="fa-solid fa-user"></i></Nav.Link>
+            <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

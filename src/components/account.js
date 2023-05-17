@@ -2,12 +2,12 @@ import React from "react";
 
 export function Account() {
     return (
-      <body class="about-page">
-      <div class="container">
+      <body className="about-page">
+      <div className="container">
 
         <main>
-          <section class="content">
-            <form class="form">
+          <section className="content">
+            <form className="form">
               <h1>Account Login</h1>
               <div>
                 <label for="username_input">Username:</label>

@@ -2,8 +2,8 @@ import React from "react";
 
 export function Intro() {
     return (
-        <body class="about-page">
-        <div class="container">
+        <body className="about-page">
+        <div className="container">
             <main>
             <div className="content content-trans">
                 <div className="div-text">

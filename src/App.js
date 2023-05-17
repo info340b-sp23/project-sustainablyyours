@@ -8,15 +8,13 @@ import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { BrowserRouter, Routes, Route, Router, Link } from "react-router-dom";
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
-
-
-export function App(props) {
+export function App(props) 
+{
     return (
     <div>
-    
         <Header />
         <Routes>
             <Route path="/" element={<Intro />} />

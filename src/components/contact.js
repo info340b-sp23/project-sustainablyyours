@@ -2,14 +2,14 @@ import React from "react";
 
 export function Contact() {
     return (
-        <body class="about-page">
-        <div class="container">
+        <body className="about-page">
+        <div className="container">
             <main>
-            <div class="content">
-                <div class="div-text">
+            <div className="content">
+                <div className="div-text">
                 <form>
-                    <h1 class="div-contact">Contact Us!</h1>
-                    <p>Fill out the contact form or email us at <a href="mailto:info@sustainablyyours.com" class="email email-contact">info@sustainablyyours.com</a></p>
+                    <h1 className="div-contact">Contact Us!</h1>
+                    <p>Fill out the contact form or email us at <a href="mailto:info@sustainablyyours.com" className="email email-contact">info@sustainablyyours.com</a></p>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required placeholder="Jon Smith" />
 
