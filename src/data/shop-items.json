@@ -1,0 +1,18 @@
+[
+    {
+        "image": "img/outerknown-yellow-puffer.png",
+        "imageDescription": "Yellow Puffer Jacket from Outerknown",
+        "item": "Outerknown Summer Yellow OK Mono Puffer Shirt Jacket",
+        "price": "$398.00",
+        "link": "https://www.outerknown.com/products/ok-mono-puffer-shirt-jacket-summer-yellow",
+        "link-description": "Outerknown Summer Yellow OK Mono Puffer Shirt Jacket"
+    },
+    {
+        "image": "img/outerknown-yellow-puffer.png",
+        "image-description": "Yellow Puffer Jacket from Outerknown",
+        "item": "Outerknown Summer Yellow OK Mono Puffer Shirt Jacket",
+        "price": "$398.00",
+        "link": "https://www.outerknown.com/products/ok-mono-puffer-shirt-jacket-summer-yellow",
+        "linkDescription": "Outerknown Summer Yellow OK Mono Puffer Shirt Jacket"
+    }
+]
