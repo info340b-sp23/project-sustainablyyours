@@ -22,6 +22,7 @@ export function Account() {
                   <a href="contact.html" aria-label="contact page">Forgot Your Login Info?</a>
                 </p>
               </div>
+              <input type="submit" value="Submit" />
             </form>
           </section>
         </main>

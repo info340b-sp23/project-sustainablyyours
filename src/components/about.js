@@ -17,7 +17,7 @@ export function About()
                 
                 <div className="col-lg-9">
                     <div className="row">
-                        <div className="column">
+                        <div className="col-4">
                             <div className="card">
                                 <img src="img/hrudhai_profilepic.jpg" aria-label="Hrudhai" alt="Hrudhai" />
                                 {/* removed 'style="width:100%"' from img */}
@@ -32,7 +32,7 @@ export function About()
                             </div>
                         </div>
                         
-                        <div className="column">
+                        <div className="col-4">
                             <div className="card">
                                 <img src="img/kaden_profilepic.jpg" aria-label="Kaden" alt="Kaden" />
                                 <div className="container-card">
@@ -46,7 +46,7 @@ export function About()
                         </div>
                     
                         <div className="row">
-                            <div className="column">
+                            <div className="col-4">
                                 <div className="card">
                                     <img src="img/abigail_profilepic.jpg" aria-label="Abi" alt="Abi" />
                                     <div className="container-card">
@@ -59,7 +59,7 @@ export function About()
                                 </div>
                             </div>
                 
-                           <div className="column">
+                           <div className="col-4">
                                 <div className="card">
                                     <img src="img/herm_profilepic.jpg" aria-label="Hermon" alt="Hermon" />
                                     <div className="container-card">
