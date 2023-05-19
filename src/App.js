@@ -15,7 +15,7 @@ export function App(props) {
 
     
     return (
-    <div>
+    <div className="container-fluid">
         <Header />
         <Routes>
             <Route path="/" element={<Intro />} />

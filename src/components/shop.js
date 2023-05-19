@@ -32,7 +32,7 @@ export function AllItems(props) {
     });
 
     return (
-        <main>
+        <main >
         <form className="search" action="/search">
             <label form="search"><i className="fa-solid fa-magnifying-glass"></i> Search:</label>
             <input type="text" id="search" name="q" placeholder="Search SustainablyYours" />
