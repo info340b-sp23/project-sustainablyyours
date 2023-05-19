@@ -6,14 +6,15 @@ import {Footer} from "./components/footer";
 import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
+import { Wishlist } from "./components/wishlist";
 import { Routes, Route } from "react-router-dom";
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-export function App(props) {
-
-    
+export function App(props) 
+{
     return (
     <div className="container-fluid">
         <Header />
@@ -24,9 +25,9 @@ export function App(props) {
             <Route path="shop" element={<AllItems items={props.items} />} />
             <Route path="contact" element={<Contact />} />
             <Route path="account" element={<Account />} />
+            <Route path="wishlist" element={<Wishlist />} />
         </Routes>
         <Footer />
-
     </div>
     )
 }
