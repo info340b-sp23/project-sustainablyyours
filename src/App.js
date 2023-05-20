@@ -27,7 +27,8 @@ export function App(props)
             <Route path="account" element={<Account />} />
             <Route path="wishlist" element={<Wishlist />} />
         </Routes>
-        <Footer />
+        
+        {window.location.pathname !== "/shop" && <Footer />}
     </div>
     )
 }

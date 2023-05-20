@@ -42,7 +42,7 @@ export function Header() {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link className="nav-item" href="/intro" aria-label="home page">Home</Nav.Link>
-              <Nav.Link className="nav-item" href="/about" aria-label="about us page">About</Nav.Link>
+              <Nav.Link className="nav-item" href="/about" aria-label="about us page">About Us</Nav.Link>
               <Nav.Link className="nav-item" href="/shop" aria-label="shop page">Shop</Nav.Link>
               <Nav.Link className="nav-item" href="/contact" aria-label="contact us page">Contact</Nav.Link>
               <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>

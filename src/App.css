@@ -91,6 +91,7 @@ height: 80px;
 position: relative;
 line-height: 80px;
 cursor: pointer;
+white-space: nowrap;
 }
 
 nav .logo {
@@ -154,25 +155,14 @@ body {
 }
 
 /* account page */
-.form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-}
-
-/* contact page and account page form */
 form {
   font-family: 'Inter', serif;
   width: 70%;
   margin: auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 5px;
-  position: absolute;
-  top: 6rem;
-  right: 23vh;
+  border-radius: 10px;
+  align-items: center;
 }
 
 @keyframes floatIn {
