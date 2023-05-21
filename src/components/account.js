@@ -43,8 +43,7 @@ export function Account() {
   };
 
   return (
-    <body className="about-page">
-      <div className="container">
+    <div className="about-page container">
         <main>
           <section className="content">
             <form className="form" onSubmit={handleSubmit}>
@@ -87,6 +86,5 @@ export function Account() {
           </section>
         </main>
       </div>
-    </body>
   );
 }

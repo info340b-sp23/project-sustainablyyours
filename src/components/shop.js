@@ -108,7 +108,7 @@ export function AllItems(props) {
                 return null; // Add this line to handle the case where neither condition is met
                 })
                 .map((val) => (
-                    <div className="col-md-6 col-xl-3 d-flex" key={val.id}>
+                    <div className="col-md-6 col-xl-3 d-flex" key={val.item}>
                         <div className="card mb-4">
                         <div className="card-body">
                             <div className="row">

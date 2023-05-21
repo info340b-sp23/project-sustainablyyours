@@ -2,8 +2,7 @@ import React from "react";
 
 export function Intro() {
     return (
-        <body className="about-page">
-        <div className="container">
+        <div className="about-page container">
             <main>
             <div className="content content-trans">
                 <div className="div-text">
@@ -16,6 +15,6 @@ export function Intro() {
             </div>
             </main>
         </div>
-        </body>        
+      
     )
 }
