@@ -13,7 +13,7 @@
 }
 
 .content .div-text h1 {
-  font-size: 45px;
+
   font-weight: bold;
   letter-spacing: 1.8px;
   margin: 4px 5px 8px;
@@ -50,9 +50,9 @@
 .content .div-text h2 {
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  font-size: 7vh;
+  font-size: 6.5vh;
   inline-size: min-content;
-  width: 90%;
+  width: 70%;
   font-weight: normal;
   margin: 20px 5px 8px;
   color: #383c36;
@@ -193,23 +193,27 @@ form {
     left: 55px;
   }
   .content .div-text h1 {
-    font-size: 5rem;
+    font-size: 3vh;
+  }
+  .content .div-text h2 {
+    font-size: 3rem;
     flex-wrap: wrap;
   }
   .content .div-text p {
     font-size: 2.0vh;
     word-wrap: break-word;
   }
-
+  .about-section-team h1 {
+    font-size: 30px;
+    margin-left: -45px;
+  }
   .meet-team-title {
     font-size: 30px;
     white-space: nowrap;
-    text-align: left;
-    margin-left: -95px;
+    text-align: center;
+    margin-left: -175px;
   }
-  .about-section-team h1 {
-    font-size: 2vh;
-  }
+
   .search {
     position: relative;
     left: 0px;
@@ -375,7 +379,7 @@ html {
 }
 
 .about-section-team h1, .meet-team-title {
-  font-size: 6.25vh;
+  font-size: 6vh;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
 }
