@@ -157,12 +157,16 @@ body {
 /* account page */
 form {
   font-family: 'Inter', serif;
-  width: 70%;
+  width: 90%;
   margin: auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   align-items: center;
+}
+
+.form {
+  width: 70%;
 }
 
 @keyframes floatIn {
@@ -510,6 +514,7 @@ label, #sustainable-items {
   position: relative;
   left: 2rem;
   top: 1rem;
+  width: 60%;
 }
 
 .category-select {

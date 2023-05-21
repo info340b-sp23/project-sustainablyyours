@@ -8,6 +8,7 @@ import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
 import { Wishlist } from "./components/wishlist";
 import { Routes, Route } from "react-router-dom";
+import { ErrorPage } from "./components/error";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,8 +27,8 @@ export function App(props)
             <Route path="contact" element={<Contact />} />
             <Route path="account" element={<Account />} />
             <Route path="wishlist" element={<Wishlist />} />
+            <Route path="*" element={<ErrorPage />} />
         </Routes>
-        
         {window.location.pathname !== "/shop" && <Footer />}
     </div>
     )

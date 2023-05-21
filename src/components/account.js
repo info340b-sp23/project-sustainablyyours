@@ -47,7 +47,7 @@ export function Account() {
       <div className="container">
         <main>
           <section className="content">
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
               <h1>Account Login</h1>
               <div className={`form-group ${usernameError ? "error" : ""}`}>
                 <label htmlFor="username_input">Username:</label>
