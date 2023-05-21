@@ -2,10 +2,7 @@ import React from "react";
 
 export function Wishlist() {
     return(
-    <div class="about-page container">
-
-
-      
+    <div class="about-page container">      
     <main>
       <h1>Wishlist</h1>
               
@@ -28,9 +25,7 @@ export function Wishlist() {
           </div>
         </div>
         </div>
-
       </div>
-
       </div>
     </main>
     </div>
