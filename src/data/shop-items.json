@@ -196,6 +196,54 @@
       "linkDescription": "Lavender + Juniper Castile Body Wash"
     },
     {
+      "image": "img/antonymmakeup.jpg",
+      "imageDescription": "Baked Highlighting Blush Lilyr",
+      "item": "Organically Made Baked Highlighting Blush Lily",
+      "price": "$42.00",
+      "link": "https://www.antonymcosmetics.com/collections/shop/products/baked-highlighting-blush-lily",
+      "linkDescription": "Baked Highlighting Blush Lily"
+    },
+    {
+      "image": "img/antonym2makeup.jpg",
+      "imageDescription": "Eye Pencil Noir",
+      "item": "Organically Made Antonym Eye Pencil Noir",
+      "price": "$21.00",
+      "link": "https://www.antonymcosmetics.com/collections/shop/products/noir",
+      "linkDescription": "Eye Pencil Noir"
+    },
+    {
+      "image": "img/axiologymakeup.jpg",
+      "imageDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
+      "item": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
+      "price": "$62.00",
+      "link": "https://axiologybeauty.com/collections/best-sellers/products/cotton-candy-skies-the-goodness-bundle",
+      "linkDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set"
+    },
+    {
+      "image": "img/axiology2makeup.jpg",
+      "imageDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
+      "item": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
+      "price": "$15.00",
+      "link": "https://axiologybeauty.com/collections/best-sellers/products/cherry-vegan-balmie",
+      "linkDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie"
+    },
+    {
+      "image": "img/biomemakeup.jpg",
+      "imageDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation",
+      "item": "Sun & Earth Natural Zinc - Sandy Light Foundation",
+      "price": "$14.00",
+      "link": "https://www.biomestores.com/products/sun-earth-natural-zinc-sandy-light",
+      "linkDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation"
+    },
+    {
+      "image": "img/biome2makeup.jpg",
+      "imageDescription": "Biome Liquid Eye Liner 6g - Black",
+      "item": "Biome Liquid Eye Liner 6g - Black",
+      "price": "$16.00",
+      "link": "https://www.biomestores.com/products/biome-liquid-eye-liner-6g-black",
+      "linkDescription": "Biome Liquid Eye Liner 6g - Black"
+    },
+    {
       "image": "img/rawganiquepants.jpg",
       "imageDescription": "ST GERMAIN Slim Straight 100% Hemp Jeans",
       "item": "ST GERMAIN Slim Straight 100% Hemp Jeans",
@@ -222,7 +270,7 @@
     {
       "image": "img/jackpants.jpg",
       "imageDescription": "Jack Wolfskin Men's Tanami Pant",
-      "item": "Jack Wolfskin Men's Tanami Pant",
+      "item": "Jack Wolfskin Men's Tanami Leisure Pant",
       "price": "$79.95",
       "link": "https://us.jackwolfskin.com/jw/mens/bottoms/pants/Tanami-Pant-M/p/1505881_1010_",
       "linkDescription": "Jack Wolfskin Men's Tanami Pant"
@@ -278,7 +326,7 @@
     {
       "image": "img/eileenclothing.jpg",
       "imageDescription": "Eco Airy Organic Cotton Twill Shorts",
-      "item": "Airy Organic Cotton Twill Shorts",
+      "item": "Airy Organic Cotton Twill Shorts, EasyFit Short Length",
       "price": "$128.00",
       "link": "https://www.eileenfisher.com/airy-organic-cotton-twill-shorts/S3PGG-P4690.html?loc=US",
       "linkDescription": "Airy Organic Cotton Twill Shorts"
@@ -288,8 +336,56 @@
       "imageDescription": "Organic Cotton Gauze Wide-Leg Pant",
       "item": "Organic Cotton Gauze Wide-Leg Pant",
       "price": "$178.00",
-      "link": "https://www.eileenfisher.com/organic-cotton-gauze-wide-leg-pant/S3GBA-P4643-PICANTE.html?loc=US",
+      "link": "",
       "linkDescription": "Organic Cotton Gauze Wide-Leg Pant"
+    },
+    {
+      "image": "img/mightlykids.jpg",
+      "imageDescription": "Pre-owned Green | White | Stripes PJ",
+      "item": "Pre-owned Green | White | Stripes PJ",
+      "price": "$19.00",
+      "link": "https://www.mightly.com/collections/lightly-loved-pajamas/products/pre-owned-green-white-stripes-pj-set-size-2t",
+      "linkDescription": "Pre-owned Green | White | Stripes PJ"
+    },
+    {
+      "image": "img/sustainkids.jpg",
+      "imageDescription": "Sustainable Kids Avocado Striped Tee",
+      "item": "Sustainable Kids Avocado Striped Tee",
+      "price": "$36.00",
+      "link": "https://sustainbykat.com/collections/kids-tees/products/kids-avocado-stripe-tee",
+      "linkDescription": "Sustainable Kids Avocado Striped Tee"
+    },
+    {
+      "image": "img/crannkids.jpg",
+      "imageDescription": "Kids' Organic Cotton Green Hoodie",
+      "item": "Kids' Organic Cotton Green Hoodie",
+      "price": "$48.00",
+      "link": "https://crannorganic.com/collections/organic-childrens-sweatshirt/products/kids-green-hoodie",
+      "linkDescription": "Kids' Organic Cotton Green Hoodie"
+    },
+    {
+      "image": "img/dyperbaby.jpg",
+      "imageDescription": "Organic Bamboo Viscose Baby Diapers",
+      "item": "Organic Bamboo Viscose Baby Diapers",
+      "price": "$94.99",
+      "link": "https://www.babylist.com/gp/dyper-bamboo-viscose-baby-diapers/36342/1388790",
+      "linkDescription": "Organic Bamboo Viscose Baby Diapers"
+    },
+    {
+      "image": "img/snugglebaby.jpg",
+      "imageDescription": "Snuggle Me Organic Infant Lounger",
+      "item": "Snuggle Me Organic Infant Lounger",
+      "price": "$109.00",
+      "link": "https://www.babylist.com/gp/snuggle-me-organic-organic-infant-lounger/20182/449149",
+      "linkDescription": "Snuggle Me Organic Infant Lounger"
+    },
+    {
+      "image": "img/oeufbaby.jpg",
+      "imageDescription": "Oeuf® Sustainably Made Classic Crib",
+      "item": "Oeuf® Sustainably Made Classic Crib",
+      "price": "$1,065.00",
+      "link": "https://oeufnyc.com/collections/nursery/products/classic-crib",
+      "linkDescription": "Oeuf® Sustainably Made Classic Crib"
     },
     {
       "image": "img/zwskitchen.jpg",
@@ -310,8 +406,8 @@
     {
       "image": "img/ourplacekitchen.jpg",
       "imageDescription": "Our Place Set the Table Set",
-      "item": "Our Place Set the Table Set",
-      "price": "260.00",
+      "item": "Our Place Set the Table Set, 20-piece set",
+      "price": "$260.00",
       "link": "https://fromourplace.com/products/set-the-table?variant=42412685066434",
       "linkDescription": "Our Place Set the Table Set"
     },
@@ -338,6 +434,53 @@
       "price": "$49.95",
       "link": "https://www.crateandbarrel.com/crate-and-barrel-acacia-edge-grain-cutting-board/f1009258",
       "linkDescription": "Crate & Barrel Acacia Edge-Grain Board"
-    }     
-    
+    },
+    {
+      "image": "img/madebed.jpg",
+      "imageDescription": "Classic Tencel Eucalyptus Sheet Set",
+      "item": "Classic Tencel Eucalyptus Sheet Set",
+      "price": "$195.00",
+      "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-sheet-set",
+      "linkDescription": "Classic Tencel Eucalyptus Sheet Set"
+    },
+    {
+      "image": "img/made2bed.jpg",
+      "imageDescription": "Tencel Eucalyptus Pillowcase Set",
+      "item": "Tencel Eucalyptus Pillowcase Set",
+      "price": "$49.00",
+      "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-pillowcase-set",
+      "linkDescription": "Tencel Eucalyptus Pillowcase Set"
+    },
+    {
+      "image": "img/underbed.jpg",
+      "imageDescription": "Organic Cotton & Wool Throw/Blanket",
+      "item": "Organic Cotton & Wool Throw/Blanket",
+      "price": "$178.00",
+      "link": "https://underthecanopy.com/products/dot-print-organic-cotton-wool-throw-woodland-green",
+      "linkDescription": "Organic Cotton & Wool Throw/Blanket"
+    },
+    {
+      "image": "img/under2bed.jpg",
+      "imageDescription": "Organically Made Cotton Quilt",
+      "item": "Organically Made Cotton Quilt/Blanket",
+      "price": "$158.00",
+      "link": "https://underthecanopy.com/products/organic-cotton-quilt-moss-green",
+      "linkDescription": "Organically Made Cotton Quilt"
+    },
+    {
+      "image": "img/westbed.jpg",
+      "imageDescription": "Organic Down Alternative Pillow Insert",
+      "item": "Organic Down Alternative Pillow Insert",
+      "price": "$25.00",
+      "link": "https://www.westelm.com/products/down-alternative-pillow-insert-b3381/?pkey=cpillow-inserts-bedding",
+      "linkDescription": "Organic Down Alternative Pillow Insert"
+    },
+    {
+      "image": "img/west2bed.jpg",
+      "imageDescription": "Organic European Flax Linen Bed Skirt",
+      "item": "Organic European Flax Linen Bed Skirt",
+      "price": "$110.00",
+      "link": "https://www.westelm.com/products/linen-bed-skirt-b3283/?pkey=cbed-skirts-covers",
+      "linkDescription": "Organic European Flax Linen Bed Skirt"
+    }
 ]

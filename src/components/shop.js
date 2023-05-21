@@ -50,48 +50,25 @@ export function AllItems(props) {
         <p className="category-select">Choose a category:</p>
             <select>
                 <option value="">Select a Category</option>
-                <optgroup label="Audio &amp; Tech">
-                <option value="1">Tech Cases</option>
-                <option value="2">Tech Accessories</option>
-                <option value="3">Chargers &amp; Cables</option>
+                    <optgroup label="Audio &amp; Tech">
+                    <option value="1">Tech Cases</option>
+                    <option value="2">Chargers &amp; Cables</option>
                 </optgroup>
                 <optgroup label="Beauty &amp; Care ">
-                <option value="4">Skin Care</option>
-                <option value="5">Hair Care</option>
-                <option value="6">Bath &amp; Body</option>
-                <option value="7">Makeup</option>
-                <option value="8">Personal Care</option>
-                <option value="9">Oral Care</option>
-                <option value="10">Sun Care</option>
+                    <option value="3">Skin Care</option>
+                    <option value="4">Hair Care</option>
+                    <option value="5">Bath &amp; Body</option>
+                    <option value="6">Makeup</option>
                 </optgroup>
                 <optgroup label="Clothing &amp; Accessories ">
-                    <option value="11">Men's Clothing</option>
-                    <option value="12">Men's Accessories</option>
-                    <option value="13">Women's Clothing &amp; Body</option>
-                    <option value="14">Women's Accessories</option>
-                    <option value="15">Kid's Clothing</option>
-                    <option value="16">Baby Clothing &amp; Products </option>
+                    <option value="7">Men's Clothing</option>
+                    <option value="8">Women's Clothing</option>
+                    <option value="9">Kid's Clothing</option>
+                    <option value="10">Baby Clothing &amp; Products </option>
                 </optgroup>
                 <optgroup label="Home &amp; Kitchen ">
-                    <option value="17">Kitchen</option>
-                    <option value="18">Bath</option>
-                    <option value="19">Bed</option>
-                    <option value="20">Garden</option>
-                    <option value="21">Office</option>
-                    <option value="22">Decor</option>
-                </optgroup>
-                <optgroup label="Sports &amp; Outdoors ">
-                    <option value="23">Bike</option>
-                    <option value="24">Camp</option>
-                    <option value="25">Garden</option>
-                    <option value="26">Games</option>
-                    <option value="27">Hike</option>
-                    <option value="28">Yoga</option>
-                </optgroup>
-                <optgroup label="Travel">
-                    <option value="29">Bags and Backpacks</option>
-                    <option value="30">Toiletry Bags</option>
-                    <option value="31">On the Go</option>
+                    <option value="11">Kitchen</option>
+                    <option value="12">Bed</option>
                 </optgroup>
             </select>
         

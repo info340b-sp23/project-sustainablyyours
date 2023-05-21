@@ -65,8 +65,7 @@ export function About()
                                     <div className="container-card">
                                         <h2>Hermon Rusom</h2>
                                         <p className="title">Informatics Student</p>
-                                        <p>Student studying Informatics at the University of Washington. Currently a final-year student working on a final capstone project. Excited to graduate at the end of this quarter and looking for job opportunities. Eager to use my informatics knowledge in the real-world.
-                                        </p>
+                                        <p>Student studying Informatics at the University of Washington. Currently I am a final-year undergraduate student working on a final capstone project with my peers and peer advisor. Excited to graduate at the end of this quarter and looking for job opportunities. Eager to use my informatics knowledge in the real-world.</p>
                                         <a href="mailto:">hermon@uw.edu</a>
                                         <p><a href="https://www.linkedin.com/home" className="btn btn-outline-primary" role="button" aria-pressed="true" target="_blank">LinkedIn</a></p>
                                     </div>
