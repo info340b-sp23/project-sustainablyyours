@@ -3,6 +3,7 @@ import React, {useState} from "react";
 export function AllItems(props) {
     const shopData = props.items;
     const [searchTerm, setSearchTerm] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("");
 
     const searchItems = shopData
         .filter((val) => {
@@ -13,6 +14,14 @@ export function AllItems(props) {
             return val;
         }
         return null; // Add this line to handle the case where neither condition is met
+        })
+        .filter((val) => {
+            // Filter items based on the selected category
+            if (selectedCategory === "") {
+              return val;
+            } else {
+              return val.category === selectedCategory;
+            }
         })
         .map((val) => (
             <div className="col-md-6 col-xl-3 d-flex" key={val.item}>
@@ -45,8 +54,10 @@ export function AllItems(props) {
         </form>
         
         <p className="category-select">Choose a category:</p>
-            <select>
-                <option value="">Select a Category</option>
+            <select
+                value={selectedCategory}
+                onChange={(event) => setSelectedCategory(event.target.value)}>
+                <option value="">Select a category</option>
                     <optgroup label="Audio &amp; Tech">
                     <option value="1">Tech Cases</option>
                     <option value="2">Chargers &amp; Cables</option>
