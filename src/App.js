@@ -24,6 +24,7 @@ export function App(props)
             <Route path="intro" element={<Intro />} />
             <Route path="about" element={<About />} />
             <Route path="shop" element={<AllItems items={props.items} />} />
+                <Route path=":category" element={AllItemsWrapper} /> {/* Route for the updated component */}
             <Route path="contact" element={<Contact />} />
             <Route path="account" element={<Account />} />
             <Route path="wishlist" element={<Wishlist />} />
@@ -32,4 +33,11 @@ export function App(props)
         {window.location.pathname !== "/shop" && <Footer />}
     </div>
     )
+}
+
+function AllItemsWrapper({ match }) {
+  const { category } = match.params;
+  const decodedCategory = decodeURIComponent(category);
+
+  return <AllItems category={decodedCategory} />;
 }

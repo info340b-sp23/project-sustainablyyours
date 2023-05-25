@@ -1,9 +1,12 @@
 import React, {useState} from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 export function AllItems(props) {
     const shopData = props.items;
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
+    const navigate = useNavigate();
 
     const searchItems = shopData
         .filter((val) => {
@@ -42,7 +45,14 @@ export function AllItems(props) {
                 </div>
                 </div>
             </div>
-        ))
+        ));
+    
+    const handleCategoryChange = (event) => {
+        const selectedValue = event.target.value;
+        setSelectedCategory(selectedValue);
+        navigate(`${encodeURIComponent(selectedValue)}`); // Update the URL parameter
+        };
+
 
     return (
         <main >
@@ -56,27 +66,27 @@ export function AllItems(props) {
         <p className="category-select">Choose a category:</p>
             <select
                 value={selectedCategory}
-                onChange={(event) => setSelectedCategory(event.target.value)}>
+                onChange={handleCategoryChange}>
                 <option value="">Select a category</option>
                     <optgroup label="Audio &amp; Tech">
-                    <option value="1">Tech Cases</option>
-                    <option value="2">Chargers &amp; Cables</option>
+                    <option value="tech cases">Tech Cases</option>
+                    <option value="chargers &amp; cables">Chargers &amp; Cables</option>
                 </optgroup>
                 <optgroup label="Beauty &amp; Care ">
-                    <option value="3">Skin Care</option>
-                    <option value="4">Hair Care</option>
-                    <option value="5">Bath &amp; Body</option>
-                    <option value="6">Makeup</option>
+                    <option value="skin care">Skin Care</option>
+                    <option value="hair care">Hair Care</option>
+                    <option value="bath &amp; body">Bath &amp; Body</option>
+                    <option value="makeup">Makeup</option>
                 </optgroup>
                 <optgroup label="Clothing &amp; Accessories ">
-                    <option value="7">Men's Clothing</option>
-                    <option value="8">Women's Clothing</option>
-                    <option value="9">Kid's Clothing</option>
-                    <option value="10">Baby Clothing &amp; Products </option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
+                    <option value="kid's clothing">Kid's Clothing</option>
+                    <option value="baby clothing &amp; products">Baby Clothing &amp; Products</option>
                 </optgroup>
                 <optgroup label="Home &amp; Kitchen ">
-                    <option value="11">Kitchen</option>
-                    <option value="12">Bed</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="bed">Bed</option>
                 </optgroup>
             </select>
         
