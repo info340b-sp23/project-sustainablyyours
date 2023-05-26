@@ -7,7 +7,7 @@ import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
 import { Wishlist } from "./components/wishlist";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import { ErrorPage } from "./components/error";
 
 import './App.css';
@@ -23,8 +23,11 @@ export function App(props)
             <Route path="/" element={<Intro />} />
             <Route path="intro" element={<Intro />} />
             <Route path="about" element={<About />} />
-            <Route path="shop" element={<AllItems items={props.items} />} />
-                <Route path=":category" element={AllItemsWrapper} /> {/* Route for the updated component */}
+            {/* <Route path="shop" element={<AllItems items={props.items} />} /> */}
+                {/* <Route path=":category?" element={<AllItemsWrapper />} /> Route for the updated component */}
+            <Route path="shop/:category?" element= {
+                <AllItems items={props.items}/>
+            }/>
             <Route path="contact" element={<Contact />} />
             <Route path="account" element={<Account />} />
             <Route path="wishlist" element={<Wishlist />} />
@@ -35,7 +38,23 @@ export function App(props)
     )
 }
 
-function AllItemsWrapper({ match }) {
+function AllItemsWrapperNew(props){
+  const params = useParams();
+  if (!params.category){
+    return <AllItems items={props.itemsInWrapper}/>
+  }
+  else {
+    const decodedCategory = decodeURIComponent(params.category);
+    // console.log(decodedCategory);
+    return <AllItems items={props.itemsInWrapper} category={decodedCategory} />;
+  }
+}
+
+function AllItemsWrapper(props) {
+  const params = useParams();
+  
+  const match = props.match;
+  console.log(params)
   const { category } = match.params;
   const decodedCategory = decodeURIComponent(category);
 

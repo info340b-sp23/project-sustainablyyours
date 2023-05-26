@@ -1,14 +1,24 @@
-import React, {useState} from "react";
-import { useNavigate } from 'react-router-dom';
+import React, {useState, useEffect, } from "react";
+import { useNavigate, useParams} from 'react-router-dom';
 
 
 export function AllItems(props) {
+    const params = useParams();
     const shopData = props.items;
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
     const navigate = useNavigate();
 
-    const searchItems = shopData
+    console.log("searchTerm " + searchTerm);
+    console.log("selectedCategory " + selectedCategory);
+
+    useEffect(()=>{
+        const category = params.category || ""
+        setSelectedCategory(category);
+    }, [])
+
+
+    const searchItemsTmp = shopData
         .filter((val) => {
         if (searchTerm === "") {
             return val;
@@ -26,13 +36,16 @@ export function AllItems(props) {
               return val.category === selectedCategory;
             }
         })
-        .map((val) => (
+    console.log(searchItemsTmp[0])
+    
+    const searchItems = searchItemsTmp.map(
+            (val) => (
             <div className="col-md-6 col-xl-3 d-flex" key={val.item}>
                 <div className="card mb-4">
                 <div className="card-body">
                     <div className="row">
                     <div className="col-sm-auto col-xl-12">
-                        <img src={val.image} className="pb-3" alt={val.imageDescription} />
+                        <img src={"/" + val.image} className="pb-3" alt={val.imageDescription} />
                     </div>
                     <div className="col-sm">
                         <p className="card-text">{val.item}</p>
@@ -47,10 +60,12 @@ export function AllItems(props) {
             </div>
         ));
     
+
     const handleCategoryChange = (event) => {
         const selectedValue = event.target.value;
+        console.log("handleCategoryChange " + selectedValue);
         setSelectedCategory(selectedValue);
-        navigate(`${encodeURIComponent(selectedValue)}`); // Update the URL parameter
+        navigate(`/shop/${encodeURIComponent(selectedValue)}`); // Update the URL parameter
         };
 
 

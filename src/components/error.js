@@ -1,3 +1,5 @@
+import React from "react";
+
 export function ErrorPage(props) {
   return (
   <div>
