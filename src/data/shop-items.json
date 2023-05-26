@@ -14,7 +14,8 @@
     "item": "pact Blue Dusk Vintage Long Sleeve Raglan Tee",
     "price": "$36.00",
     "link": "https://wearpact.com/men/apparel/tops%20&%20shirts/vintage%20long%20sleeve%20raglan%20tee/wa1-mvr-blk",
-    "linkDescription": "pact Blue Dusk Vintage Long Sleeve Raglan Tee"
+    "linkDescription": "pact Blue Dusk Vintage Long Sleeve Raglan Tee",
+    "category": "men's clothing"
   },
   {
     "image": "img/pact-green-shirt.jpg",
@@ -22,7 +23,8 @@
     "item": "pact Myrtle Vintage Short Sleeve Henley",
     "price": "$41.00",
     "link": "https://wearpact.com/men/apparel/tops%20&%20shirts/vintage%20short%20sleeve%20henley/wa1-mvy-blk",
-    "link-description": "pact Myrtle Vintage Short Sleeve Henley"
+    "link-description": "pact Myrtle Vintage Short Sleeve Henley",
+    "category": "men's clothing"
   },
 
   {
@@ -31,7 +33,8 @@
   "item": "Outerknown Azure Blue Rewind Polo",
   "price": "$108.00",
   "link": "https://www.outerknown.com/products/rewind-polo-azure-blue",
-  "link-description": "Outerknown Azure Blue Rewind Polo"
+  "link-description": "Outerknown Azure Blue Rewind Polo",
+  "category": "women's clothing"
   },
 
   {
@@ -40,7 +43,8 @@
   "item": "Pela Teal Green iPhone 13 Pro Case",
   "price": "$50.96",
   "link": "https://pelacase.com/products/green-eco-friendly-iphone-13-pro-case?sscid=51k7_p5gzw&utm_source=shareasale&utm_medium=affiliate&utm_campaign=2029250",
-  "link-description": "Green Pela Phone Case"
+  "link-description": "Green Pela Phone Case",
+  "category": "tech cases"
   },
 
   {
@@ -49,7 +53,8 @@
   "item": "Casetify Nantucket Blue Hydrangeas Phone Case",
   "price": "$68.00",
   "link": "https://www.casetify.com/product/nantucket-blue-hydrangeas/iphone13-pro-max/impact-case-with-black-camera-ring?color=blue&sscid=51k7_p5kxa&#/16003740",
-  "link-description": "Casetify Nantucket Blue Hydrangeas Phone Case"
+  "link-description": "Casetify Nantucket Blue Hydrangeas Phone Case",
+  "category": "tech cases"
   },
 
   {
@@ -58,430 +63,485 @@
   "item": "Wilma Biodegradable Compatible with iPhone 12",
   "price": "$39.99",
   "link": "https://www.amazon.com/Biodegradable-Compatible-Shockproof-Protective-Pollution/dp/B08L1HLGNM?&linkCode=ll1&tag=0418ecophonecases-20&linkId=8c6d563d43cf12a55089c358bac9f446&language=en_US&ref_=as_li_ss_tl",
-  "link-description": "Wilma Biodegradable Compatible with iPhone 12 Case and iPhone 12 Pro"
+  "link-description": "Wilma Biodegradable Compatible with iPhone 12 Case and iPhone 12 Pro",
+  "category": "tech cases"
   },
+  
   {
   "image": "img/casetify2phonecase.jpg",
   "imageDescription": "Casetify Winter Tale Clear Case",
   "item": "Casetify Mountain Winter Tale Clear Case",
   "price": "$58.00",
   "link": "https://www.casetify.com/product/winter-tale-clear-case/iphone13-pro/ultra-compostable-case?sscid=51k7_p61cv&#/16003566",
-  "link-description": "Casetify Winter Tale Clear Case"
+  "link-description": "Casetify Winter Tale Clear Case",
+  "category": "tech cases"
   },
   {
-      "image": "img/pela2phonecase.jpg",
-      "imageDescription": "Clear Google Pixel 6 Case with Forest Floor Ridge",
-      "item": "Clear Google Pixel 6 Case with Forest Floor Ridge",
-      "price": "$35.66",
-      "link": "https://pelacase.com/products/clear-google-pixel-6-case-with-forest-floor-ridge?sscid=51k7_p66nc&utm_source=shareasale&utm_medium=affiliate&utm_campaign=2029250",
-      "linkDescription": "Clear Google Pixel 6 Case with Forest Floor Ridge"
-    },
-    {
-      "image": "img/casetify3phonecase.jpg",
-      "imageDescription": "Casetify Custom Phone Case",
-      "item": "Casetify Custom Phone Case (Create your own design)",
-      "price": "$62.00",
-      "link": "https://www.casetify.com/product/phone-case-customization/iphone13-pro-max/ultra-compostable-case?sscid=51k7_p6a57&#/16003573",
-      "linkDescription": "Casetify Custom Phone Case"
-    },
-    {
-      "image": "img/nimblephonecharger.jpg",
-      "imageDescription": "WALLY Mini Plus Wall Charger",
-      "item": "WALLY Mini Plus Wall Charger (Charging Port Only)",
-      "price": "$29.96",
-      "link": "https://www.gonimble.com/collections/wall-chargers-adapters/products/wally-mini-plus-wall-charger",
-      "linkDescription": "WALLY Mini Plus Wall Charger"
-    },
-    {
-      "image": "img/ecoblvdphonecharger.jpg",
-      "imageDescription": "PowerPlant Dual-Port Wall Charger",
-      "item": "PowerPlant Dual-Port Wall Charger (Charging Port Only)",
-      "price": "$30.00",
-      "link": "https://www.ecoblvd.com/products/powerplant-dual-port-wall-charger?_pos=1&_sid=306951347&_ss=r",
-      "linkDescription": "PowerPlant Dual-Port Wall Charger"
-    },
-    {
-      "image": "img/biolitecharger.jpg",
-      "imageDescription": "BaseCharge 1500: 1521 Wh Rechargeable Power Station",
-      "item": "BaseCharge 1500: 1521 Wh Rechargeable Power Station",
-      "price": "$1,359.20",
-      "link": "https://www.bioliteenergy.com/products/basecharge-1500",
-      "linkDescription": "BaseCharge 1500: 1521 Wh Rechargeable Power Station"
-    },
-    {
-      "image": "img/ankercharger.jpg",
-      "imageDescription": "Anker PowerHouse 767 - 2048Wh | 2400W",
-      "item": "Anker PowerHouse 767 - 2048Wh | 2400W",
-      "price": "$1,999.00",
-      "link": "https://www.anker.com/products/a1780?ref=pps_masterBanner2&variant=42353286348950",
-      "linkDescription": "Anker PowerHouse 767 - 2048Wh | 2400W"
-    },
-    {
-      "image": "img/keliskincare.jpg",
-      "imageDescription": "Calm Spearmint & Lavender Floral Facial Steam",
-      "item": "Klei Calm Spearmint & Lavender Floral Facial Steam",
-      "price": "$20.00",
-      "link": "https://kleibeauty.com/collections/natural-skincare/products/calm-spearmint-lavender-floral-facial-steam",
-      "linkDescription": "Calm Spearmint & Lavender Floral Facial Steam"
-    },
-    {
-      "image": "img/keli2skincare.jpg",
-      "imageDescription": "Klei Uplift & Clarify Facial Set",
-      "item": "Klei Uplift & Clarify Facial Set (Clay Mask and Facial Steam)",
-      "price": "$48.00",
-      "link": "https://kleibeauty.com/collections/natural-skincare/products/calm-spearmint-lavender-floral-facial-steam",
-      "linkDescription": "Klei Uplift & Clarify Facial Set"
-    },
-    {
-      "image": "img/fleurskincare.jpg",
-      "imageDescription": "5-STEP ROUTINE Deluxe Set",
-      "item": "Fleur & Bee: 5-STEP ROUTINE Deluxe Set",
-      "price": "$227.00",
-      "link": "https://fleurandbee.com/products/5-step-skincare-routine",
-      "linkDescription": "5-STEP ROUTINE Deluxe Set"
-    },
-    {
-      "image": "img/fleur2skincare.jpg",
-      "imageDescription": "So Clean! Facial Cleanser",
-      "item": "Fleur & Bee: So Clean! Facial Cleanser",
-      "price": "$33.00",
-      "link": "https://fleurandbee.com/products/face-wash-cleanser",
-      "linkDescription": "So Clean! Facial Cleanser"
-    },
-    {
-      "image": "img/plainehaircare.jpg",
-      "imageDescription": "Plaine Products Organic Styling Gel",
-      "item": "Plaine Products Organic Styling Gel",
-      "price": "$30.00",
-      "link": "https://www.plaineproducts.com/product/styling-gel/",
-      "linkDescription": "Plaine Products Organic Styling Gel"
-    },
-    {
-      "image": "img/plaine2haircare.jpg",
-      "imageDescription": "Plaine Products Organic Conditioner",
-      "item": "Plaine Products Organic Conditioner",
-      "price": "$30.00",
-      "link": "https://www.plaineproducts.com/product/conditioner/",
-      "linkDescription": "Plaine Products Organic Conditioner"
-    },
-    {
-      "image": "img/everistbodywash.jpg",
-      "imageDescription": "Everist The Body Wash Concentrate",
-      "item": "Everist The Body Wash Concentrate",
-      "price": "$24.00",
-      "link": "https://helloeverist.com/products/waterless-body-wash-concentrate",
-      "linkDescription": "Everist The Body Wash Concentrate"
-    },
-    {
-      "image": "img/drbronnersbodywash.jpg",
-      "imageDescription": "Pure Castile Bar Soap, Peppermint",
-      "item": "Pure Castile Bar Soap, Peppermint",
-      "price": "$4.49",
-      "link": "https://thrivemarket.com/p/dr-bronners-bar-soap-castile-organic-peppermint",
-      "linkDescription": "Pure Castile Bar Soap, Peppermint"
-    },
-    {
-      "image": "img/ethiquebodywash.jpg",
-      "imageDescription": "Ethique Zesty Lime & Ginger Soap Bar",
-      "item": "Ethique Zesty Lime & Ginger Soap Bar",
-      "price": "$6.00",
-      "link": "https://ethique.com/products/lime-ginger",
-      "linkDescription": "Ethique Zesty Lime & Ginger Soap Bar"
-    },
-    {
-      "image": "img/alpinebodywash.jpg",
-      "imageDescription": "Lavender + Juniper Castile Body Wash",
-      "item": "Lavender + Juniper Castile Body Wash",
-      "price": "$23.99",
-      "link": "https://earthhero.com/collections/alpine-provisions/products/alpine-provisions-lavender-juniper-castile-body-wash",
-      "linkDescription": "Lavender + Juniper Castile Body Wash"
-    },
-    {
-      "image": "img/antonymmakeup.jpg",
-      "imageDescription": "Baked Highlighting Blush Lilyr",
-      "item": "Organically Made Baked Highlighting Blush Lily",
-      "price": "$42.00",
-      "link": "https://www.antonymcosmetics.com/collections/shop/products/baked-highlighting-blush-lily",
-      "linkDescription": "Baked Highlighting Blush Lily"
-    },
-    {
-      "image": "img/antonym2makeup.jpg",
-      "imageDescription": "Eye Pencil Noir",
-      "item": "Organically Made Antonym Eye Pencil Noir",
-      "price": "$21.00",
-      "link": "https://www.antonymcosmetics.com/collections/shop/products/noir",
-      "linkDescription": "Eye Pencil Noir"
-    },
-    {
-      "image": "img/axiologymakeup.jpg",
-      "imageDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
-      "item": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
-      "price": "$62.00",
-      "link": "https://axiologybeauty.com/collections/best-sellers/products/cotton-candy-skies-the-goodness-bundle",
-      "linkDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set"
-    },
-    {
-      "image": "img/axiology2makeup.jpg",
-      "imageDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
-      "item": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
-      "price": "$15.00",
-      "link": "https://axiologybeauty.com/collections/best-sellers/products/cherry-vegan-balmie",
-      "linkDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie"
-    },
-    {
-      "image": "img/biomemakeup.jpg",
-      "imageDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation",
-      "item": "Sun & Earth Natural Zinc - Sandy Light Foundation",
-      "price": "$14.00",
-      "link": "https://www.biomestores.com/products/sun-earth-natural-zinc-sandy-light",
-      "linkDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation"
-    },
-    {
-      "image": "img/biome2makeup.jpg",
-      "imageDescription": "Biome Liquid Eye Liner 6g - Black",
-      "item": "Biome Liquid Eye Liner 6g - Black",
-      "price": "$16.00",
-      "link": "https://www.biomestores.com/products/biome-liquid-eye-liner-6g-black",
-      "linkDescription": "Biome Liquid Eye Liner 6g - Black"
-    },
-    {
-      "image": "img/rawganiquepants.jpg",
-      "imageDescription": "ST GERMAIN Slim Straight 100% Hemp Jeans",
-      "item": "ST GERMAIN Slim Straight 100% Hemp Jeans",
-      "price": "$104.00",
-      "link": "https://rawganique.com/collections/mens-organic-pants/products/saint-germain-slim-straight-100-hemp-jeans?ref=7fjfwseox5by",
-      "linkDescription": "ST GERMAIN Slim Straight 100% Hemp Jeans"
-    },
-    {
-      "image": "img/patagoniapants.jpg",
-      "imageDescription": "Men's Iron Forge Hemp® Canvas Cargo Pants",
-      "item": "Men's Iron Forge Hemp® Canvas Cargo Pants",
-      "price": "$79.00",
-      "link": "https://www.patagonia.com/product/mens-iron-forge-hemp-canvas-cargo-work-pants-long/55281.html?dwvar_55281_color=COI&cgid=root&avad=280725_a30a4b811&netid=1&pubid=223737&utm_source=www.leafscore.com&utm_medium=affiliate&utm_campaign=Custom+Link&src=cl&src=avl",
-      "linkDescription": "Men's Iron Forge Hemp® Canvas Cargo Pants"
-    },
-    {
-      "image": "img/pranapants.jpg",
-      "imageDescription": "prana Men's Sustainer Pant Durable",
-      "item": "prana Men's Sustainer Pant Durable",
-      "price": "$95.00",
-      "link": "https://www.prana.com/p/sustainer-pant/1964751.html?dwvar_1964751_color=Peppercorn&pos=22",
-      "linkDescription": "prana Men's Sustainer Pant Durable"
-    },
-    {
-      "image": "img/jackpants.jpg",
-      "imageDescription": "Jack Wolfskin Men's Tanami Pant",
-      "item": "Jack Wolfskin Men's Tanami Leisure Pant",
-      "price": "$79.95",
-      "link": "https://us.jackwolfskin.com/jw/mens/bottoms/pants/Tanami-Pant-M/p/1505881_1010_",
-      "linkDescription": "Jack Wolfskin Men's Tanami Pant"
-    },
-    {
-      "image": "img/outerknownclothing.jpg",
-      "imageDescription": "Outerknown Organic Eva Cashmere Dress",
-      "item": "Outerknown Organic Eva Cashmere Dress",
-      "price": "428.00",
-      "link": "https://www.outerknown.com/products/eva-cashmere-dress-heather-grey",
-      "linkDescription": "Outerknown Organic Eva Cashmere Dress"
-    },
-    {
-      "image": "img/outerknown2clothing.jpg",
-      "imageDescription": "Outerknown Organic Generation Slim Selvedge",
-      "item": "Outerknown Organic Generation Slim Selvedge",
-      "price": "$328.00",
-      "link": "https://www.outerknown.com/products/generation-slim-selvedge-vista-blue",
-      "linkDescription": "Outerknown Organic Generation Slim Selvedge"
-    },
-    {
-      "image": "img/organicclothing.jpg",
-      "imageDescription": "OrganicBasics Cotton Crewneck Sweat",
-      "item": "OrganicBasics Cotton Crewneck Sweat",
-      "price": "$95.00",
-      "link": "https://us.organicbasics.com/products/mens-organic-cotton-crewneck-sweat-grey-melange",
-      "linkDescription": "OrganicBasics Cotton Crewneck Sweat"
-    },
-    {
-      "image": "img/organic2clothing.jpg",
-      "imageDescription": "OrganicBasics Cotton Seamless Leggings",
-      "item": "OrganicBasics Cotton Seamless Leggings",
-      "price": "$90.00",
-      "link": "https://us.organicbasics.com/products/womens-organic-cotton-seamless-leggings-lavender",
-      "linkDescription": "OrganicBasics Cotton Seamless Leggings"
-    },
-    {
-      "image": "img/reformationclothing.jpg",
-      "imageDescription": "Reformation Recycled Alden Knit Dress",
-      "item": "Reformation Recycled Alden Knit Dress",
-      "price": "128.00",
-      "link": "https://www.thereformation.com/products/alden-knit-dress/1310160PRI.html",
-      "linkDescription": "Reformation Recycled Alden Knit Dress"
-    },
-    {
-      "image": "img/reformation2clothing.jpg",
-      "imageDescription": "Reformation Recycled Nyala Knit Dress",
-      "item": "Reformation Recycled Nyala Knit Dress",
-      "price": "$148.95",
-      "link": "https://www.thereformation.com/products/nyala-knit-dress/1312741MSN.html",
-      "linkDescription": "Reformation Recycled Nyala Knit Dress"
-    },
-    {
-      "image": "img/eileenclothing.jpg",
-      "imageDescription": "Eco Airy Organic Cotton Twill Shorts",
-      "item": "Airy Organic Cotton Twill Shorts, EasyFit Short Length",
-      "price": "$128.00",
-      "link": "https://www.eileenfisher.com/airy-organic-cotton-twill-shorts/S3PGG-P4690.html?loc=US",
-      "linkDescription": "Airy Organic Cotton Twill Shorts"
-    },
-    {
-      "image": "img/eileen2clothing.jpg",
-      "imageDescription": "Organic Cotton Gauze Wide-Leg Pant",
-      "item": "Organic Cotton Gauze Wide-Leg Pant",
-      "price": "$178.00",
-      "link": "",
-      "linkDescription": "Organic Cotton Gauze Wide-Leg Pant"
-    },
-    {
-      "image": "img/mightlykids.jpg",
-      "imageDescription": "Pre-owned Green | White | Stripes PJ",
-      "item": "Pre-owned Green | White | Stripes PJ",
-      "price": "$19.00",
-      "link": "https://www.mightly.com/collections/lightly-loved-pajamas/products/pre-owned-green-white-stripes-pj-set-size-2t",
-      "linkDescription": "Pre-owned Green | White | Stripes PJ"
-    },
-    {
-      "image": "img/sustainkids.jpg",
-      "imageDescription": "Sustainable Kids Avocado Striped Tee",
-      "item": "Sustainable Kids Avocado Striped Tee",
-      "price": "$36.00",
-      "link": "https://sustainbykat.com/collections/kids-tees/products/kids-avocado-stripe-tee",
-      "linkDescription": "Sustainable Kids Avocado Striped Tee"
-    },
-    {
-      "image": "img/crannkids.jpg",
-      "imageDescription": "Kids' Organic Cotton Green Hoodie",
-      "item": "Kids' Organic Cotton Green Hoodie",
-      "price": "$48.00",
-      "link": "https://crannorganic.com/collections/organic-childrens-sweatshirt/products/kids-green-hoodie",
-      "linkDescription": "Kids' Organic Cotton Green Hoodie"
-    },
-    {
-      "image": "img/dyperbaby.jpg",
-      "imageDescription": "Organic Bamboo Viscose Baby Diapers",
-      "item": "Organic Bamboo Viscose Baby Diapers",
-      "price": "$94.99",
-      "link": "https://www.babylist.com/gp/dyper-bamboo-viscose-baby-diapers/36342/1388790",
-      "linkDescription": "Organic Bamboo Viscose Baby Diapers"
-    },
-    {
-      "image": "img/snugglebaby.jpg",
-      "imageDescription": "Snuggle Me Organic Infant Lounger",
-      "item": "Snuggle Me Organic Infant Lounger",
-      "price": "$109.00",
-      "link": "https://www.babylist.com/gp/snuggle-me-organic-organic-infant-lounger/20182/449149",
-      "linkDescription": "Snuggle Me Organic Infant Lounger"
-    },
-    {
-      "image": "img/oeufbaby.jpg",
-      "imageDescription": "Oeuf® Sustainably Made Classic Crib",
-      "item": "Oeuf® Sustainably Made Classic Crib",
-      "price": "$1,065.00",
-      "link": "https://oeufnyc.com/collections/nursery/products/classic-crib",
-      "linkDescription": "Oeuf® Sustainably Made Classic Crib"
-    },
-    {
-      "image": "img/zwskitchen.jpg",
-      "imageDescription": "Beeswax Food Wraps - Variety Packs",
-      "item": "Beeswax Food Wraps - Variety Packs",
-      "price": "$18.99",
-      "link": "https://zerowastestore.com/products/beeswax-reusable-food-wrap-variety-pack?variant=40731505721455",
-      "linkDescription": "Beeswax Food Wraps - Variety Packs"
-    },
-    {
-      "image": "img/earthherokitchen.jpg",
-      "imageDescription": "Marley's Monsters Organic Unpaper Towels",
-      "item": "Marley's Monsters Organic Unpaper Towels",
-      "price": "$19.99",
-      "link": "https://earthhero.com/collections/marleys-monsters/products/marleys-monsters-organic-reusable-paper-towels-marleys-monsters-earthhero#r",
-      "linkDescription": "Marley's Monsters Organic Unpaper Towels"
-    },
-    {
-      "image": "img/ourplacekitchen.jpg",
-      "imageDescription": "Our Place Set the Table Set",
-      "item": "Our Place Set the Table Set, 20-piece set",
-      "price": "$260.00",
-      "link": "https://fromourplace.com/products/set-the-table?variant=42412685066434",
-      "linkDescription": "Our Place Set the Table Set"
-    },
-    {
-      "image": "img/kleankitchen.jpg",
-      "imageDescription": "32 oz TKWide Insulated Water Bottle",
-      "item": "32 oz TKWide Insulated Water Bottle",
-      "price": "$44.95",
-      "link": "https://www.kleankanteen.com/products/insulated-water-bottle-tkwide-32-oz-twist-straw-cap",
-      "linkDescription": "32 oz TKWide Insulated Water Bottle"
-    },
-    {
-      "image": "img/amazonkitchen.jpg",
-      "imageDescription": "Organic Cotton Produce Bags, 5 Pcs",
-      "item": "Organic Cotton Produce Bags, 5 Pcs",
-      "price": "$16.99",
-      "link": "https://www.amazon.com/gp/product/B01IT37BPG/",
-      "linkDescription": "Organic Cotton Produce Bags, 5 Pcs"
-    },
-    {
-      "image": "img/cratekitchen.jpg",
-      "imageDescription": "Crate & Barrel Acacia Edge-Grain Board",
-      "item": "Crate & Barrel Acacia Edge-Grain Board",
-      "price": "$49.95",
-      "link": "https://www.crateandbarrel.com/crate-and-barrel-acacia-edge-grain-cutting-board/f1009258",
-      "linkDescription": "Crate & Barrel Acacia Edge-Grain Board"
-    },
-    {
-      "image": "img/madebed.jpg",
-      "imageDescription": "Classic Tencel Eucalyptus Sheet Set",
-      "item": "Classic Tencel Eucalyptus Sheet Set",
-      "price": "$195.00",
-      "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-sheet-set",
-      "linkDescription": "Classic Tencel Eucalyptus Sheet Set"
-    },
-    {
-      "image": "img/made2bed.jpg",
-      "imageDescription": "Tencel Eucalyptus Pillowcase Set",
-      "item": "Tencel Eucalyptus Pillowcase Set",
-      "price": "$49.00",
-      "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-pillowcase-set",
-      "linkDescription": "Tencel Eucalyptus Pillowcase Set"
-    },
-    {
-      "image": "img/underbed.jpg",
-      "imageDescription": "Organic Cotton & Wool Throw/Blanket",
-      "item": "Organic Cotton & Wool Throw/Blanket",
-      "price": "$178.00",
-      "link": "https://underthecanopy.com/products/dot-print-organic-cotton-wool-throw-woodland-green",
-      "linkDescription": "Organic Cotton & Wool Throw/Blanket"
-    },
-    {
-      "image": "img/under2bed.jpg",
-      "imageDescription": "Organically Made Cotton Quilt",
-      "item": "Organically Made Cotton Quilt/Blanket",
-      "price": "$158.00",
-      "link": "https://underthecanopy.com/products/organic-cotton-quilt-moss-green",
-      "linkDescription": "Organically Made Cotton Quilt"
-    },
-    {
-      "image": "img/westbed.jpg",
-      "imageDescription": "Organic Down Alternative Pillow Insert",
-      "item": "Organic Down Alternative Pillow Insert",
-      "price": "$25.00",
-      "link": "https://www.westelm.com/products/down-alternative-pillow-insert-b3381/?pkey=cpillow-inserts-bedding",
-      "linkDescription": "Organic Down Alternative Pillow Insert"
-    },
-    {
-      "image": "img/west2bed.jpg",
-      "imageDescription": "Organic European Flax Linen Bed Skirt",
-      "item": "Organic European Flax Linen Bed Skirt",
-      "price": "$110.00",
-      "link": "https://www.westelm.com/products/linen-bed-skirt-b3283/?pkey=cbed-skirts-covers",
-      "linkDescription": "Organic European Flax Linen Bed Skirt"
-    }
+    "image": "img/pela2phonecase.jpg",
+    "imageDescription": "Clear Google Pixel 6 Case with Forest Floor Ridge",
+    "item": "Clear Google Pixel 6 Case with Forest Floor Ridge",
+    "price": "$35.66",
+    "link": "https://pelacase.com/products/clear-google-pixel-6-case-with-forest-floor-ridge?sscid=51k7_p66nc&utm_source=shareasale&utm_medium=affiliate&utm_campaign=2029250",
+    "linkDescription": "Clear Google Pixel 6 Case with Forest Floor Ridge",
+    "category": "tech cases"
+  },
+  {
+    "image": "img/casetify3phonecase.jpg",
+    "imageDescription": "Casetify Custom Phone Case",
+    "item": "Casetify Custom Phone Case (Create your own design)",
+    "price": "$62.00",
+    "link": "https://www.casetify.com/product/phone-case-customization/iphone13-pro-max/ultra-compostable-case?sscid=51k7_p6a57&#/16003573",
+    "linkDescription": "Casetify Custom Phone Case",
+    "category": "tech cases"
+  },
+  {
+    "image": "img/nimblephonecharger.jpg",
+    "imageDescription": "WALLY Mini Plus Wall Charger",
+    "item": "WALLY Mini Plus Wall Charger (Charging Port Only)",
+    "price": "$29.96",
+    "link": "https://www.gonimble.com/collections/wall-chargers-adapters/products/wally-mini-plus-wall-charger",
+    "linkDescription": "WALLY Mini Plus Wall Charger",
+    "category": "chargers & cables"
+  },
+  {
+    "image": "img/ecoblvdphonecharger.jpg",
+    "imageDescription": "PowerPlant Dual-Port Wall Charger",
+    "item": "PowerPlant Dual-Port Wall Charger (Charging Port Only)",
+    "price": "$30.00",
+    "link": "https://www.ecoblvd.com/products/powerplant-dual-port-wall-charger?_pos=1&_sid=306951347&_ss=r",
+    "linkDescription": "PowerPlant Dual-Port Wall Charger",
+    "category": "chargers & cables"
+  },
+  {
+    "image": "img/biolitecharger.jpg",
+    "imageDescription": "BaseCharge 1500: 1521 Wh Rechargeable Power Station",
+    "item": "BaseCharge 1500: 1521 Wh Rechargeable Power Station",
+    "price": "$1,359.20",
+    "link": "https://www.bioliteenergy.com/products/basecharge-1500",
+    "linkDescription": "BaseCharge 1500: 1521 Wh Rechargeable Power Station",
+    "category": "chargers & cables"
+  },
+  {
+    "image": "img/ankercharger.jpg",
+    "imageDescription": "Anker PowerHouse 767 - 2048Wh | 2400W",
+    "item": "Anker PowerHouse 767 - 2048Wh | 2400W",
+    "price": "$1,999.00",
+    "link": "https://www.anker.com/products/a1780?ref=pps_masterBanner2&variant=42353286348950",
+    "linkDescription": "Anker PowerHouse 767 - 2048Wh | 2400W",
+    "category": "chargers & cables"
+  },
+  {
+    "image": "img/keliskincare.jpg",
+    "imageDescription": "Calm Spearmint & Lavender Floral Facial Steam",
+    "item": "Klei Calm Spearmint & Lavender Floral Facial Steam",
+    "price": "$20.00",
+    "link": "https://kleibeauty.com/collections/natural-skincare/products/calm-spearmint-lavender-floral-facial-steam",
+    "linkDescription": "Calm Spearmint & Lavender Floral Facial Steam",
+    "category": "skin care"
+  },
+  {
+    "image": "img/keli2skincare.jpg",
+    "imageDescription": "Klei Uplift & Clarify Facial Set",
+    "item": "Klei Uplift & Clarify Facial Set (Clay Mask and Facial Steam)",
+    "price": "$48.00",
+    "link": "https://kleibeauty.com/collections/natural-skincare/products/calm-spearmint-lavender-floral-facial-steam",
+    "linkDescription": "Klei Uplift & Clarify Facial Set",
+    "category": "skin care"
+  },
+  {
+    "image": "img/fleurskincare.jpg",
+    "imageDescription": "5-STEP ROUTINE Deluxe Set",
+    "item": "Fleur & Bee: 5-STEP ROUTINE Deluxe Set",
+    "price": "$227.00",
+    "link": "https://fleurandbee.com/products/5-step-skincare-routine",
+    "linkDescription": "5-STEP ROUTINE Deluxe Set",
+    "category": "skin care"
+  },
+  {
+    "image": "img/fleur2skincare.jpg",
+    "imageDescription": "So Clean! Facial Cleanser",
+    "item": "Fleur & Bee: So Clean! Facial Cleanser",
+    "price": "$33.00",
+    "link": "https://fleurandbee.com/products/face-wash-cleanser",
+    "linkDescription": "So Clean! Facial Cleanser",
+    "category": "skin care"
+  },
+  {
+    "image": "img/plainehaircare.jpg",
+    "imageDescription": "Plaine Products Organic Styling Gel",
+    "item": "Plaine Products Organic Styling Gel",
+    "price": "$30.00",
+    "link": "https://www.plaineproducts.com/product/styling-gel/",
+    "linkDescription": "Plaine Products Organic Styling Gel",
+    "category": "hair care"
+  },
+  {
+    "image": "img/plaine2haircare.jpg",
+    "imageDescription": "Plaine Products Organic Conditioner",
+    "item": "Plaine Products Organic Conditioner",
+    "price": "$30.00",
+    "link": "https://www.plaineproducts.com/product/conditioner/",
+    "linkDescription": "Plaine Products Organic Conditioner",
+    "category": "hair care"
+  },
+  {
+    "image": "img/everistbodywash.jpg",
+    "imageDescription": "Everist The Body Wash Concentrate",
+    "item": "Everist The Body Wash Concentrate",
+    "price": "$24.00",
+    "link": "https://helloeverist.com/products/waterless-body-wash-concentrate",
+    "linkDescription": "Everist The Body Wash Concentrate",
+    "category": "bath & body"
+  },
+  {
+    "image": "img/drbronnersbodywash.jpg",
+    "imageDescription": "Pure Castile Bar Soap, Peppermint",
+    "item": "Pure Castile Bar Soap, Peppermint",
+    "price": "$4.49",
+    "link": "https://thrivemarket.com/p/dr-bronners-bar-soap-castile-organic-peppermint",
+    "linkDescription": "Pure Castile Bar Soap, Peppermint",
+    "category": "bath & body"
+  },
+  {
+    "image": "img/ethiquebodywash.jpg",
+    "imageDescription": "Ethique Zesty Lime & Ginger Soap Bar",
+    "item": "Ethique Zesty Lime & Ginger Soap Bar",
+    "price": "$6.00",
+    "link": "https://ethique.com/products/lime-ginger",
+    "linkDescription": "Ethique Zesty Lime & Ginger Soap Bar",
+    "category": "bath & body"
+  },
+  {
+    "image": "img/alpinebodywash.jpg",
+    "imageDescription": "Lavender + Juniper Castile Body Wash",
+    "item": "Lavender + Juniper Castile Body Wash",
+    "price": "$23.99",
+    "link": "https://earthhero.com/collections/alpine-provisions/products/alpine-provisions-lavender-juniper-castile-body-wash",
+    "linkDescription": "Lavender + Juniper Castile Body Wash",
+    "category": "bath & body"
+  },
+  {
+    "image": "img/antonymmakeup.jpg",
+    "imageDescription": "Baked Highlighting Blush Lilyr",
+    "item": "Organically Made Baked Highlighting Blush Lily",
+    "price": "$42.00",
+    "link": "https://www.antonymcosmetics.com/collections/shop/products/baked-highlighting-blush-lily",
+    "linkDescription": "Baked Highlighting Blush Lily",
+    "category": "makeup"
+  },
+  {
+    "image": "img/antonym2makeup.jpg",
+    "imageDescription": "Eye Pencil Noir",
+    "item": "Organically Made Antonym Eye Pencil Noir",
+    "price": "$21.00",
+    "link": "https://www.antonymcosmetics.com/collections/shop/products/noir",
+    "linkDescription": "Eye Pencil Noir",
+    "category": "makeup"
+  },
+  {
+    "image": "img/axiologymakeup.jpg",
+    "imageDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
+    "item": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
+    "price": "$62.00",
+    "link": "https://axiologybeauty.com/collections/best-sellers/products/cotton-candy-skies-the-goodness-bundle",
+    "linkDescription": "Everyday Pinks Bundle: Vegan Multi-Use Balmie Set",
+    "category": "makeup"
+  },
+  {
+    "image": "img/axiology2makeup.jpg",
+    "imageDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
+    "item": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
+    "price": "$15.00",
+    "link": "https://axiologybeauty.com/collections/best-sellers/products/cherry-vegan-balmie",
+    "linkDescription": "Cherry Makeup Crayon Vegan Multi-Use Balmie",
+    "category": "makeup"
+  },
+  {
+    "image": "img/biomemakeup.jpg",
+    "imageDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation",
+    "item": "Sun & Earth Natural Zinc - Sandy Light Foundation",
+    "price": "$14.00",
+    "link": "https://www.biomestores.com/products/sun-earth-natural-zinc-sandy-light",
+    "linkDescription": "Sun & Earth Natural Zinc - Sandy Light Foundation",
+    "category": "makeup"
+  },
+  {
+    "image": "img/biome2makeup.jpg",
+    "imageDescription": "Biome Liquid Eye Liner 6g - Black",
+    "item": "Biome Liquid Eye Liner 6g - Black",
+    "price": "$16.00",
+    "link": "https://www.biomestores.com/products/biome-liquid-eye-liner-6g-black",
+    "linkDescription": "Biome Liquid Eye Liner 6g - Black",
+    "category": "makeup"
+  },
+  {
+    "image": "img/rawganiquepants.jpg",
+    "imageDescription": "ST GERMAIN Slim Straight 100% Hemp Jeans",
+    "item": "ST GERMAIN Slim Straight 100% Hemp Jeans",
+    "price": "$104.00",
+    "link": "https://rawganique.com/collections/mens-organic-pants/products/saint-germain-slim-straight-100-hemp-jeans?ref=7fjfwseox5by",
+    "linkDescription": "ST GERMAIN Slim Straight 100% Hemp Jeans",
+    "category": "men's clothing"
+  },
+  {
+    "image": "img/patagoniapants.jpg",
+    "imageDescription": "Men's Iron Forge Hemp® Canvas Cargo Pants",
+    "item": "Men's Iron Forge Hemp® Canvas Cargo Pants",
+    "price": "$79.00",
+    "link": "https://www.patagonia.com/product/mens-iron-forge-hemp-canvas-cargo-work-pants-long/55281.html?dwvar_55281_color=COI&cgid=root&avad=280725_a30a4b811&netid=1&pubid=223737&utm_source=www.leafscore.com&utm_medium=affiliate&utm_campaign=Custom+Link&src=cl&src=avl",
+    "linkDescription": "Men's Iron Forge Hemp® Canvas Cargo Pants",
+    "category": "men's clothing"
+  },
+  {
+    "image": "img/pranapants.jpg",
+    "imageDescription": "prana Men's Sustainer Pant Durable",
+    "item": "prana Men's Sustainer Pant Durable",
+    "price": "$95.00",
+    "link": "https://www.prana.com/p/sustainer-pant/1964751.html?dwvar_1964751_color=Peppercorn&pos=22",
+    "linkDescription": "prana Men's Sustainer Pant Durable",
+    "category": "men's clothing"
+  },
+  {
+    "image": "img/jackpants.jpg",
+    "imageDescription": "Jack Wolfskin Men's Tanami Pant",
+    "item": "Jack Wolfskin Men's Tanami Leisure Pant",
+    "price": "$79.95",
+    "link": "https://us.jackwolfskin.com/jw/mens/bottoms/pants/Tanami-Pant-M/p/1505881_1010_",
+    "linkDescription": "Jack Wolfskin Men's Tanami Pant",
+    "category": "men's clothing"
+  },
+  {
+    "image": "img/outerknownclothing.jpg",
+    "imageDescription": "Outerknown Organic Eva Cashmere Dress",
+    "item": "Outerknown Organic Eva Cashmere Dress",
+    "price": "428.00",
+    "link": "https://www.outerknown.com/products/eva-cashmere-dress-heather-grey",
+    "linkDescription": "Outerknown Organic Eva Cashmere Dress",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/outerknown2clothing.jpg",
+    "imageDescription": "Outerknown Organic Generation Slim Selvedge",
+    "item": "Outerknown Organic Generation Slim Selvedge",
+    "price": "$328.00",
+    "link": "https://www.outerknown.com/products/generation-slim-selvedge-vista-blue",
+    "linkDescription": "Outerknown Organic Generation Slim Selvedge",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/organicclothing.jpg",
+    "imageDescription": "OrganicBasics Cotton Crewneck Sweat",
+    "item": "OrganicBasics Cotton Crewneck Sweat",
+    "price": "$95.00",
+    "link": "https://us.organicbasics.com/products/mens-organic-cotton-crewneck-sweat-grey-melange",
+    "linkDescription": "OrganicBasics Cotton Crewneck Sweat",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/organic2clothing.jpg",
+    "imageDescription": "OrganicBasics Cotton Seamless Leggings",
+    "item": "OrganicBasics Cotton Seamless Leggings",
+    "price": "$90.00",
+    "link": "https://us.organicbasics.com/products/womens-organic-cotton-seamless-leggings-lavender",
+    "linkDescription": "OrganicBasics Cotton Seamless Leggings",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/reformationclothing.jpg",
+    "imageDescription": "Reformation Recycled Alden Knit Dress",
+    "item": "Reformation Recycled Alden Knit Dress",
+    "price": "128.00",
+    "link": "https://www.thereformation.com/products/alden-knit-dress/1310160PRI.html",
+    "linkDescription": "Reformation Recycled Alden Knit Dress",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/reformation2clothing.jpg",
+    "imageDescription": "Reformation Recycled Nyala Knit Dress",
+    "item": "Reformation Recycled Nyala Knit Dress",
+    "price": "$148.95",
+    "link": "https://www.thereformation.com/products/nyala-knit-dress/1312741MSN.html",
+    "linkDescription": "Reformation Recycled Nyala Knit Dress",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/eileenclothing.jpg",
+    "imageDescription": "Eco Airy Organic Cotton Twill Shorts",
+    "item": "Airy Organic Cotton Twill Shorts, EasyFit Short Length",
+    "price": "$128.00",
+    "link": "https://www.eileenfisher.com/airy-organic-cotton-twill-shorts/S3PGG-P4690.html?loc=US",
+    "linkDescription": "Airy Organic Cotton Twill Shorts",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/eileen2clothing.jpg",
+    "imageDescription": "Organic Cotton Gauze Wide-Leg Pant",
+    "item": "Organic Cotton Gauze Wide-Leg Pant",
+    "price": "$178.00",
+    "link": "https://www.eileenfisher.com/organic-cotton-gauze-wide-leg-pant/S3GBA-P4643-PICANTE.html?loc=default&dwvar_S3GBA-P4643-PICANTE_color=807",
+    "linkDescription": "Organic Cotton Gauze Wide-Leg Pant",
+    "category": "women's clothing"
+  },
+  {
+    "image": "img/mightlykids.jpg",
+    "imageDescription": "Pre-owned Green | White | Stripes PJ",
+    "item": "Pre-owned Green | White | Stripes PJ",
+    "price": "$19.00",
+    "link": "https://www.mightly.com/collections/lightly-loved-pajamas/products/pre-owned-green-white-stripes-pj-set-size-2t",
+    "linkDescription": "Pre-owned Green | White | Stripes PJ",
+    "category": "kid's clothing"
+  },
+  {
+    "image": "img/sustainkids.jpg",
+    "imageDescription": "Sustainable Kids Avocado Striped Tee",
+    "item": "Sustainable Kids Avocado Striped Tee",
+    "price": "$36.00",
+    "link": "https://sustainbykat.com/collections/kids-tees/products/kids-avocado-stripe-tee",
+    "linkDescription": "Sustainable Kids Avocado Striped Tee",
+    "category": "kid's clothing"
+  },
+  {
+    "image": "img/crannkids.jpg",
+    "imageDescription": "Kids' Organic Cotton Green Hoodie",
+    "item": "Kids' Organic Cotton Green Hoodie",
+    "price": "$48.00",
+    "link": "https://crannorganic.com/collections/organic-childrens-sweatshirt/products/kids-green-hoodie",
+    "linkDescription": "Kids' Organic Cotton Green Hoodie",
+    "category": "kid's clothing"
+  },
+  {
+    "image": "img/dyperbaby.jpg",
+    "imageDescription": "Organic Bamboo Viscose Baby Diapers",
+    "item": "Organic Bamboo Viscose Baby Diapers",
+    "price": "$94.99",
+    "link": "https://www.babylist.com/gp/dyper-bamboo-viscose-baby-diapers/36342/1388790",
+    "linkDescription": "Organic Bamboo Viscose Baby Diapers",
+    "category": "baby clothing & products"
+  },
+  {
+    "image": "img/snugglebaby.jpg",
+    "imageDescription": "Snuggle Me Organic Infant Lounger",
+    "item": "Snuggle Me Organic Infant Lounger",
+    "price": "$109.00",
+    "link": "https://www.babylist.com/gp/snuggle-me-organic-organic-infant-lounger/20182/449149",
+    "linkDescription": "Snuggle Me Organic Infant Lounger",
+    "category": "baby clothing & products"
+  },
+  {
+    "image": "img/oeufbaby.jpg",
+    "imageDescription": "Oeuf® Sustainably Made Classic Crib",
+    "item": "Oeuf® Sustainably Made Classic Crib",
+    "price": "$1,065.00",
+    "link": "https://oeufnyc.com/collections/nursery/products/classic-crib",
+    "linkDescription": "Oeuf® Sustainably Made Classic Crib",
+    "category": "baby clothing & products"
+  },
+  {
+    "image": "img/zwskitchen.jpg",
+    "imageDescription": "Beeswax Food Wraps - Variety Packs",
+    "item": "Beeswax Food Wraps - Variety Packs",
+    "price": "$18.99",
+    "link": "https://zerowastestore.com/products/beeswax-reusable-food-wrap-variety-pack?variant=40731505721455",
+    "linkDescription": "Beeswax Food Wraps - Variety Packs",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/earthherokitchen.jpg",
+    "imageDescription": "Marley's Monsters Organic Unpaper Towels",
+    "item": "Marley's Monsters Organic Unpaper Towels",
+    "price": "$19.99",
+    "link": "https://earthhero.com/collections/marleys-monsters/products/marleys-monsters-organic-reusable-paper-towels-marleys-monsters-earthhero#r",
+    "linkDescription": "Marley's Monsters Organic Unpaper Towels",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/ourplacekitchen.jpg",
+    "imageDescription": "Our Place Set the Table Set",
+    "item": "Our Place Set the Table Set, 20-piece set",
+    "price": "$260.00",
+    "link": "https://fromourplace.com/products/set-the-table?variant=42412685066434",
+    "linkDescription": "Our Place Set the Table Set",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/kleankitchen.jpg",
+    "imageDescription": "32 oz TKWide Insulated Water Bottle",
+    "item": "32 oz TKWide Insulated Water Bottle",
+    "price": "$44.95",
+    "link": "https://www.kleankanteen.com/products/insulated-water-bottle-tkwide-32-oz-twist-straw-cap",
+    "linkDescription": "32 oz TKWide Insulated Water Bottle",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/amazonkitchen.jpg",
+    "imageDescription": "Organic Cotton Produce Bags, 5 Pcs",
+    "item": "Organic Cotton Produce Bags, 5 Pcs",
+    "price": "$16.99",
+    "link": "https://www.amazon.com/gp/product/B01IT37BPG/",
+    "linkDescription": "Organic Cotton Produce Bags, 5 Pcs",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/cratekitchen.jpg",
+    "imageDescription": "Crate & Barrel Acacia Edge-Grain Board",
+    "item": "Crate & Barrel Acacia Edge-Grain Board",
+    "price": "$49.95",
+    "link": "https://www.crateandbarrel.com/crate-and-barrel-acacia-edge-grain-cutting-board/f1009258",
+    "linkDescription": "Crate & Barrel Acacia Edge-Grain Board",
+    "category": "kitchen"
+  },
+  {
+    "image": "img/madebed.jpg",
+    "imageDescription": "Classic Tencel Eucalyptus Sheet Set",
+    "item": "Classic Tencel Eucalyptus Sheet Set",
+    "price": "$195.00",
+    "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-sheet-set",
+    "linkDescription": "Classic Tencel Eucalyptus Sheet Set",
+    "category": "bed"
+  },
+  {
+    "image": "img/made2bed.jpg",
+    "imageDescription": "Tencel Eucalyptus Pillowcase Set",
+    "item": "Tencel Eucalyptus Pillowcase Set",
+    "price": "$49.00",
+    "link": "https://www.madetrade.com/products/eucalypso-tencel-eucalyptus-pillowcase-set",
+    "linkDescription": "Tencel Eucalyptus Pillowcase Set",
+    "category": "bed"
+  },
+  {
+    "image": "img/underbed.jpg",
+    "imageDescription": "Organic Cotton & Wool Throw/Blanket",
+    "item": "Organic Cotton & Wool Throw/Blanket",
+    "price": "$178.00",
+    "link": "https://underthecanopy.com/products/dot-print-organic-cotton-wool-throw-woodland-green",
+    "linkDescription": "Organic Cotton & Wool Throw/Blanket",
+    "category": "bed"
+  },
+  {
+    "image": "img/under2bed.jpg",
+    "imageDescription": "Organically Made Cotton Quilt",
+    "item": "Organically Made Cotton Quilt/Blanket",
+    "price": "$158.00",
+    "link": "https://underthecanopy.com/products/organic-cotton-quilt-moss-green",
+    "linkDescription": "Organically Made Cotton Quilt",
+    "category": "bed"
+  },
+  {
+    "image": "img/westbed.jpg",
+    "imageDescription": "Organic Down Alternative Pillow Insert",
+    "item": "Organic Down Alternative Pillow Insert",
+    "price": "$25.00",
+    "link": "https://www.westelm.com/products/down-alternative-pillow-insert-b3381/?pkey=cpillow-inserts-bedding",
+    "linkDescription": "Organic Down Alternative Pillow Insert",
+    "category": "bed"
+  },
+  {
+    "image": "img/west2bed.jpg",
+    "imageDescription": "Organic European Flax Linen Bed Skirt",
+    "item": "Organic European Flax Linen Bed Skirt",
+    "price": "$110.00",
+    "link": "https://www.westelm.com/products/linen-bed-skirt-b3283/?pkey=cbed-skirts-covers",
+    "linkDescription": "Organic European Flax Linen Bed Skirt",
+    "category": "bed"
+  }
 ]
