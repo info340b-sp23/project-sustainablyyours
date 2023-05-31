@@ -6,7 +6,7 @@ export function Contact() {
             <main>
             <div className="content">
                 <div className="div-text">
-                <form>
+                <form action="https://formsubmit.co/kadenk10@uw.edu" method="POST">
                     <h1 className="div-contact">Contact Us!</h1>
                     <p>Fill out the contact form or email us at <a href="mailto:info@sustainablyyours.com" className="email email-contact">info@sustainablyyours.com</a></p>
                     <label htmlFor="name">Name:</label>
