@@ -11,12 +11,16 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",
+    "firebase": "^9.22.1",
+    "json-server": "^0.17.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-firebaseui": "https://gitpkg.now.sh/gvillenave/firebaseui-web-react/dist",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "whatwg-fetch": "^3.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This repository contains code for an interactive information web app, SustainablyYours.com, a platform that provides users with access to a wide range of sustainable products from various brands and local small businesses. The platform aims to promote sustainable consumption by offering a curated selection of products that meet sustainability criteria such as eco-friendly practices, fair trade, and ethical sourcing.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

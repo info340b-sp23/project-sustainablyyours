@@ -13,9 +13,25 @@ import { ErrorPage } from "./components/error";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+const url = './data/shop-items.json'
 
-export function App(props) 
-{
+function requestData() {
+    fetch(url)
+        .then((response) => {
+            console.log("recieved:", response.url);
+            const dataPromise = response.json();
+            console.log(dataPromise);
+            return dataPromise;
+        })
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.log("Error:", error)
+        })
+};
+
+export function App(props) {
     return (
     <div className="container-fluid">
         <Header />
@@ -36,27 +52,4 @@ export function App(props)
         {window.location.pathname !== "/shop" && <Footer />}
     </div>
     )
-}
-
-function AllItemsWrapperNew(props){
-  const params = useParams();
-  if (!params.category){
-    return <AllItems items={props.itemsInWrapper}/>
-  }
-  else {
-    const decodedCategory = decodeURIComponent(params.category);
-    // console.log(decodedCategory);
-    return <AllItems items={props.itemsInWrapper} category={decodedCategory} />;
-  }
-}
-
-function AllItemsWrapper(props) {
-  const params = useParams();
-  
-  const match = props.match;
-  console.log(params)
-  const { category } = match.params;
-  const decodedCategory = decodeURIComponent(category);
-
-  return <AllItems category={decodedCategory} />;
 }

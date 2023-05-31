@@ -1,4 +1,4 @@
-import React, {useState, useEffect, } from "react";
+import React, {useState, useEffect } from "react";
 import { useNavigate, useParams} from 'react-router-dom';
 
 
@@ -32,7 +32,8 @@ export function AllItems(props) {
             // Filter items based on the selected category
             if (selectedCategory === "") {
               return val;
-            } else {
+            }
+            else {
               return val.category === selectedCategory;
             }
         })
