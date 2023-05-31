@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 export function Account() {
   const navigate = useNavigate();
@@ -42,11 +44,27 @@ export function Account() {
     return true;
   };
 
+  const firebaseUIConfig = {
+    signInOptions: [ //array of sign in options supported
+      //array can include just "Provider IDs", or objects with the IDs and options
+      GoogleAuthProvider.PROVIDER_ID,
+      { provider: EmailAuthProvider.PROVIDER_ID, requiredDisplayName: true },
+    ],
+    signInFlow: 'popup', //don't redirect to authenticate
+    credentialHelper: 'none', //don't show the email account chooser
+    callbacks: { //"lifecycle" callbacks
+      signInSuccessWithAuthResult: () => {
+        return false; //don't redirect after authentication
+      }
+    }
+  }
+
   return (
     <div className="about-page container">
         <main>
           <section className="content">
-            <form className="form" onSubmit={handleSubmit}>
+            <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={getAuth()} />
+            {/* <form className="form" onSubmit={handleSubmit}>
               <h1>Account Login</h1>
               <div className={`form-group ${usernameError ? "error" : ""}`}>
                 <label htmlFor="username_input">Username:</label>
@@ -82,7 +100,7 @@ export function Account() {
                 </p>
               </div>
               <input type="submit" value="Submit" />
-            </form>
+            </form> */}
           </section>
         </main>
       </div>
