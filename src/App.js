@@ -15,13 +15,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import items from './data/shop-items.json'
 const url = './data/shop-items.json'
 
-function handleDataFetch(data) {
-    // Do something with the fetched data
-    console.log(data);
-  }
-
-
-
 export function App(props) {
 
     const [shopItems, setShopItems] = useState([]);
@@ -50,11 +43,8 @@ export function App(props) {
                 <Route path="/" element={<Intro />} />
                 <Route path="intro" element={<Intro />} />
                 <Route path="about" element={<About />} />
-                {/* <Route path="shop" element={<AllItems items={props.items} />} /> */}
-                    {/* <Route path=":category?" element={<AllItemsWrapper />} /> Route for the updated component */}
                 <Route path="shop/:category?" element= {
                     <AllItems items={shopItems} />
-                    // onDataFetch={handleDataFetch}
                 }/>
                 <Route path="contact" element={<Contact />} />
                 <Route path="account" element={<Account />} />
