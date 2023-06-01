@@ -37,7 +37,7 @@ export function AllItems(props) {
               return val.category === selectedCategory;
             }
         })
-    console.log(searchItemsTmp[0])
+    // console.log(searchItemsTmp[0])
     
     const searchItems = searchItemsTmp.map(
             (val) => (
@@ -60,7 +60,6 @@ export function AllItems(props) {
                 </div>
             </div>
         ));
-    
 
     const handleCategoryChange = (event) => {
         const selectedValue = event.target.value;
