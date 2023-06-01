@@ -1,7 +1,7 @@
 const form = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
-const phoneInput = document.getElementById('phone_number');
+const phoneInput = document.getElementById('phone number');
 
 form.addEventListener('submit', (e) => {
 
