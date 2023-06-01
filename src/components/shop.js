@@ -9,8 +9,8 @@ export function AllItems(props) {
     const [selectedCategory, setSelectedCategory] = useState("");
     const navigate = useNavigate();
 
-    console.log("searchTerm " + searchTerm);
-    console.log("selectedCategory " + selectedCategory);
+    // console.log("searchTerm " + searchTerm);
+    // console.log("selectedCategory " + selectedCategory);
 
     useEffect(()=>{
         const category = params.category || ""
@@ -63,8 +63,9 @@ export function AllItems(props) {
 
     const handleCategoryChange = (event) => {
         const selectedValue = event.target.value;
-        console.log("handleCategoryChange " + selectedValue);
+        // console.log("handleCategoryChange " + selectedValue);
         setSelectedCategory(selectedValue);
+        setSearchTerm(''); 
         navigate(`/shop/${encodeURIComponent(selectedValue)}`); // Update the URL parameter
         };
 
@@ -73,9 +74,9 @@ export function AllItems(props) {
         <main >
         <form className="search" action="/search">
             <label form="search"><i className="fa-solid fa-magnifying-glass"></i> Search:</label>
-            <input type="text" id="search" name="q" placeholder="Search SustainablyYours" onChange={(event) => {
-            setSearchTerm(event.target.value);
-          }} />
+            <input type="text" id="search" name="q"placeholder="Search SustainablyYours"
+            onChange={(event) => 
+            {setSearchTerm(event.target.value);}} value={searchTerm} />
         </form>
         
         <p className="category-select">Choose a category:</p>
