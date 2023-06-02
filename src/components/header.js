@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { getAuth, signOut } from "firebase/auth";
-
+import { Link } from "react-router-dom";
 
 export function Header(props) {
 
@@ -29,13 +29,14 @@ export function Header(props) {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="nav-item" href="/intro" aria-label="home page">Home</Nav.Link>
-              <Nav.Link className="nav-item" href="/about" aria-label="about us page">About Us</Nav.Link>
-              <Nav.Link className="nav-item" href="/shop" aria-label="shop page">Shop</Nav.Link>
-              <Nav.Link className="nav-item" href="/contact" aria-label="contact us page">Contact</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/intro" aria-label="home page">Home</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/about" aria-label="about us page">About Us</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/shop" aria-label="shop page">Shop</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/contact" aria-label="contact us page">Contact</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/wishlist" aria-label="wishlist page">WishList - Test</Nav.Link>
 
               {!props.user &&
-                <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
+                <Nav.Link className="nav-item" as={Link} to="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
               {props.user &&
                 <Nav>               
                   <Nav.Link onClick={showSignOut} className="nav-item">Sign out</Nav.Link>

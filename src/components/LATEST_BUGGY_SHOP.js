@@ -33,8 +33,10 @@ export function AllItems(props) {
   };
 
   const isInWishlist = (item) => {
-    return props.wishlist && props.wishlist.some((wishlistItem) => wishlistItem.item === item.item);
+    return item["isInWishlist"]
+    // return props.wishlist && props.wishlist.some((wishlistItem) => wishlistItem.item === item.item);
   };
+
 
   const searchItemsTmp = shopData
     .filter((val) => {

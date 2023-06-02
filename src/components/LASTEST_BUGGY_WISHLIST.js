@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export function Wishlist(props) {
+  console.log(props.wishlist)
   const handleRemoveFromWishlist = (item) => {
     props.removeFromWishlist(item);
   };

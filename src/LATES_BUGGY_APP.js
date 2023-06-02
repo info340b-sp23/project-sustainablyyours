@@ -5,14 +5,16 @@ import { About } from "./components/about";
 import { Footer } from "./components/footer";
 import { Contact } from "./components/contact";
 import { Account } from "./components/account";
-import { AllItems } from "./components/shop";
-import { Wishlist } from "./components/wishlist";
+// import { AllItems } from "./components/shop";
+import { AllItems } from "./components/LATEST_BUGGY_SHOP";
+// import { Wishlist } from "./components/wishlist";
 import { Routes, Route } from "react-router-dom";
 import { ErrorPage } from "./components/error";
 import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
+import { Wishlist } from "./components/LASTEST_BUGGY_WISHLIST";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -41,6 +43,7 @@ export function App(props) {
   useEffect(() => {
     fetchJSONFromFile(url);
   }, []);
+
 
   const [user, loading] = useAuthState(getAuth());
   const currentUser = user;
@@ -83,7 +86,10 @@ export function App(props) {
         <Route
           path="shop/:category?"
           element={
-            <AllItems items={shopItems} addToWishlist={addToWishlist} />
+            <AllItems items={shopItems}
+            addToWishlist={addToWishlist}
+            removeFromWishlist={removeFromWishlist}
+            user={currentUser} />
           }
         />
         <Route path="contact" element={<Contact />} />

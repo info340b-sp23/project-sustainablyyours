@@ -154,6 +154,10 @@ body {
   animation: floatIn 3s forwards;
 }
 
+.yellow-star {
+  color: #ffdf00;
+}
+
 /* account page */
 form {
   font-family: 'Inter', serif;
