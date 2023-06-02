@@ -3,9 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { getAuth, signOut } from "firebase/auth";
 
 
-export function Header() {
+export function Header(props) {
+
+
+  const showLogOutModal = () => {
+    props.showLogOut(true);
+}
 
   return (
     <Navbar bg="body" expand='lg' className="mb-3">
@@ -28,7 +34,12 @@ export function Header() {
               <Nav.Link className="nav-item" href="/about" aria-label="about us page">About Us</Nav.Link>
               <Nav.Link className="nav-item" href="/shop" aria-label="shop page">Shop</Nav.Link>
               <Nav.Link className="nav-item" href="/contact" aria-label="contact us page">Contact</Nav.Link>
-              <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>
+
+              {!props.user && <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
+              {props.user &&
+                <Nav className="me-auto">               
+                  <Nav.Link onClick={showLogOutModal} className="nav-item">Sign out</Nav.Link>
+                </Nav>}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

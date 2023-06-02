@@ -1,48 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
+import { getAuth, EmailAuthProvider, GoogleAuthProvider, onAuthStateChanged } from 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 export function Account() {
-  const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [usernameError, setUsernameError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
+  // const navigate = useNavigate();
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [usernameError, setUsernameError] = useState("");
+  // const [passwordError, setPasswordError] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (!validateUsername() || !validatePassword()) {
-      return;
-    }
-    // Perform login logic here
-    navigate("/wishlist"); // Navigate to the wishlist page after successful login
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (!validateUsername() || !validatePassword()) {
+  //     return;
+  //   }
+  //   // Perform login logic here
+  //   navigate("/wishlist"); // Navigate to the wishlist page after successful login
+  // };
 
-  function validateUsername()
-  {
-    if (username.length < 2 || username.length > 30) 
-    {
-      setUsernameError("Username must be between 2 and 30 characters");
-      return false;
-    }
+  // function validateUsername()
+  // {
+  //   if (username.length < 2 || username.length > 30) 
+  //   {
+  //     setUsernameError("Username must be between 2 and 30 characters");
+  //     return false;
+  //   }
 
-    setUsernameError("");
-    return true;
-  };
+  //   setUsernameError("");
+  //   return true;
+  // };
 
-  function validatePassword()
-  {
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  // function validatePassword()
+  // {
+  //   const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     
-    if (!passwordRegex.test(password)) 
-    {
-      setPasswordError("Password must contain at least 8 characters, 1 uppercase letter, 1 number, and 1 symbol");
-      return false;
-    }
-    setPasswordError("");
-    return true;
-  };
+  //   if (!passwordRegex.test(password)) 
+  //   {
+  //     setPasswordError("Password must contain at least 8 characters, 1 uppercase letter, 1 number, and 1 symbol");
+  //     return false;
+  //   }
+  //   setPasswordError("");
+  //   return true;
+  // };
 
   const firebaseUIConfig = {
     signInOptions: [ //array of sign in options supported
@@ -58,6 +58,20 @@ export function Account() {
       }
     }
   }
+
+  useEffect(() => {
+  const auth = getAuth()
+  auth.onAuthStateChanged(user => {
+    if (user) {
+      console.log("logged in")
+     
+    }
+    else {
+      console.log("logged out")
+    }
+  })
+  })
+
 
   return (
     <div className="about-page container">

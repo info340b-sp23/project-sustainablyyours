@@ -9,6 +9,10 @@ import { AllItems } from "./components/shop";
 import { Wishlist } from "./components/wishlist";
 import { Routes, Route, useParams } from "react-router-dom";
 import { ErrorPage } from "./components/error";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { LogOut } from "./components/signout"
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -34,19 +38,26 @@ export function App(props) {
         fetchJSONFromFile(url);
 
     }, [])
-    
+    // Start up user authentication
+    const [user, loading] = useAuthState(getAuth());
+    const currentUser = user;
+    // Access database
+    const db = getDatabase();
+    // Dealing with log out modal
+    const [showLogOut, setShowLogOut] = useState(false);
+
     return (
         <div className="container-fluid">
-            <Header />
+            <Header user={currentUser} loading={loading} showLogOut={setShowLogOut} />
+            <LogOut show={showLogOut} setShowLogOut={setShowLogOut} />
             <Routes>
                 <Route path="/" element={<Intro />} />
                 <Route path="intro" element={<Intro />} />
                 <Route path="about" element={<About />} />
                 <Route path="shop/:category?" element= {
-                    <AllItems items={shopItems} />
-                }/>
+                    <AllItems items={shopItems} user={currentUser} />} />
                 <Route path="contact" element={<Contact />} />
-                <Route path="account" element={<Account />} />
+                <Route path="account" element={<Account  user={currentUser} loading={loading} />} />
                 <Route path="wishlist" element={<Wishlist />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
