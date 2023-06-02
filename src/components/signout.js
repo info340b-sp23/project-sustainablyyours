@@ -3,19 +3,19 @@ import { Modal } from "react-bootstrap";
 import { signOut, getAuth } from "firebase/auth";
 
 
-export function LogOut(props) {
+export function SignOut(props) {
     const exitOut = () => {
-        props.setShowLogOut(false);
+        props.setShowSignOut(false);
     }
 
-    const handleLogOut = () => {
+    const handleSignOut = () => {
         signOut(getAuth());
         exitOut();
     }
 
     return (
         <Modal show={props.show} id="signOutModal">
-            <form onSubmit={handleLogOut}>
+            <form onSubmit={handleSignOut}>
                 <Modal.Body>
                     You have signed out of SustainablyYours.
                 </Modal.Body>

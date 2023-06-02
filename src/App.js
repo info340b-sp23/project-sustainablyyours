@@ -12,7 +12,7 @@ import { ErrorPage } from "./components/error";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { LogOut } from "./components/signout"
+import { SignOut } from "./components/signout"
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -43,13 +43,13 @@ export function App(props) {
     const currentUser = user;
     // Access database
     const db = getDatabase();
-    // Dealing with log out modal
-    const [showLogOut, setShowLogOut] = useState(false);
+    // Dealing with sign out modal
+    const [showSignOut, setShowSignOut] = useState(false);
 
     return (
         <div className="container-fluid">
-            <Header user={currentUser} loading={loading} showLogOut={setShowLogOut} />
-            <LogOut show={showLogOut} setShowLogOut={setShowLogOut} />
+            <Header user={currentUser} loading={loading} showSignOut={setShowSignOut} />
+            <SignOut show={showSignOut} setShowSignOut={setShowSignOut} />
             <Routes>
                 <Route path="/" element={<Intro />} />
                 <Route path="intro" element={<Intro />} />

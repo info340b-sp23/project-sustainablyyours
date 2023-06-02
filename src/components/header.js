@@ -8,9 +8,8 @@ import { getAuth, signOut } from "firebase/auth";
 
 export function Header(props) {
 
-
-  const showLogOutModal = () => {
-    props.showLogOut(true);
+  const showSignOut = () => {
+    props.showSignOut(true);
 }
 
   return (
@@ -35,10 +34,11 @@ export function Header(props) {
               <Nav.Link className="nav-item" href="/shop" aria-label="shop page">Shop</Nav.Link>
               <Nav.Link className="nav-item" href="/contact" aria-label="contact us page">Contact</Nav.Link>
 
-              {!props.user && <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
+              {!props.user &&
+                <Nav.Link className="nav-item" href="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
               {props.user &&
-                <Nav className="me-auto">               
-                  <Nav.Link onClick={showLogOutModal} className="nav-item">Sign out</Nav.Link>
+                <Nav>               
+                  <Nav.Link onClick={showSignOut} className="nav-item">Sign out</Nav.Link>
                 </Nav>}
             </Nav>
           </Offcanvas.Body>
