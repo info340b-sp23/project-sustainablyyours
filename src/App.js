@@ -7,9 +7,8 @@ import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
 import { Wishlist } from "./components/wishlist";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import { ErrorPage } from "./components/error";
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,7 +18,6 @@ const url = './data/shop-items.json'
 export function App(props) {
 
     const [shopItems, setShopItems] = useState([]);
-    const [currentUser, setCurrentUser] = useState(undefined);
 
     const fetchJSONFromFile = async (url) => {
         try {
@@ -36,25 +34,6 @@ export function App(props) {
         fetchJSONFromFile(url);
 
     }, [])
-
-    const navigateTo = useNavigate(); 
-
-    //effect to run when the component first loads
-    useEffect(() => {
-    //log in a default user
-    //loginUser(DEFAULT_USERS[0])
-        const auth = getAuth();
-        onAuthStateChanged(auth, (firebaseUserObj) => {
-        console.log("auth state changed");
-        console.log(firebaseUserObj);
-        if(firebaseUserObj) { //if defined
-            setCurrentUser(firebaseUserObj);
-            // navigateTo('/wishlist'); //go to wishlist after         
-            <Route path="account" element={<Wishlist />} />
-        }
-        })
-
-    }, []) 
     
     return (
         <div className="container-fluid">
