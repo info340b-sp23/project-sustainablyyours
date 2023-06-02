@@ -63,7 +63,7 @@ export function Account() {
     <div className="about-page container">
         <main>
           <section className="content">
-            <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={getAuth()} onSubmit={handleSubmit} />
+            <StyledFirebaseAuth className="form" uiConfig={firebaseUIConfig} firebaseAuth={getAuth()} onSubmit={handleSubmit} />
             {/* <form className="form" onSubmit={handleSubmit}>
               <h1>Account Login</h1>
               <div className={`form-group ${usernameError ? "error" : ""}`}>
