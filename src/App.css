@@ -85,7 +85,9 @@ Nav {
 
 Nav .nav-item {
 display: inline-block;
-margin-left: 8vw;
+font-size: 18px;
+margin-left: 5vw;
+margin-right: -2.5vw;
 text-transform: uppercase;
 height: 80px;
 position: relative;
@@ -378,7 +380,7 @@ html {
 .about-section-team {
   padding: 50px;
   text-align: center;
-  color: black;
+  color: rgb(24, 10, 10);
   animation: floatIn 3s forwards;
 }
 
@@ -404,7 +406,7 @@ html {
 
 .background-about{
   background-color: #E8E8E8;
-  border-radius: 2%;
+  border-radius: 6%;
   animation: floatIn 3s forwards;
 } 
 

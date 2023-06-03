@@ -32,8 +32,8 @@ export function Header(props) {
               <Nav.Link className="nav-item" as={Link} to="/intro" aria-label="home page">Home</Nav.Link>
               <Nav.Link className="nav-item" as={Link} to="/about" aria-label="about us page">About Us</Nav.Link>
               <Nav.Link className="nav-item" as={Link} to="/shop" aria-label="shop page">Shop</Nav.Link>
+              <Nav.Link className="nav-item" as={Link} to="/wishlist" aria-label="wishlist page">WishList</Nav.Link>
               <Nav.Link className="nav-item" as={Link} to="/contact" aria-label="contact us page">Contact</Nav.Link>
-              <Nav.Link className="nav-item" as={Link} to="/wishlist" aria-label="wishlist page">WishList - Test</Nav.Link>
 
               {!props.user &&
                 <Nav.Link className="nav-item" as={Link} to="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}

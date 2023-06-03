@@ -17,7 +17,7 @@ export function SignOut(props) {
         <Modal show={props.show} id="signOutModal">
             <form onSubmit={handleSignOut}>
                 <Modal.Body>
-                    You have signed out of SustainablyYours.
+                    You have signed out of SustainablyYours. Come back soon!
                 </Modal.Body>
                 <Modal.Footer>
                     <button type="submit" className="btn btn-default">Okay</button>

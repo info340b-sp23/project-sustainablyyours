@@ -45,7 +45,7 @@ export function Wishlist(props) {
       <main>
         <h1>Wishlist</h1>
         {props.wishlist.length === 0 ? (
-          <p>Your wishlist is empty. <Link to="/shop">Browse items</Link> to add to your wishlist.</p>
+          <p>Your SustainablyYours wishlist is empty. <Link to="/shop">Browse items</Link> to add to your wishlist.</p>
         ) : (
           <div className="container">
             <div className="row">{wishlistItems}</div>
