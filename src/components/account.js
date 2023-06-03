@@ -62,17 +62,14 @@ export function Account() {
   const navigateTo = useNavigate();
   
   useEffect(() => {
-  const auth = getAuth()
-  auth.onAuthStateChanged(user => {
-    if (user) {
-      console.log("logged in")
-      navigateTo('/shop'); 
-    }
-    else {
-      console.log("logged out")
-    }
-  })
-  })
+    const auth = getAuth()
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        navigateTo('/shop'); 
+        console.log(user)
+      }
+    });
+  });
 
   return (
     <div className="about-page container">

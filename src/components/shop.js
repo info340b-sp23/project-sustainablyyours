@@ -76,6 +76,9 @@ export function AllItems(props) {
               </a>
               <i
                 className={`fas fa-star fa-xl ${isInWishlist(val) ? "yellow-star" : ""}`}
+                title="Add Item to Wishlist"
+                aria-label="add item from wishlist"
+                aria-hidden="true"
                 onClick={() => {
                   if (isInWishlist(val)) {
                     handleRemoveFromWishlist(val);

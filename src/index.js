@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import 'whatwg-fetch';
 
-// import {App} from './App';
-import {App} from "./App.js";
+import { App } from './App';
 import './App.css';
 
 // Import the functions you need from the SDKs you need
