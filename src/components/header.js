@@ -39,7 +39,7 @@ export function Header(props) {
                 <Nav.Link className="nav-item" as={Link} to="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
               {props.user &&
                 <Nav>               
-                  <Nav.Link onClick={showSignOut} className="nav-item">Sign out</Nav.Link>
+                  <Nav.Link onClick={showSignOut} className="nav-item"><i class="fa-solid fa-right-from-bracket"></i></Nav.Link>
                 </Nav>}
             </Nav>
           </Offcanvas.Body>
