@@ -1,33 +1,85 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-export function Wishlist() {
-    return(
-    <div className="about-page container">      
-    <main>
-      <h1>Wishlist</h1>
-              
-      <div className="container">
-      <div className="row">
-        <div className="col-md-6 col-xl-3 d-flex">
-        <div className="card mb-4">
-          <div className="card-body">
+export function Wishlist(props) {
+  const [userSignedIn, setUserSignedIn] = useState(false);
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUserSignedIn(true);
+      } else {
+        setUserSignedIn(false);
+      }
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  const handleRemoveFromWishlist = (item) => {
+    props.removeFromWishlist(item);
+  };
+
+  const wishlistItems = props.wishlist.map((item) => (
+    <div className="col-md-6 col-xl-3 d-flex" key={item.item}>
+      <div className="card mb-4">
+        <div className="card-body">
           <div className="row">
             <div className="col-sm-auto col-xl-12">
-              <img src="img/outerknown-yellow-puffer.png" className="pb-3" alt="yellow puffer jacket from Outerknown" />
+              <img src={item.image} className="pb-3" alt={item.imageDescription} />
             </div>
             <div className="col-sm">
-              <p className="card-text">Outerknown Summer Yellow OK Mono Puffer Shirt Jacket</p>
-              <p className="card-text">$398.00</p>
-              <a href="https://www.outerknown.com/products/ok-mono-puffer-shirt-jacket-summer-yellow" aria-label="Outerknown Summer Yellow OK Mono Puffer Shirt Jacket" target="_blank" className="btn btn-dark">View on Company Website</a>
-              <i title="Remove Item to Wishlist" aria-label="remove item from wishlist" aria-hidden="true" className="fa-solid fa-star fa-xl remove-from-wishlist"></i>
+              <p className="card-text">{item.item}</p>
+              <p className="card-text">{item.price}</p>
+              <a
+                href={item.link}
+                aria-label={item.linkDescription}
+                target="_blank"
+                className="btn btn-dark"
+              >
+                View on Company Website
+              </a>
+              <i
+                title="Remove Item from Wishlist"
+                aria-label="remove item from wishlist"
+                aria-hidden="true"
+                className="fa-solid fa-star fa-xl yellow-star"
+                onClick={() => handleRemoveFromWishlist(item)}
+              ></i>
             </div>
           </div>
-          </div>
-        </div>
         </div>
       </div>
-      </div>
-    </main>
     </div>
+  ));
 
-)}
+  return (
+    <div className="about-page container">
+      <main>
+        <h1>Wishlist</h1>
+        {userSignedIn ? (
+          <div>
+            {props.wishlist.length === 0 ? (
+              <p>
+                Your SustainablyYours wishlist is empty.{" "}
+                <Link to="/shop">Browse items</Link> to add to your wishlist.
+              </p>
+            ) : (
+              <div className="container">
+                <div className="row">{wishlistItems}</div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <p>
+            Please <Link to="/account"> sign in</Link> to view your wishlist.{" "}
+          </p>
+        )}
+      </main>
+    </div>
+  );
+}

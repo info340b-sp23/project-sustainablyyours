@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'whatwg-fetch';
 
 // import {App} from './App';
-import {App} from "./LATES_BUGGY_APP.js";
+import {App} from "./App.js";
 import './App.css';
 
 // Import the functions you need from the SDKs you need
