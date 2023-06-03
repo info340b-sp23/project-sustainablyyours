@@ -47,7 +47,7 @@ export function Wishlist(props) {
                 title="Remove Item from Wishlist"
                 aria-label="remove item from wishlist"
                 aria-hidden="true"
-                className="fa-solid fa-star fa-xl yellow-star"
+                className="fa-solid fa-star fa-xl yellow-star remove-from-wishlist"
                 onClick={() => handleRemoveFromWishlist(item)}
               ></i>
             </div>
