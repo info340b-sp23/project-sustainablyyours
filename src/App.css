@@ -552,6 +552,12 @@ label, #sustainable-items {
   color: #4bb45c;
 }
 
+/* real wishlist page */
+.wishlist-page {
+  text-align: center;
+  font-family: sans-serif;;
+}
+
 /* Login Error Page */
 .form-group {
   position: relative;
