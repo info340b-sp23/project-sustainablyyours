@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 export function Wishlist(props) {
-  console.log(props.wishlist)
+  const [userSignedIn, setUserSignedIn] = useState(false);
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUserSignedIn(true);
+      } else {
+        setUserSignedIn(false);
+      }
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
   const handleRemoveFromWishlist = (item) => {
     props.removeFromWishlist(item);
   };
@@ -44,12 +61,23 @@ export function Wishlist(props) {
     <div className="about-page container">
       <main>
         <h1>Wishlist</h1>
-        {props.wishlist.length === 0 ? (
-          <p>Your SustainablyYours wishlist is empty. <Link to="/shop">Browse items</Link> to add to your wishlist.</p>
-        ) : (
-          <div className="container">
-            <div className="row">{wishlistItems}</div>
+        {userSignedIn ? (
+          <div>
+            {props.wishlist.length === 0 ? (
+              <p>
+                Your SustainablyYours wishlist is empty.{" "}
+                <Link to="/shop">Browse items</Link> to add to your wishlist.
+              </p>
+            ) : (
+              <div className="container">
+                <div className="row">{wishlistItems}</div>
+              </div>
+            )}
           </div>
+        ) : (
+          <p>
+            Please <Link to="/account"> sign in</Link> to view your wishlist.{" "}
+          </p>
         )}
       </main>
     </div>
