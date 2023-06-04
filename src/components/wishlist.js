@@ -30,7 +30,7 @@ export function Wishlist(props) {
         <div className="card-body">
           <div className="row">
             <div className="col-sm-auto col-xl-12">
-              <img src={item.image} className="pb-3" alt={item.imageDescription} />
+              <img src={item.image} className="pb-3 wishlist-image" alt={item.imageDescription} />
             </div>
             <div className="col-sm">
               <p className="card-text">{item.item}</p>
@@ -67,6 +67,7 @@ export function Wishlist(props) {
               <p>
                 Your SustainablyYours wishlist is empty.{" "}
                 <Link to="/shop">Browse items</Link> to add to your wishlist.
+                
               </p>
             ) : (
               <div className="container">
@@ -76,7 +77,8 @@ export function Wishlist(props) {
           </div>
         ) : (
           <p>
-            Please <Link to="/account"> sign in</Link> to view your wishlist.{" "}
+            Please <Link to="/account"> sign in</Link> to view your wishlist.
+            
           </p>
         )}
       </main>

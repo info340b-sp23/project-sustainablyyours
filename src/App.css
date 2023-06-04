@@ -558,6 +558,12 @@ label, #sustainable-items {
   font-family: sans-serif;;
 }
 
+/*wishlist image*/
+.wishlist-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 /* Login Error Page */
 .form-group {
   position: relative;
