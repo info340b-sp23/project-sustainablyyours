@@ -20,9 +20,19 @@ import "bootstrap/dist/css/bootstrap.css";
 const url = "./data/shop-items.json";
 
 export function App(props) {
+  // User auth
+  const [user, loading] = useAuthState(getAuth());
+  const currentUser = user;
+  // Show items when not empty
   const [shopItems, setShopItems] = useState([]);
-  const [wishlist, setWishlist] = useState([]); // Maintain wishlist data here
+  // Access database
+  const db = getDatabase();
+  // Maintain wishlist data here
+  const [wishlist, setWishlist] = useState([]); 
+  // Sign out only when click sign out
+  const [showSignOut, setShowSignOut] = useState(false);
 
+  // External data
   const fetchJSONFromFile = async (url) => {
     try {
       const response = await fetch(url);
@@ -41,12 +51,6 @@ export function App(props) {
   useEffect(() => {
     fetchJSONFromFile(url);
   }, []);
-
-
-  const [user, loading] = useAuthState(getAuth());
-  const currentUser = user;
-  const db = getDatabase();
-  const [showSignOut, setShowSignOut] = useState(false);
 
   const addToWishlist = (item) => {
     const updatedShopItems = shopItems.map((shopItem) => {
@@ -72,7 +76,6 @@ export function App(props) {
     );
   };
   
-
   return (
     <div className="container-fluid">
       <Header user={currentUser} loading={loading} showSignOut={setShowSignOut} />
@@ -93,7 +96,8 @@ export function App(props) {
         <Route path="contact" element={<Contact />} />
         <Route
           path="account"
-          element={<Account user={currentUser} loading={loading} />}
+          element={<Account user={currentUser}
+          loading={loading} />}
         />
         <Route
           path="wishlist"

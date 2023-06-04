@@ -29,6 +29,7 @@ export function AllItems(props) {
   const handleAddToWishlist = (item) => {
     if (props.user) {
       props.addToWishlist(item);
+      // console.log(item)
     }
   };
 
@@ -36,7 +37,6 @@ export function AllItems(props) {
     return item["isInWishlist"]
     // return props.wishlist && props.wishlist.some((wishlistItem) => wishlistItem.item === item.item);
   };
-
 
   const searchItemsTmp = shopData
     .filter((val) => {
