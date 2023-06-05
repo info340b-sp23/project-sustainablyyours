@@ -132,6 +132,14 @@ nav ul li {
   transition: 0.3s;
 }
 
+#wishlist-bubble {
+  padding: 15px 35px;
+  color: #fff;
+  background-color: #086404;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
 .content .div-text .btn:hover {
   color: #fff;
   background-color: #086404;
@@ -562,6 +570,8 @@ label, #sustainable-items {
 .wishlist-image {
   max-width: 300px;
   max-height: 300px;
+  margin-top: 7rem;
+  margin-bottom: 0;
 }
 
 /* Login Error Page */

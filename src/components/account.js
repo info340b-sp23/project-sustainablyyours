@@ -66,7 +66,6 @@ export function Account() {
     auth.onAuthStateChanged(user => {
       if (user) {
         navigateTo('/shop'); 
-        console.log(user)
       }
     });
   });

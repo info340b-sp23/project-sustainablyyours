@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export function AllItems(props) {
   const params = useParams();

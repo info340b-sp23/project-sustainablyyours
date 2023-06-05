@@ -8,11 +8,12 @@ import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
 import { Routes, Route } from "react-router-dom";
 import { ErrorPage } from "./components/error";
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
 import { Wishlist } from "./components/wishlist";
+import { ref, push as firebasePush, onValue } from "firebase/database";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -31,6 +32,7 @@ export function App(props) {
   const [wishlist, setWishlist] = useState([]); 
   // Sign out only when click sign out
   const [showSignOut, setShowSignOut] = useState(false);
+
 
   // External data
   const fetchJSONFromFile = async (url) => {
