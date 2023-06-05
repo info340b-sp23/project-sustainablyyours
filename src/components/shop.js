@@ -115,7 +115,7 @@ export function AllItems(props) {
     <main>
       <div className="category-search-container">
         <div className="category-dropdown">
-          <br></br><p className="category-select">Choose a category:</p>
+          <p className="category-select">Choose a category:</p>
           <select value={selectedCategory} onChange={handleCategoryChange}>
             <option value="">Select a category</option>
             <optgroup label="Audio &amp; Tech">
