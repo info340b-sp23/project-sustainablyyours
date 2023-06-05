@@ -8,12 +8,11 @@ import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
 import { Routes, Route } from "react-router-dom";
 import { ErrorPage } from "./components/error";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { getDatabase } from "firebase/database";
+import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
 import { Wishlist } from "./components/wishlist";
-import { ref, push as firebasePush, onValue } from "firebase/database";
+import { getDatabase, set as firebaseSet, ref, push, remove, onValue } from 'firebase/database';
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -28,6 +27,8 @@ export function App(props) {
   const [shopItems, setShopItems] = useState([]);
   // Access database
   const db = getDatabase();
+  // Get reference to "wishlist" propety in database
+  const wishlistRef = ref(db, "wishlist");
   // Maintain wishlist data here
   const [wishlist, setWishlist] = useState([]); 
   // Sign out only when click sign out
@@ -63,6 +64,8 @@ export function App(props) {
     });
     setShopItems(updatedShopItems);
     setWishlist((prevWishlist) => [...prevWishlist, item]);
+    const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
+    push(wishlistRef, item);
   };
   
   const removeFromWishlist = (item) => {
@@ -74,8 +77,9 @@ export function App(props) {
     });
     setShopItems(updatedShopItems);
     setWishlist((prevWishlist) =>
-      prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item)
-    );
+      prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item));
+    const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
+    remove(wishlistRef, item);
   };
   
   return (

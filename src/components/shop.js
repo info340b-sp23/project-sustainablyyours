@@ -103,7 +103,7 @@ export function AllItems(props) {
   // Render the loading spinner if the loading state is true
   if (loading) {
     return (
-      <div class="page-container">
+      <div className="page-container">
         <div className="loader-container">
           <FontAwesomeIcon icon={FontAwesomeIcon} spin />
         </div>
