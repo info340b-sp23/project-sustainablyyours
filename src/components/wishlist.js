@@ -65,8 +65,8 @@ export function Wishlist(props) {
             {props.wishlist.length === 0 ? (
               <p>
                 <img className="wishlist-image" src="img/shoppingcart.jpg" aria-label="Green Shopping Cart" alt="Green Shopping Cart" />  <br></br> <br></br>
-                Your SustainablyYours wishlist is empty.{" "}
-                <Link to="/shop">Browse items</Link> to add to your wishlist.
+                Your SustainablyYours wishlist is empty. Browse items to add to your wishlist. <br></br><br></br>
+                <a href="/shop" className="btn" id="wishlist-bubble">Browse Items</a>
               </p>
             ) : (
               <div className="container">
@@ -78,9 +78,8 @@ export function Wishlist(props) {
           <div>
             <p>
               <img className="wishlist-image" src="img/shoppingcart.jpg" aria-label="Green Shopping Cart" alt="Green Shopping Cart" /> <br></br> <br></br>
-              Please <Link to="/account"> sign in</Link> to view your wishlist. 
+              Please sign in to view your wishlist. 
             </p>
-
             <a href="/account" className="btn" id="wishlist-bubble">Sign in</a>
           </div>
         )}

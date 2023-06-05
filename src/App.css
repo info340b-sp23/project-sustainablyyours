@@ -135,7 +135,7 @@ nav ul li {
 #wishlist-bubble {
   padding: 15px 35px;
   color: #fff;
-  background-color: #086404;
+  background-color: #4ab45d;
   text-transform: uppercase;
   border-radius: 30px;
 }
@@ -570,7 +570,7 @@ label, #sustainable-items {
 .wishlist-image {
   max-width: 300px;
   max-height: 300px;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 0;
 }
 
