@@ -16,7 +16,7 @@ export function AllItems(props) {
     // Simulate a delay using setTimeout
     setTimeout(() => {
       setLoading(false); // Mark loading as false after a delay
-    }, 2500); // Adjust the delay duration as needed -- this is 3 seconds
+    }, 2500); // Adjust the delay duration as needed -- this is 2.5 seconds
   }, []);
 
   const handleCategoryChange = (event) => {
@@ -113,48 +113,53 @@ export function AllItems(props) {
 
   return (
     <main>
-      <form className="search" action="/search">
-        <label htmlFor="search">
-          <i className="fa-solid fa-magnifying-glass"></i> Search:
-        </label>
-        <input
-          type="text"
-          id="search"
-          name="q"
-          placeholder="Search SustainablyYours"
-          onChange={(event) => {
-            setSearchTerm(event.target.value);
-          }}
-          value={searchTerm}
-        />
-      </form>
+      <div className="category-search-container">
+        <div className="category-dropdown">
+          <br></br><p className="category-select">Choose a category:</p>
+          <select value={selectedCategory} onChange={handleCategoryChange}>
+            <option value="">Select a category</option>
+            <optgroup label="Audio &amp; Tech">
+              <option value="tech cases">Tech Cases</option>
+              <option value="chargers &amp; cables">Chargers &amp; Cables</option>
+            </optgroup>
+            <optgroup label="Beauty &amp; Care ">
+              <option value="skin care">Skin Care</option>
+              <option value="hair care">Hair Care</option>
+              <option value="bath &amp; body">Bath &amp; Body</option>
+              <option value="makeup">Makeup</option>
+            </optgroup>
+            <optgroup label="Clothing &amp; Accessories ">
+              <option value="men's clothing">Men's Clothing</option>
+              <option value="women's clothing">Women's Clothing</option>
+              <option value="kid's clothing">Kid's Clothing</option>
+              <option value="baby clothing &amp; products">
+                Baby Clothing &amp; Products
+              </option>
+            </optgroup>
+            <optgroup label="Home &amp; Kitchen ">
+              <option value="kitchen">Kitchen</option>
+              <option value="bed">Bed</option>
+            </optgroup>
+          </select>
+        </div>  
 
-      <p className="category-select">Choose a category:</p>
-      <select value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="">Select a category</option>
-        <optgroup label="Audio &amp; Tech">
-          <option value="tech cases">Tech Cases</option>
-          <option value="chargers &amp; cables">Chargers &amp; Cables</option>
-        </optgroup>
-        <optgroup label="Beauty &amp; Care ">
-          <option value="skin care">Skin Care</option>
-          <option value="hair care">Hair Care</option>
-          <option value="bath &amp; body">Bath &amp; Body</option>
-          <option value="makeup">Makeup</option>
-        </optgroup>
-        <optgroup label="Clothing &amp; Accessories ">
-          <option value="men's clothing">Men's Clothing</option>
-          <option value="women's clothing">Women's Clothing</option>
-          <option value="kid's clothing">Kid's Clothing</option>
-          <option value="baby clothing &amp; products">
-            Baby Clothing &amp; Products
-          </option>
-        </optgroup>
-        <optgroup label="Home &amp; Kitchen ">
-          <option value="kitchen">Kitchen</option>
-          <option value="bed">Bed</option>
-        </optgroup>
-      </select>
+        <form className="search" action="/search">
+          <label htmlFor="search">
+            <i className="fa-solid fa-magnifying-glass"></i> Search:
+          </label>
+          <input
+            type="text"
+            id="search"
+            name="q"
+            placeholder="Search SustainablyYours"
+            onChange={(event) => {
+              setSearchTerm(event.target.value);
+            }}
+            value={searchTerm}
+          />
+        </form>
+      </div>
+      <br></br>
 
       <div className="container">
         <div className="row">{searchItems}</div>
