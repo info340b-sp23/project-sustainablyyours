@@ -159,7 +159,6 @@ export function AllItems(props) {
           />
         </form>
       </div>
-      <br></br>
 
       <div className="container">
         <div className="row">{searchItems}</div>
