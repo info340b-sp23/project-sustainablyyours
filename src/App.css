@@ -540,6 +540,18 @@ label, #sustainable-items {
   margin-bottom: 4px;
 }
 
+.category-search-container {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}
+
+.category-dropdown {
+  margin-left: 72px;
+  margin-top: 20px;
+  margin-right: -100px;
+}
+
+
 .fa-star {
   position: absolute;
   top: .11rem;
