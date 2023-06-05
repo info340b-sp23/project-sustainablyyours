@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function AllItems(props) {
   const params = useParams();
   const shopData = props.items;
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [loading, setLoading] = useState(true); // New loading state
   const navigate = useNavigate();
 
   useEffect(() => {
     const category = params.category || "";
     setSelectedCategory(category);
+    // Simulate a delay using setTimeout
+    setTimeout(() => {
+      setLoading(false); // Mark loading as false after a delay
+    }, 2000); // Adjust the delay duration as needed -- this is 2 seconds
   }, []);
 
   const handleCategoryChange = (event) => {
@@ -35,7 +41,7 @@ export function AllItems(props) {
   };
 
   const isInWishlist = (item) => {
-    return item["isInWishlist"]
+    return item["isInWishlist"];
     // return props.wishlist && props.wishlist.some((wishlistItem) => wishlistItem.item === item.item);
   };
 
@@ -94,6 +100,15 @@ export function AllItems(props) {
       </div>
     </div>
   ));
+
+  // Render the loading spinner if the loading state is true
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <FontAwesomeIcon icon={faSpinner} spin />
+      </div>
+    );
+  }
 
   return (
     <main>

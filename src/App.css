@@ -594,3 +594,11 @@ label, #sustainable-items {
   color: white;
   font-size: 0.9rem;
 }
+
+/*loading circle*/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
