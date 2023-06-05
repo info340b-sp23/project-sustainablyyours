@@ -597,8 +597,30 @@ label, #sustainable-items {
 
 /*loading circle*/
 .loader-container {
+  color: #4ab45d;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #4ab45d;
+  border-bottom: 16px solid #4ab45d;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(480deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(480deg); }
+}
+
+.page-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  height: 70vh; /* Set the container height to occupy the full viewport height */
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function AllItems(props) {
@@ -17,7 +16,7 @@ export function AllItems(props) {
     // Simulate a delay using setTimeout
     setTimeout(() => {
       setLoading(false); // Mark loading as false after a delay
-    }, 2000); // Adjust the delay duration as needed -- this is 2 seconds
+    }, 3000); // Adjust the delay duration as needed -- this is 3 seconds
   }, []);
 
   const handleCategoryChange = (event) => {
@@ -104,8 +103,10 @@ export function AllItems(props) {
   // Render the loading spinner if the loading state is true
   if (loading) {
     return (
-      <div className="loader-container">
-        <FontAwesomeIcon icon={faSpinner} spin />
+      <div class="page-container">
+        <div className="loader-container">
+          <FontAwesomeIcon icon={FontAwesomeIcon} spin />
+        </div>
       </div>
     );
   }
