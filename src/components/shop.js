@@ -16,7 +16,7 @@ export function AllItems(props) {
     // Simulate a delay using setTimeout
     setTimeout(() => {
       setLoading(false); // Mark loading as false after a delay
-    }, 3000); // Adjust the delay duration as needed -- this is 3 seconds
+    }, 2500); // Adjust the delay duration as needed -- this is 3 seconds
   }, []);
 
   const handleCategoryChange = (event) => {
