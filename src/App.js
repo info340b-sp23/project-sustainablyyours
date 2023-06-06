@@ -34,7 +34,6 @@ export function App(props) {
   // Sign out only when click sign out
   const [showSignOut, setShowSignOut] = useState(false);
 
-
   // External data
   const fetchJSONFromFile = async (url) => {
     try {
@@ -64,8 +63,10 @@ export function App(props) {
     });
     setShopItems(updatedShopItems);
     setWishlist((prevWishlist) => [...prevWishlist, item]);
-    const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
-    push(wishlistRef, item);
+    if (currentUser) {
+      const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
+      push(wishlistRef, item);
+    }
   };
   
   const removeFromWishlist = (item) => {
@@ -78,10 +79,34 @@ export function App(props) {
     setShopItems(updatedShopItems);
     setWishlist((prevWishlist) =>
       prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item));
-    const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
-    remove(wishlistRef, item);
+      if (currentUser) {
+        const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
+        remove(wishlistRef);
+      }
   };
-  
+
+
+  useEffect(() => {
+    if (currentUser) {
+      const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
+
+      const offFunction = onValue(wishlistRef, (snapshot) => {
+        const wishlistData = snapshot.val();
+        if (wishlistData) {
+          const wishlistArray = Object.values(wishlistData);
+          setWishlist(wishlistArray);
+        } else {
+          setWishlist([]);
+        }
+      });
+
+      const cleanup = function () {
+        offFunction();
+      };
+      return cleanup;
+    }
+  }, [currentUser]);
+
   return (
     <div className="container-fluid">
       <Header user={currentUser} loading={loading} showSignOut={setShowSignOut} />
