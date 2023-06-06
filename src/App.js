@@ -29,15 +29,17 @@ export function App(props) {
   const db = getDatabase();
   // Get reference to "wishlist" propety in database
   const wishlistRef = ref(db, "wishlist");
+  // Get reference to "shop" property in database
+  const shopRef = ref(db, "shop");
   // Maintain wishlist data here
   const [wishlist, setWishlist] = useState([]); 
   // Sign out only when click sign out
   const [showSignOut, setShowSignOut] = useState(false);
-
+  // Hide footer on wishlist and shop page to not overlap
   const location = useLocation();
   const hideFooter = location.pathname === '/wishlist' || location.pathname.startsWith('/shop');
 
-
+  
   // External data
   const fetchJSONFromFile = async (url) => {
     try {
@@ -88,11 +90,11 @@ export function App(props) {
         remove(wishlistRef);
       }
   };
-
+  
+  // Render wishlist per account when logged back in; get initial wishlist
   useEffect(() => {
     if (currentUser) {
       const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
-
       const offFunction = onValue(wishlistRef, (snapshot) => {
         const wishlistData = snapshot.val();
         if (wishlistData) {
@@ -103,7 +105,7 @@ export function App(props) {
         }
       });
 
-      const cleanup = function () {
+      const cleanup = function() {
         offFunction();
       };
       return cleanup;
