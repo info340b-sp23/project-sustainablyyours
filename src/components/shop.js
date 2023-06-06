@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getDatabase, ref, push, remove, onValue } from 'firebase/database';
 
 export function AllItems(props) {
   const params = useParams();
@@ -16,7 +16,8 @@ export function AllItems(props) {
     // Simulate a delay using setTimeout
     setTimeout(() => {
       setLoading(false); // Mark loading as false after a delay
-    }, 2500); // Adjust the delay duration as needed -- this is 2.5 seconds
+    }, 250); // Adjust the delay duration as needed -- this is 2.5 seconds
+    // REMEMBER TO CHANGE BACK TO 2500; changed for firebase testing
   }, []);
 
   const handleCategoryChange = (event) => {
@@ -45,6 +46,7 @@ export function AllItems(props) {
   };
 
   const searchItemsTmp = shopData
+    //search bar
     .filter((val) => {
       if (searchTerm === "") {
         return val;
@@ -53,6 +55,7 @@ export function AllItems(props) {
       }
       return null;
     })
+    // category selector
     .filter((val) => {
       if (selectedCategory === "") {
         return val;
@@ -105,7 +108,7 @@ export function AllItems(props) {
     return (
       <div className="page-container">
         <div className="loader-container">
-          <FontAwesomeIcon icon={FontAwesomeIcon} spin />
+        <i icon="fa-solid fa-circle-notch" />
         </div>
       </div>
     );
@@ -164,6 +167,5 @@ export function AllItems(props) {
         <div className="row">{searchItems}</div>
       </div>
     </main>
-    
   );
 }
