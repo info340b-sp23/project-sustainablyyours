@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { getDatabase, ref, push, remove, onValue } from 'firebase/database';
+import { getDatabase, onValue, ref } from "firebase/database";
 
 export function AllItems(props) {
+  const currentUser = props.user ? props.user.userName : null;
   const params = useParams();
   const shopData = props.items;
+  const [starred, setStarred] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [loading, setLoading] = useState(true); // New loading state
@@ -19,6 +21,27 @@ export function AllItems(props) {
     }, 250); // Adjust the delay duration as needed -- this is 2.5 seconds
     // REMEMBER TO CHANGE BACK TO 2500; changed for firebase testing
   }, []);
+
+  useEffect(() => {
+    const db = getDatabase();
+    if (currentUser) {
+      const shopRef = ref(db, `shop/${currentUser.uid}`);
+      const offFunction = onValue(shopRef, (snapshot) => {
+        const shopData = snapshot.val();
+        if (shopData) {
+          const shopArray = Object.values(shopData);
+          setStarred(shopArray);
+        } else {
+          setStarred([]);
+        }
+      });
+
+      const cleanup = function() {
+        offFunction();
+      };
+      return cleanup;
+    }
+  }, [currentUser]);
 
   const handleCategoryChange = (event) => {
     const selectedValue = event.target.value;

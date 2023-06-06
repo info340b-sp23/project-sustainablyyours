@@ -12,7 +12,7 @@ import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
 import { Wishlist } from "./components/wishlist";
-import { getDatabase, set as firebaseSet, ref, push, remove, onValue } from 'firebase/database';
+import { getDatabase, set, ref, push, remove, onValue } from 'firebase/database';
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -91,7 +91,7 @@ export function App(props) {
       }
   };
   
-  // Render wishlist per account when logged back in; get initial wishlist
+  // Render wishlist and shop per account when logged back in; get initial wishlist and shop starred
   useEffect(() => {
     if (currentUser) {
       const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
@@ -100,17 +100,25 @@ export function App(props) {
         if (wishlistData) {
           const wishlistArray = Object.values(wishlistData);
           setWishlist(wishlistArray);
+          // Update the isInWishlist property of shopItems
+          const updatedShopItems = shopItems.map((shopItem) => {
+            const isInWishlist = wishlistArray.some(
+              (wishlistItem) => wishlistItem.item === shopItem.item
+            );
+            return { ...shopItem, isInWishlist };
+          });
+          setShopItems(updatedShopItems);
         } else {
           setWishlist([]);
         }
       });
-
+  
       const cleanup = function() {
         offFunction();
       };
       return cleanup;
     }
-  }, [currentUser]);
+  }, [currentUser, shopItems]);
 
   return (
     <div className="container-fluid">
