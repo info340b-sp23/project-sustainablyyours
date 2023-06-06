@@ -6,7 +6,7 @@ import { Footer } from "./components/footer";
 import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { ErrorPage } from "./components/error";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -33,6 +33,10 @@ export function App(props) {
   const [wishlist, setWishlist] = useState([]); 
   // Sign out only when click sign out
   const [showSignOut, setShowSignOut] = useState(false);
+
+  const location = useLocation();
+  const hideFooter = location.pathname === '/wishlist' || location.pathname.startsWith('/shop');
+
 
   // External data
   const fetchJSONFromFile = async (url) => {
@@ -84,7 +88,6 @@ export function App(props) {
         remove(wishlistRef);
       }
   };
-
 
   useEffect(() => {
     if (currentUser) {
@@ -141,7 +144,7 @@ export function App(props) {
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {window.location.pathname !== "/shop" && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   );
 }

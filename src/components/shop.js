@@ -164,5 +164,6 @@ export function AllItems(props) {
         <div className="row">{searchItems}</div>
       </div>
     </main>
+    
   );
 }
