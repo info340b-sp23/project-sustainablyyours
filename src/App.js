@@ -12,7 +12,7 @@ import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
 import { Wishlist } from "./components/wishlist";
-import { getDatabase, set, ref, push, remove, onValue } from 'firebase/database';
+import { getDatabase, ref, push, remove, onValue } from 'firebase/database';
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -27,10 +27,6 @@ export function App(props) {
   const [shopItems, setShopItems] = useState([]);
   // Access database
   const db = getDatabase();
-  // Get reference to "wishlist" propety in database
-  const wishlistRef = ref(db, "wishlist");
-  // Get reference to "shop" property in database
-  const shopRef = ref(db, "shop");
   // Maintain wishlist data here
   const [wishlist, setWishlist] = useState([]); 
   // Sign out only when click sign out

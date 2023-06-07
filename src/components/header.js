@@ -33,7 +33,7 @@ export function Header(props) {
               <Nav.Link className="nav-item" as={Link} to="/shop" aria-label="shop page">Shop</Nav.Link>
               <Nav.Link className="nav-item" as={Link} to="/wishlist" aria-label="wishlist page">WishList</Nav.Link>
               <Nav.Link className="nav-item" as={Link} to="/contact" aria-label="contact us page">Contact</Nav.Link>
-
+              {/* What to show if logged in or not */}
               {!props.user &&
                 <Nav.Link className="nav-item" as={Link} to="/account" aria-label="account login"><i className="fa-solid fa-user"></i></Nav.Link>}
               {props.user &&

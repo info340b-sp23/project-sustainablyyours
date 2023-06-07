@@ -10,21 +10,7 @@ export function About() {
             <div className="about-section-team">
               <h1>About SustainablyYours!</h1>
               <p>
-                SustainablyYours.com is a platform that provides users with
-                access to a wide range of sustainable products from various
-                brands and local small businesses. The platform aims to promote
-                sustainable consumption by offering a curated selection of
-                products that meet sustainability criteria such as eco-friendly
-                practices, fair trade, and ethical sourcing. Users can browse
-                through product details and sustainability attributes, as well
-                as brand information and user-generated reviews to make informed
-                decisions based on their sustainability preferences.
-                SustainablyYours.com also supports local farmers and small
-                businesses that adhere to sustainable practices, fostering
-                community-driven and localized sustainability efforts. By
-                providing a one-stop destination for sustainable products,
-                SustainablyYours.com aims to make it easier for users to make
-                more environmentally and socially responsible choices.
+                SustainablyYours.com is a platform that provides users with access to a wide range of sustainable products from various and local small businesses. The platform aims to promote sustainable consumption by offering a curated selection of products that meet sustainability criteria such as eco-friendly practices, fair trade, and ethical sourcing. Users can browse through product details and sustainability attributes, as well as brand information and user-generated reviews to make informed decisions based on their sustainability preferences. SustainablyYours.com also supports local farmers and small businesses that adhere to sustainable practices, fostering community-driven and localized sustainability efforts. By providing a one-stop destination for sustainable products, SustainablyYours.com aims to make it easier for users to make more environmentally and socially responsible choices.
               </p>
             </div>
           </Carousel.Item>
@@ -32,42 +18,31 @@ export function About() {
             <div className="about-section-team">
               <h1>Curated Selection</h1>
               <p>
-                Our platform offers a curated selection of products based on
-                sustainability criteria like eco-friendly practices, fair trade,
-                and ethical sourcing. This ensures that users can make
-                environmentally and socially responsible choices.
+                Our platform offers a curated selection of products based on sustainability criteria like eco-friendly practices, fair trade, and ethical sourcing. This ensures that users can make environmentally and socially responsible choices.
               </p>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="about-section-team">
               <h1>Detailed Product Information</h1>
               <p>
-                We provide detailed product information and sustainability
-                attributes for every item in our collection. This will empower
-                users to make informed decisions that align with their
-                sustainability preferences.
+                We provide detailed product information and sustainability attributes for every item in our collection. This will empower users to make informed decisions that align with their sustainability preferences.
               </p>
             </div>
-          </Carousel.Item>
-          <Carousel.Item>
+          </Carousel.Item> */}
+          {/* <Carousel.Item>
             <div className="about-section-team">
               <h1>User-Generated Reviews</h1>
               <p>
-                Our platform features user-generated reviews for social proof
-                and feedback. You can read reviews from other users to get
-                insights and make confident purchasing decisions.
+                Our platform features user-generated reviews for social proof and feedback. You can read reviews from other users to get insights and make confident purchasing decisions.
               </p>
             </div>
-          </Carousel.Item>
+          </Carousel.Item> */}
           <Carousel.Item>
             <div className="about-section-team">
               <h1>Support for Local Farmers and Small Businesses</h1>
               <p>
-                We actively support local farmers and small businesses that
-                adhere to sustainable practices. By choosing their products,
-                you contribute to their efforts and help build a more
-                sustainable and resilient community.
+                We actively support local farmers and small businesses that adhere to sustainable practices. By choosing their products, you contribute to their efforts and help build a more sustainable and resilient community.
               </p>
             </div>
           </Carousel.Item>
@@ -75,10 +50,7 @@ export function About() {
             <div className="about-section-team">
               <h1>Community-Driven Sustainability</h1>
               <p>
-                We believe in fostering community-driven and localized
-                sustainability efforts. Our platform serves as a hub for
-                individuals and organizations to come together, share
-                knowledge, and work towards a more sustainable future.
+                We believe in fostering community-driven and localized sustainability efforts. Our platform serves as a hub for individuals and organizations to come together, share knowledge, and work towards a more sustainable future.
               </p>
             </div>
           </Carousel.Item>
@@ -86,11 +58,7 @@ export function About() {
             <div className="about-section-team">
               <h1>One-Stop Destination</h1>
               <p>
-                SustainablyYours.com is your one-stop destination for
-                environmentally and socially responsible choices. We strive to
-                make it easier for you to find and purchase sustainable
-                products, empowering you to make a positive impact through your
-                everyday consumption.
+                SustainablyYours.com is your one-stop destination for environmentally and socially responsible choices. We strive to make it easier for you to find and purchase sustainable products, empowering you to make a positive impact through your everyday consumption.
               </p>
             </div>
           </Carousel.Item>

@@ -15,6 +15,5 @@ export function Intro() {
             </div>
             </main>
         </div>
-      
     )
 }
