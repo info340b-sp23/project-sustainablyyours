@@ -554,6 +554,7 @@ label, #sustainable-items {
 /* wishlist items */
 .fa-star:hover{
   color: #ffdf00 !important;
+  cursor: pointer;
 }
 
 .remove-from-wishlist:hover {
