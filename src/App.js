@@ -84,11 +84,12 @@ export function App(props) {
     });
     setShopItems(updatedShopItems);
     setWishlist((prevWishlist) =>
-      prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item));
-      if (currentUser) {
-        const wishlistRef = ref(db, `wishlist/${currentUser.uid}`);
-        remove(wishlistRef);
-      }
+      prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item)
+    );
+    if (currentUser) {
+      const wishlistRef = ref(db, `wishlist/${currentUser.uid}/${item.itemKey}`);
+      remove(wishlistRef);
+    }
   };
   
   // Render wishlist and shop per account when logged back in; get initial wishlist and shop starred
@@ -119,6 +120,8 @@ export function App(props) {
       return cleanup;
     }
   }, [currentUser, shopItems]);
+
+  
 
   return (
     <div className="container-fluid">

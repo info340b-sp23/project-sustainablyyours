@@ -22,26 +22,27 @@ export function AllItems(props) {
     // REMEMBER TO CHANGE BACK TO 2500; changed for firebase testing
   }, []);
 
-  useEffect(() => {
-    const db = getDatabase();
-    if (currentUser) {
-      const shopRef = ref(db, `shop/${currentUser.uid}`);
-      const offFunction = onValue(shopRef, (snapshot) => {
-        const shopData = snapshot.val();
-        if (shopData) {
-          const shopArray = Object.values(shopData);
-          setStarred(shopArray);
-        } else {
-          setStarred([]);
-        }
-      });
+  // items that were starred are starred when logged back in
+  // useEffect(() => {
+  //   const db = getDatabase();
+  //   if (currentUser) {
+  //     const shopRef = ref(db, `shop/${currentUser.uid}`);
+  //     const offFunction = onValue(shopRef, (snapshot) => {
+  //       const shopData = snapshot.val();
+  //       if (shopData) {
+  //         const shopArray = Object.values(shopData);
+  //         setStarred(shopArray);
+  //       } else {
+  //         setStarred([]);
+  //       }
+  //     });
 
-      const cleanup = function() {
-        offFunction();
-      };
-      return cleanup;
-    }
-  }, [currentUser]);
+  //     const cleanup = function() {
+  //       offFunction();
+  //     };
+  //     return cleanup;
+  //   }
+  // }, [currentUser]);
 
   const handleCategoryChange = (event) => {
     const selectedValue = event.target.value;
