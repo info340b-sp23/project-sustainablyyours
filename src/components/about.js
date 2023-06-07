@@ -44,7 +44,7 @@ export function About() {
               <h1>Detailed Product Information</h1>
               <p>
                 We provide detailed product information and sustainability
-                attributes for every item in our collection. This empowers
+                attributes for every item in our collection. This will empower
                 users to make informed decisions that align with their
                 sustainability preferences.
               </p>
