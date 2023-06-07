@@ -13,7 +13,7 @@ import { Wishlist } from "./components/wishlist";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { getDatabase, ref, push, remove, onValue } from 'firebase/database';
+import { getDatabase, ref, push, onValue } from 'firebase/database';
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -88,6 +88,8 @@ export function App(props) {
   //     remove(wishlistRef); // doesn't remove item
   //   }
   // };
+
+  
   
   // Render wishlist and shop per account when logged back in; get initial wishlist and shop starred
   useEffect(() => {
