@@ -6,12 +6,13 @@ import { Footer } from "./components/footer";
 import { Contact } from "./components/contact";
 import { Account } from "./components/account";
 import { AllItems } from "./components/shop";
-import { Routes, Route, useLocation } from "react-router-dom";
 import { ErrorPage } from "./components/error";
-import { getAuth } from "firebase/auth";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { SignOut } from "./components/signout";
 import { Wishlist } from "./components/wishlist";
+
+import { Routes, Route, useLocation } from "react-router-dom";
+import { getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { getDatabase, ref, push, remove, onValue } from 'firebase/database';
 
 import "./App.css";
@@ -83,8 +84,8 @@ export function App(props) {
       prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item)
     );
     if (currentUser) {
-      const wishlistRef = ref(db, `wishlist/${currentUser.uid}/${item.itemKey}`);
-      remove(wishlistRef);
+      const wishlistRef = ref(db, `wishlist/${currentUser.uid}/${item.item}`);
+      remove(wishlistRef); // doesn't remove item
     }
   };
   
@@ -118,7 +119,6 @@ export function App(props) {
   }, [currentUser, shopItems]);
 
   
-
   return (
     <div className="container-fluid">
       <Header user={currentUser} loading={loading} showSignOut={setShowSignOut} />
@@ -140,15 +140,15 @@ export function App(props) {
         <Route
           path="account"
           element={<Account user={currentUser}
-          loading={loading} />}
+          loading={loading} />
+        }
         />
         <Route
           path="wishlist"
           element={
             <Wishlist
               wishlist={wishlist}
-              removeFromWishlist={removeFromWishlist}
-            />
+              removeFromWishlist={removeFromWishlist} />
           }
         />
         <Route path="*" element={<ErrorPage />} />
