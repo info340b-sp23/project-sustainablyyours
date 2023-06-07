@@ -630,3 +630,11 @@ label, #sustainable-items {
   justify-content: center;
   height: 70vh; /* Set the container height to occupy the full viewport height */
 }
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
