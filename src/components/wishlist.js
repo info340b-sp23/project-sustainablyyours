@@ -19,9 +19,9 @@ export function Wishlist(props) {
     };
   }, []);
 
-  const handleRemoveFromWishlist = (item) => {
-    props.removeFromWishlist(item);
-  };
+  // const handleRemoveFromWishlist = (item) => {
+  //   props.removeFromWishlist(item);
+  // };
 
   const wishlistItems = props.wishlist.map((item) => (
     <div className="col-md-6 col-xl-3 d-flex" key={item.item}>
@@ -46,8 +46,8 @@ export function Wishlist(props) {
                 title="Remove Item from Wishlist"
                 aria-label="remove item from wishlist"
                 aria-hidden="true"
-                className="fa-solid fa-star fa-xl yellow-star remove-from-wishlist"
-                onClick={() => handleRemoveFromWishlist(item)}
+                className="fa-solid fa-star fa-xl yellow-star"
+                // onClick={() => handleRemoveFromWishlist(item)}
               ></i>
             </div>
           </div>

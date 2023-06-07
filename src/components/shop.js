@@ -26,11 +26,11 @@ export function AllItems(props) {
     navigate(`/shop/${encodeURIComponent(selectedValue)}`);
   };
 
-  const handleRemoveFromWishlist = (item) => {
-    if (props.user) {
-      props.removeFromWishlist(item);
-    }
-  };
+  // const handleRemoveFromWishlist = (item) => {
+  //   if (props.user) {
+  //     props.removeFromWishlist(item);
+  //   }
+  // };
 
   const handleAddToWishlist = (item) => {
     if (props.user) {
@@ -88,7 +88,7 @@ export function AllItems(props) {
                 aria-hidden="true"
                 onClick={() => {
                   if (isInWishlist(val)) {
-                    handleRemoveFromWishlist(val);
+                    // handleRemoveFromWishlist(val);
                   } else {
                     handleAddToWishlist(val);
                   }

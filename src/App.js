@@ -72,22 +72,22 @@ export function App(props) {
     }
   };
   
-  const removeFromWishlist = (item) => {
-    const updatedShopItems = shopItems.map((shopItem) => {
-      if (shopItem.item === item.item) {
-        return { ...shopItem, isInWishlist: false };
-      }
-      return shopItem;
-    });
-    setShopItems(updatedShopItems);
-    setWishlist((prevWishlist) =>
-      prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item)
-    );
-    if (currentUser) {
-      const wishlistRef = ref(db, `wishlist/${currentUser.uid}/${item.item}`);
-      remove(wishlistRef); // doesn't remove item
-    }
-  };
+  // const removeFromWishlist = (item) => {
+  //   const updatedShopItems = shopItems.map((shopItem) => {
+  //     if (shopItem.item === item.item) {
+  //       return { ...shopItem, isInWishlist: false };
+  //     }
+  //     return shopItem;
+  //   });
+  //   setShopItems(updatedShopItems);
+  //   setWishlist((prevWishlist) =>
+  //     prevWishlist.filter((wishlistItem) => wishlistItem.item !== item.item)
+  //   );
+  //   if (currentUser) {
+  //     const wishlistRef = ref(db, `wishlist/${currentUser.uid}/${item.item}`);
+  //     remove(wishlistRef); // doesn't remove item
+  //   }
+  // };
   
   // Render wishlist and shop per account when logged back in; get initial wishlist and shop starred
   useEffect(() => {
@@ -132,8 +132,9 @@ export function App(props) {
           element={
             <AllItems items={shopItems}
             addToWishlist={addToWishlist}
-            removeFromWishlist={removeFromWishlist}
-            user={currentUser} />
+            // removeFromWishlist={removeFromWishlist}
+            user={currentUser}
+            />
           }
         />
         <Route path="contact" element={<Contact />} />
@@ -148,7 +149,8 @@ export function App(props) {
           element={
             <Wishlist
               wishlist={wishlist}
-              removeFromWishlist={removeFromWishlist} />
+              // removeFromWishlist={removeFromWishlist} 
+            />
           }
         />
         <Route path="*" element={<ErrorPage />} />
